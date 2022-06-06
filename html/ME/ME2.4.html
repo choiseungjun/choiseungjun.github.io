@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>가입완료 | 러너블</title>
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/page.css">
+	<script src="/js/jquery-3.6.0.min.js"></script>
+	<script src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="skipnavi">
+	<ul>
+		<li><a href="#container_title">본문바로가기</a></li>
+	</ul>
+</div>
+<div id="wrap">
+	<!-- header -->
+	<header id="header" class="hide">
+		<div class="header_inner">
+			<h1>가입완료</h1>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<section id="container">
+		<div id="container_title" class="hide" tabindex="-1">본문 시작</div>
+
+		<!-- Fixed Top Area -->
+		<!-- //Fixed Top Area -->
+
+		<!-- content -->
+		<div id="content">
+			<div class="join_wrap">
+				<i class="icon_join_complete"></i>
+				<h2 class="head_tit">김러너님,<br>회원가입이 완료되었습니다!</h2>
+				<ul class="benefits_list">
+					<li><span class="step">1</span>다양한 대회 신청을 러너블에서,</li>
+					<li><span class="step">2</span>온/오프라인 대회 참여를 간편하게,</li>
+					<li><span class="step">3</span>혼자하는 러닝도 재미있게 즐겨보세요.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //content -->
+
+		<!-- Fixed Bottom Area -->
+		<div class="fixed_bottom_area">
+			<div class="btn_wrap started">
+				<a href="javascript:void(0);" class="btn_default_gray">
+					<!-- # 모션 가이드
+						- 정책 : 10초 동안 게이지가 찬다.
+
+						1. js 사용하지 않고 css로만 실행.
+						- html에 강제로 넣어서 사용
+						- <span class="bar setGageMotion cue"></span>
+
+						2. js 사용하여 원하는 시점에 모션실행.
+						- .setGageMotion에 원하는 시점 후 .cue 넣어서 사용 가능.
+
+						3. 혹시 모션을 멈추고 싶다면 .cue 제거.
+					-->
+					<span class="bar setGageMotion"></span> <!-- 모션시작: .cue 추가 -->
+					<span>시작하기</span>
+				</a>
+			</div>
+		</div>
+		<!-- //Fixed Bottom Area -->
+	</section>
+</div>
+
+<script>
+$(function() {
+	setTimeout(function() {
+		$('.setGageMotion').addClass('cue');
+	}, 500);
+});
+</script>
+</body>
+</html>

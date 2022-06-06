@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>이메일/비밀번호로 가입 | 러너블</title>
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/page.css">
+	<script src="/js/jquery-3.6.0.min.js"></script>
+	<script src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="skipnavi">
+	<ul>
+		<li><a href="#container_title">본문바로가기</a></li>
+	</ul>
+</div>
+<div id="wrap">
+	<!-- header -->
+	<header id="header">
+		<div class="header_inner">
+			<h1>회원가입</h1>
+			<div class="header_left">
+				<a href="javascript:void(0);">
+					<i class="icon_gnb_back"><span class="hide">뒤로가기</span></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<section id="container">
+		<div id="container_title" class="hide" tabindex="-1">본문 시작</div>
+
+		<!-- content -->
+		<div id="content">
+			<div class="join_wrap">
+				<h2 class="head_tit">비밀번호를 입력해주세요</h2>
+				<ul class="form_wrap">
+					<li>
+						<strong class="form_tit">
+							<label for="inp01">이메일</label>
+							<em class="tag_necessary"><span class="hide">필수 입력</span></em>
+						</strong>
+						<div class="input_box">
+							<div class="input_inner">
+								<span class="input_item">
+									<input type="text" title="이메일 입력란" placeholder="이메일을 입력해 주세요." value="kimvinyl@vinylc.com" id="inp01">
+								</span>
+								<span class="input_util">
+									<i class="icon_check_form"><span class="hide">이메일 인증완료</span></i>
+								</span>
+							</div>
+							<p class="input_msg">이메일 형식이 유효하지 않아요.</p>
+							<!-- <p class="input_msg">이미 가입되어 있는 이메일이에요.</p> -->
+						</div>
+					</li>
+					<li>
+						<strong class="form_tit">
+							<label for="inp02">비밀번호</label>
+							<em class="tag_necessary"><span class="hide">필수 입력</span></em>
+						</strong>
+						<div class="input_box">
+							<div class="input_inner uiTogglePassword">
+								<span class="input_item">
+									<input type="password" title="비밀번호 입력란" placeholder="영문, 숫자, 특수문자 8자 이상 조합을 입력해 주세요." id="inp02">
+								</span>
+								<span class="input_btn">
+									<button type="button" class="btn_pw_view">
+										<i class="icon_view_on"></i>
+										<span class="hide">비밀번호 보기</span>
+									</button>
+								</span>
+								<span class="input_btn">
+									<button type="button" class="btn_input_clear">
+										<i class="icon_input_clear"></i>
+										<span class="hide">내용 지우기</span>
+									</button>
+								</span>
+							</div>
+							<p class="input_msg">
+								<span class="done">영문자(조건 충족)</span>, <!-- 조건충족시 .done 추가 -->
+								<span>특수문자</span>,
+								<span class="done">숫자(조건 충족)</span>, <!-- 조건충족시 .done 추가 -->
+								<span>8자 이상</span>
+							</p>
+						</div>
+						<div class="input_box">
+							<div class="input_inner uiTogglePassword">
+								<span class="input_item">
+									<input type="password" title="비밀번호 재입력란" placeholder="비밀번호를 한 번 더 입력해 주세요.">
+								</span>
+								<span class="input_btn">
+									<button type="button" class="btn_pw_view">
+										<i class="icon_view_on"></i>
+										<span class="hide">비밀번호 보기</span>
+									</button>
+								</span>
+								<span class="input_btn">
+									<button type="button" class="btn_input_clear">
+										<i class="icon_input_clear"></i>
+										<span class="hide">내용 지우기</span>
+									</button>
+								</span>
+							</div>
+							<p class="input_msg">동일한 비밀번호를 입력해 주세요.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //content -->
+
+		<!-- Fixed Bottom Area -->
+		<div class="fixed_bottom_area">
+			<div class="btn_wrap">
+				<div class="btn_type_col">
+					<a href="javascript:void(0);" class="btn_default_secondary"><span>이전</span></a>
+					<a href="javascript:void(0);" class="btn_default_primary"><span>다음</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- //Fixed Bottom Area -->
+	</section>
+</div>
+
+</body>
+</html>

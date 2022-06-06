@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>전체 레이스 기록 보기 | 러너블</title>
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/page.css">
+	<script src="/js/jquery-3.6.0.min.js"></script>
+	<script src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="skipnavi">
+	<ul>
+		<li><a href="#container_title">본문바로가기</a></li>
+	</ul>
+</div>
+<div id="wrap">
+	<!-- header -->
+	<header id="header">
+		<div class="header_inner">
+			<h1>전체 레이스 기록 보기</h1>
+			<div class="header_left">
+				<a href="javascript:void(0);">
+					<i class="icon_gnb_back"><span class="hide">뒤로가기</span></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<section id="container">
+		<div id="container_title" class="hide" tabindex="-1">본문 시작</div>
+
+		<!-- content -->
+		<div id="content">
+			<div class="record_history_wrap">
+				<div class="top_util">
+					<div class="select_box type_inline">
+						<div class="select_inner">
+							<p class="select_txt">전체 기록</p>
+							<select name="" id="">
+								<option value="" selected>전체 기록</option>
+								<option value="">2021년 10월</option>
+								<option value="">2021년 9월</option>
+								<option value="">2021년 8월</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<!-- case1. 목록 있을시 -->
+				<div class="run_record_list">
+					<ul>
+						<!-- 대회기록 승인대기중 모듈 -->
+						<li>
+							<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+								<em class="record_category"><span>승인 대기 중</span></em>
+								<strong class="record_tit ellipsis">대회 기록 "승인 대기 중" 모듈</strong>
+								<p class="record_date">2022.01.01 12:00</p>
+								<dl class="record_info">
+									<dt class="hide">러닝 부문</dt>
+									<dd>Full</dd>
+									<dt class="hide">러닝 시간</dt>
+									<dd>00:00:00</dd>
+								</dl>
+							</a>
+						</li>
+						<!-- //대회기록 승인대기중 모듈 -->
+						<!-- 대회기록 승인반려 모듈 -->
+						<li>
+							<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+								<em class="record_category"><span class="reject">승인 반려</span></em>
+								<strong class="record_tit ellipsis">대회 기록 "승인 반려" 모듈</strong>
+								<p class="record_date">2022.01.01 12:00</p>
+								<dl class="record_info">
+									<dt class="hide">러닝 부문</dt>
+									<dd>Full</dd>
+									<dt class="hide">러닝 시간</dt>
+									<dd>00:00:00</dd>
+								</dl>
+							</a>
+						</li>
+						<!-- //대회기록 승인반려 모듈 -->
+						<!-- 대회기록 승인완료 모듈 -->
+						<li>
+							<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+								<strong class="record_tit ellipsis">대회 기록 "승인 완료" 모듈</strong>
+								<p class="record_date">2022.01.01 12:00</p>
+								<dl class="record_info">
+									<dt class="hide">러닝 부문</dt>
+									<dd>Full</dd>
+									<dt class="hide">러닝 시간</dt>
+									<dd>00:00:00</dd>
+								</dl>
+							</a>
+						</li>
+						<!-- //대회기록 승인완료 모듈 -->
+						<!-- 대회기록 승인대기중 모듈(타앱) -->
+						<li>
+							<div class="record_item type_disabled"> <!-- .type_disabled -->
+								<em class="record_category"><span>승인 대기 중</span></em>
+								<strong class="record_tit ellipsis">대회 기록 "승인 대기 중" 모듈(타앱)</strong>
+								<p class="record_date">2022.01.01 12:00</p>
+								<dl class="record_info">
+									<dt class="hide">러닝 부문</dt>
+									<dd>Full</dd>
+								</dl>
+								<div class="record_bottom">
+									<p class="record_warn">다른 앱 기록으로 참여 시, 상세 정보가 제공되지 않습니다.</p>
+								</div>
+							</div>
+						</li>
+						<!-- //대회기록 승인대기중 모듈(타앱) -->
+						<!-- 대회기록 승인반려 모듈(타앱) -->
+						<li>
+							<div class="record_item type_disabled"> <!-- .type_disabled -->
+								<em class="record_category"><span class="reject">승인 반려</span></em>
+								<strong class="record_tit ellipsis">대회 기록 "승인 반려" 모듈(타앱)</strong>
+								<p class="record_date">2022.01.01 12:00</p>
+								<dl class="record_info">
+									<dt class="hide">러닝 부문</dt>
+									<dd>Full</dd>
+								</dl>
+								<div class="record_bottom">
+									<p class="record_warn">다른 앱 기록으로 참여 시, 상세 정보가 제공되지 않습니다.</p>
+								</div>
+							</div>
+						</li>
+						<!-- //대회기록 승인반려 모듈(타앱) -->
+						<!-- 대회기록 승인완료 모듈(타앱) -->
+						<li>
+							<div class="record_item type_disabled"> <!-- .type_disabled -->
+								<strong class="record_tit ellipsis">대회 기록 "승인 완료" 모듈(타앱)</strong>
+								<p class="record_date">2022.01.01 12:00</p>
+								<dl class="record_info">
+									<dt class="hide">러닝 부문</dt>
+									<dd>Full</dd>
+								</dl>
+								<div class="record_bottom">
+									<p class="record_warn">다른 앱 기록으로 참여 시, 상세 정보가 제공되지 않습니다.</p>
+								</div>
+							</div>
+						</li>
+						<!-- //대회기록 승인완료 모듈(타앱) -->
+					</ul>
+				</div>
+				<!-- //case1. 목록 있을시 -->
+				<!-- case2. 목록 없을시 -->
+				<div class="history_nodata">
+					<div class="nodata_inner">
+						<i class="icon_no_data"></i>
+						<p class="nodata_msg">탐색된 레이스 기록이 없습니다.</p>
+					</div>
+				</div>
+				<!-- //case2. 목록 없을시 -->
+			</div>
+		</div>
+		<!-- //content -->
+	</section>
+</div>
+
+</body>
+</html>

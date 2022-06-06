@@ -1,0 +1,1012 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge ,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>Guide - form</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" type="text/css" href="/guide/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Form</h1>
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># Checkbox 기본</h2>
+	<div class="d_view">
+		<span class="checkbox">
+			<input type="checkbox" id="chk001">
+			<label for="chk001">default</label>
+		</span>
+		<br><br>
+		<span class="checkbox">
+			<input type="checkbox" id="chk002" checked>
+			<label for="chk002">checked</label>
+		</span>
+		<br><br>
+		<span class="checkbox">
+			<input type="checkbox" id="chk003" disabled>
+			<label for="chk003">disable default</label>
+		</span>
+		<br><br>
+		<span class="checkbox">
+			<input type="checkbox" id="chk004" checked disabled>
+			<label for="chk004">disable checked</label>
+		</span>
+	</div>
+	<div class="d_desc">
+<xmp>
+<span class="checkbox">
+	<input type="checkbox" id="chk001">
+	<label for="chk001">default</label>
+</span>
+
+<span class="checkbox">
+	<input type="checkbox" id="chk002" checked>
+	<label for="chk002">checked</label>
+</span>
+
+<span class="checkbox">
+	<input type="checkbox" id="chk003" disabled>
+	<label for="chk003">disable default</label>
+</span>
+
+<span class="checkbox">
+	<input type="checkbox" id="chk004" checked disabled>
+	<label for="chk004">disable checked</label>
+</span>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># Checkbox 라운드</h2>
+	<div class="d_view">
+		<span class="checkbox round">
+			<input type="checkbox" id="chk011">
+			<label for="chk011">default</label>
+		</span>
+		<br><br>
+		<span class="checkbox round">
+			<input type="checkbox" id="chk012" checked>
+			<label for="chk012">checked</label>
+		</span>
+		<br><br>
+		<span class="checkbox round">
+			<input type="checkbox" id="chk013" disabled>
+			<label for="chk013">disable default</label>
+		</span>
+		<br><br>
+		<span class="checkbox round">
+			<input type="checkbox" id="chk014" checked disabled>
+			<label for="chk014">disable checked</label>
+		</span>
+	</div>
+	<div class="d_desc">
+<xmp>
+// .checkbox 에 .round 추가
+
+<span class="checkbox round">
+	<input type="checkbox" id="chk011">
+	<label for="chk011">default</label>
+</span>
+
+<span class="checkbox round">
+	<input type="checkbox" id="chk012" checked>
+	<label for="chk012">checked</label>
+</span>
+
+<span class="checkbox round">
+	<input type="checkbox" id="chk013" disabled>
+	<label for="chk013">disable default</label>
+</span>
+
+<span class="checkbox round">
+	<input type="checkbox" id="chk014" checked disabled>
+	<label for="chk014">disable checked</label>
+</span>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># Radio 기본</h2>
+	<div class="d_view">
+		<span class="radiobox">
+			<input type="radio" name="rdo021" id="rdo021_1">
+			<label for="rdo021_1">default</label>
+		</span>
+		<br><br>
+		<span class="radiobox">
+			<input type="radio" name="rdo021" id="rdo021_2" checked>
+			<label for="rdo021_2">checked</label>
+		</span>
+		<br><br>
+		<span class="radiobox">
+			<input type="radio" name="rdo022" id="rdo022_1" disabled>
+			<label for="rdo022_1">disable default</label>
+		</span>
+		<br><br>
+		<span class="radiobox">
+			<input type="radio" name="rdo022" id="rdo022_2" checked disabled>
+			<label for="rdo022_2">disable checked</label>
+		</span>
+	</div>
+	<div class="d_desc">
+<xmp>
+<span class="radiobox">
+	<input type="radio" name="rdo021" id="rdo021_1">
+	<label for="rdo021_1">default</label>
+</span>
+
+<span class="radiobox">
+	<input type="radio" name="rdo021" id="rdo021_2" checked>
+	<label for="rdo021_2">checked</label>
+</span>
+
+<span class="radiobox">
+	<input type="radio" name="rdo022" id="rdo022_1" disabled>
+	<label for="rdo022_1">disable default</label>
+</span>
+
+<span class="radiobox">
+	<input type="radio" name="rdo022" id="rdo022_2" checked disabled>
+	<label for="rdo022_2">disable checked</label>
+</span>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 그룹핑(default) - checkbox/radio</h2>
+	<div class="d_view">
+		<div class="control_box">
+			<span class="checkbox">
+				<input type="checkbox" id="chk031">
+				<label for="chk031">checkbox 1</label>
+			</span>
+			<span class="checkbox round">
+				<input type="checkbox" id="chk032" checked>
+				<label for="chk032">checkbox 2</label>
+			</span>
+			<span class="radiobox">
+				<input type="radio" name="rdo033" id="rdo033_1">
+				<label for="rdo033_1">radio 1</label>
+			</span>
+			<span class="radiobox">
+				<input type="radio" name="rdo033" id="rdo033_2" checked>
+				<label for="rdo033_2">radio 2</label>
+			</span>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+<div class="control_box">
+	<span class="checkbox">
+		<input type="checkbox" id="">
+		<label for="">checkbox</label>
+	</span>
+	<span class="radiobox">
+		<input type="radio" name="" id="">
+		<label for="">radio</label>
+	</span>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 그룹핑(column) - checkbox/radio</h2>
+	<div class="d_view">
+		<div class="control_box col2">
+			<span class="checkbox">
+				<input type="checkbox" id="chk041">
+				<label for="chk041">checkbox 1</label>
+			</span>
+			<span class="checkbox round">
+				<input type="checkbox" id="chk042" checked>
+				<label for="chk042">checkbox 2</label>
+			</span>
+			<span class="radiobox">
+				<input type="radio" name="rdo043" id="rdo043_1">
+				<label for="rdo043_1">radio 1</label>
+			</span>
+			<span class="radiobox">
+				<input type="radio" name="rdo043" id="rdo043_2" checked>
+				<label for="rdo043_2">radio 2</label>
+			</span>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+// 현재 .col2 만 존재.
+
+<div class="control_box col2">
+	<span class="checkbox">
+		<input type="checkbox" id="">
+		<label for="">checkbox</label>
+	</span>
+	<span class="radiobox">
+		<input type="radio" name="" id="">
+		<label for="">radio</label>
+	</span>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># Input - text</h2>
+	<div class="d_view">
+		<div class="input_box">
+			<div class="input_inner">
+				<span class="input_item">
+					<input type="text" title="OO 입력란" placeholder="입력해주세요">
+				</span>
+				<span class="input_btn">
+					<button type="button" class="btn_input_clear">
+						<i class="icon_input_clear"></i>
+						<span class="hide">내용 지우기</span>
+					</button>
+				</span>
+			</div>
+			<p class="input_msg">에러메시지</p>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+<div class="input_box">
+	<div class="input_inner">
+		<span class="input_item">
+			<input type="text" title="OO 입력란" placeholder="입력해주세요">
+		</span>
+		<span class="input_btn">
+			<button type="button" class="btn_input_clear">
+				<i class="icon_input_clear"></i>
+				<span class="hide">내용 지우기</span>
+			</button>
+		</span>
+	</div>
+	<p class="input_msg">에러메시지</p>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># Input - text readonly</h2>
+	<div class="d_view">
+		<div class="input_box">
+			<div class="input_inner">
+				<span class="input_item">
+					<input type="text" title="OO 입력란" placeholder="입력해주세요" value="test text" readonly>
+				</span>
+			</div>
+			<p class="input_msg">에러메시지</p>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+<div class="input_box">
+	<div class="input_inner">
+		<span class="input_item">
+			<input type="text" title="OO 입력란" placeholder="입력해주세요" value="test text" readonly>
+		</span>
+	</div>
+	<p class="input_msg">에러메시지</p>
+</div>
+
+</xmp>
+	</div>
+	
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># Input - focus</h2>
+	<div class="d_view">
+		<div class="input_box focus">
+			<div class="input_inner">
+				<span class="input_item">
+					<input type="text" title="OO 입력란" placeholder="입력해주세요" value="입력중..">
+				</span>
+				<span class="input_btn">
+					<button type="button" class="btn_input_clear">
+						<i class="icon_input_clear"></i>
+						<span class="hide">내용 지우기</span>
+					</button>
+				</span>
+			</div>
+			<p class="input_msg">에러메시지</p>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+// focus 클래스.
+
+<div class="input_box focus">
+	<div class="input_inner">
+		<span class="input_item">
+			<input type="text" title="OO 입력란" placeholder="입력해주세요" value="입력중..">
+		</span>
+		<span class="input_btn">
+			<button type="button" class="btn_input_clear">
+				<i class="icon_input_clear"></i>
+				<span class="hide">내용 지우기</span>
+			</button>
+		</span>
+	</div>
+	<p class="input_msg">에러메시지</p>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># Input - error</h2>
+	<div class="d_view">
+		<div class="input_box error">
+			<div class="input_inner">
+				<span class="input_item">
+					<input type="text" title="OO 입력란" placeholder="입력해주세요">
+				</span>
+				<span class="input_btn">
+					<button type="button" class="btn_input_clear">
+						<i class="icon_input_clear"></i>
+						<span class="hide">내용 지우기</span>
+					</button>
+				</span>
+			</div>
+			<p class="input_msg">에러메시지</p>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+// error 클래스.
+
+<div class="input_box error">
+	<div class="input_inner">
+		<span class="input_item">
+			<input type="text" title="OO 입력란" placeholder="입력해주세요">
+		</span>
+		<span class="input_btn">
+			<button type="button" class="btn_input_clear">
+				<i class="icon_input_clear"></i>
+				<span class="hide">내용 지우기</span>
+			</button>
+		</span>
+	</div>
+	<p class="input_msg">에러메시지</p>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># input - tel</h2>
+	<div class="d_view">
+		<div class="input_box">
+			<div class="input_inner">
+				<span class="input_item">
+					<input type="tel" title="OO 입력란" placeholder="입력해주세요">
+				</span>
+				<span class="input_btn">
+					<button type="button" class="btn_input_clear">
+						<i class="icon_input_clear"></i>
+						<span class="hide">내용 지우기</span>
+					</button>
+				</span>
+			</div>
+			<p class="input_msg">에러메시지</p>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+<div class="input_box">
+	<div class="input_inner">
+		<span class="input_item">
+			<input type="tel" title="OO 입력란" placeholder="입력해주세요">
+		</span>
+		<span class="input_btn">
+			<button type="button" class="btn_input_clear">
+				<i class="icon_input_clear"></i>
+				<span class="hide">내용 지우기</span>
+			</button>
+		</span>
+	</div>
+	<p class="input_msg">에러메시지</p>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># input - password</h2>
+	<div class="d_view">
+		<div class="input_box">
+			<div class="input_inner">
+				<span class="input_item">
+					<input type="password" title="OO 입력란" placeholder="입력해주세요">
+				</span>
+				<span class="input_btn">
+					<button type="button" class="btn_input_clear">
+						<i class="icon_input_clear"></i>
+						<span class="hide">내용 지우기</span>
+					</button>
+				</span>
+			</div>
+			<p class="input_msg">에러메시지</p>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+<div class="input_box">
+	<div class="input_inner">
+		<span class="input_item">
+			<input type="password" title="OO 입력란" placeholder="입력해주세요">
+		</span>
+		<span class="input_btn">
+			<button type="button" class="btn_input_clear">
+				<i class="icon_input_clear"></i>
+				<span class="hide">내용 지우기</span>
+			</button>
+		</span>
+	</div>
+	<p class="input_msg">에러메시지</p>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># input - 입력완료</h2>
+	<div class="d_view">
+		<div class="input_box">
+			<div class="input_inner">
+				<span class="input_item">
+					<input type="text" title="이메일 입려란" placeholder="이메일을 입력해 주세요." value="kimvinyl@vinylc.com">
+				</span>
+				<span class="input_util">
+					<i class="icon_check_form"><span class="hide">이메일 인증완료</span></i>
+				</span>
+			</div>
+			<p class="input_msg">에러메시지</p>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+<div class="input_box">
+	<div class="input_inner">
+		<span class="input_item">
+			<input type="text" title="이메일 입려란" placeholder="이메일을 입력해 주세요." value="kimvinyl@vinylc.com">
+		</span>
+		<span class="input_util">
+			<i class="icon_check_form"><span class="hide">이메일 인증완료</span></i>
+		</span>
+	</div>
+	<p class="input_msg">에러메시지</p>
+</div>
+
+</xmp>
+			</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># input - password (toggle)</h2>
+	<div class="d_view">
+		<div class="input_box">
+			<div class="input_inner uiTogglePassword">
+				<span class="input_item">
+					<input type="password" title="OO 입력란" placeholder="입력해주세요">
+				</span>
+				<span class="input_btn">
+					<button type="button" class="btn_pw_view">
+						<i class="icon_view_on"></i>
+						<span class="hide">비밀번호 보기</span>
+					</button>
+				</span>
+				<span class="input_btn">
+					<button type="button" class="btn_input_clear">
+						<i class="icon_input_clear"></i>
+						<span class="hide">내용 지우기</span>
+					</button>
+				</span>
+			</div>
+			<p class="input_msg">에러메시지</p>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+// .uiTogglePassword 추가하여 사용.
+
+<div class="input_box">
+	<div class="input_inner uiTogglePassword">
+		<span class="input_item">
+			<input type="password" title="OO 입력란" placeholder="입력해주세요">
+		</span>
+		<span class="input_btn">
+			<button type="button" class="btn_pw_view">
+				<i class="icon_view_on"></i>
+				<span class="hide">비밀번호 보기</span>
+			</button>
+		</span>
+		<span class="input_btn">
+			<button type="button" class="btn_input_clear">
+				<i class="icon_input_clear"></i>
+				<span class="hide">내용 지우기</span>
+			</button>
+		</span>
+	</div>
+	<p class="input_msg">에러메시지</p>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># select</h2>
+	<div class="d_view">
+		<div class="select_box">
+			<div class="select_inner">
+				<p class="select_txt">option 1</p>
+				<select name="" id="">
+					<option value="" selected>option 1</option>
+					<option value="">option 2</option>
+					<option value="">option 3</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+<div class="select_box">
+	<div class="select_inner">
+		<p class="select_txt">option 1</p>
+		<select name="" id="">
+			<option value="" selected>option 1</option>
+			<option value="">option 2</option>
+			<option value="">option 3</option>
+		</select>
+	</div>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># select - type inline</h2>
+	<div class="d_view">
+		<div class="select_box type_inline">
+			<div class="select_inner">
+				<p class="select_txt">option 1</p>
+				<select name="" id="">
+					<option value="" selected>option 1</option>
+					<option value="">option 2</option>
+					<option value="">option 3</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+<div class="select_box type_inline">
+	<div class="select_inner">
+		<p class="select_txt">option 1</p>
+		<select name="" id="">
+			<option value="" selected>option 1</option>
+			<option value="">option 2</option>
+			<option value="">option 3</option>
+		</select>
+	</div>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># textarea</h2>
+	<div class="d_view">
+		<div class="input_box">
+			<div class="input_inner">
+				<span class="input_item">
+					<textarea name="" id="" cols="" rows="">최소 7줄</textarea>
+				</span>
+			</div>
+			<p class="input_msg">에러메시지</p>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+// textarea 에는 input clear 없음.
+
+<div class="input_box">
+	<div class="input_inner">
+		<span class="input_item">
+			<textarea name="" id="" cols="" rows=""></textarea>
+		</span>
+	</div>
+	<p class="input_msg">에러메시지</p>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 생년월일</h2>
+	<div class="d_view">
+		<div class="calendar_form">
+			<div class="input_box"> <!-- 에러시 .error 추가 -->
+				<div class="input_inner">
+					<span class="input_item">
+						<input type="tel" maxlength="4" title="생년월일 년도 입력란" placeholder="YYYY">
+					</span>
+					<span class="input_btn">
+						<button type="button" class="btn_input_clear">
+							<i class="icon_input_clear"></i>
+							<span class="hide">내용 지우기</span>
+						</button>
+					</span>
+				</div>
+			</div>
+			<div class="select_box"> <!-- 에러시 .error 추가 -->
+				<div class="select_inner">
+					<p class="select_txt">1월</p>
+					<select name="" id="">
+						<option value="" selected>1월</option>
+						<option value="">2월</option>
+						<option value="">3월</option>
+						<option value="">4월</option>
+						<option value="">5월</option>
+						<option value="">6월</option>
+						<option value="">7월</option>
+						<option value="">8월</option>
+						<option value="">9월</option>
+						<option value="">10월</option>
+						<option value="">11월</option>
+						<option value="">12월</option>
+					</select>
+				</div>
+			</div>
+			<div class="select_box"> <!-- 에러시 .error 추가 -->
+				<div class="select_inner">
+					<p class="select_txt">1일</p>
+					<select name="" id="">
+						<option value="" selected>1일</option>
+						<option value="">2일</option>
+						<option value="">3일</option>
+						<option value="">4일</option>
+						<option value="">5일</option>
+						<option value="">6일</option>
+						<option value="">7일</option>
+						<option value="">8일</option>
+						<option value="">9일</option>
+						<option value="">10일</option>
+						<option value="">11일</option>
+						<option value="">12일</option>
+						<option value="">13일</option>
+						<option value="">14일</option>
+						<option value="">15일</option>
+						<option value="">16일</option>
+						<option value="">17일</option>
+						<option value="">18일</option>
+						<option value="">19일</option>
+						<option value="">20일</option>
+						<option value="">21일</option>
+						<option value="">22일</option>
+						<option value="">23일</option>
+						<option value="">24일</option>
+						<option value="">25일</option>
+						<option value="">26일</option>
+						<option value="">27일</option>
+						<option value="">28일</option>
+						<option value="">29일</option>
+						<option value="">30일</option>
+						<option value="">31일</option>
+					</select>
+				</div>
+			</div>
+			<p class="calendar_msg">년 입력 형식이 유효하지 않습니다.</p> <!-- 활성시 .active 추가 -->
+			<p class="calendar_msg">월/일 입력 형식이 유효하지 않습니다.</p> <!-- 활성시 .active 추가 -->
+			<p class="calendar_msg">년/월/일 입력 형식이 유효하지 않습니다.</p> <!-- 활성시 .active 추가 -->
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+<div class="calendar_form">
+	<div class="input_box"> <!-- 에러시 .error 추가 -->
+		<div class="input_inner">
+			<span class="input_item">
+				<input type="tel" title="생년월일 년도 입력란" placeholder="YYYY (생년 입력 필드)">
+			</span>
+			<span class="input_btn">
+				<button type="button" class="btn_input_clear">
+					<i class="icon_input_clear"></i>
+					<span class="hide">내용 지우기</span>
+				</button>
+			</span>
+		</div>
+	</div>
+	<div class="select_box"> <!-- 에러시 .error 추가 -->
+		<div class="select_inner">
+			<p class="select_txt">1월</p>
+			<select name="" id="">
+				<option value="" selected>1월</option>
+				<option value="">2월</option>
+				...
+				<option value="">11월</option>
+				<option value="">12월</option>
+			</select>
+		</div>
+	</div>
+	<div class="select_box"> <!-- 에러시 .error 추가 -->
+		<div class="select_inner">
+			<p class="select_txt">1일</p>
+			<select name="" id="">
+				<option value="" selected>1일</option>
+				<option value="">2일</option>
+				...
+				<option value="">30일</option>
+				<option value="">31일</option>
+			</select>
+		</div>
+	</div>
+	<p class="calendar_msg">년/월/일 입력 형식이 유효하지 않습니다.</p> <!-- 활성시 .active 추가 -->
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 본인확인/인증</h2>
+	<div class="d_view">
+		<div class="input_box">
+			<div class="input_inner">
+				<span class="input_item">
+					<input type="text" title="OO 입력란" placeholder="입력해주세요">
+				</span>
+				<span class="input_btn">
+					<button type="button" class="btn_input_clear">
+						<i class="icon_input_clear"></i>
+						<span class="hide">내용 지우기</span>
+					</button>
+				</span>
+				<span class="input_btn expand">
+					<a href="javascript:void(0);" class="btn_default_primary inline"><span>인증</span></a>
+				</span>
+			</div>
+			<p class="input_msg">에러메시지</p>
+		</div>
+		<div class="input_box">
+			<div class="input_inner">
+				<span class="input_item">
+					<input type="tel" title="OO 입력란" placeholder="입력해주세요">
+				</span>
+				<span class="input_btn">
+					<button type="button" class="btn_input_clear">
+						<i class="icon_input_clear"></i>
+						<span class="hide">내용 지우기</span>
+					</button>
+				</span>
+				<span class="input_util">
+					<em class="count">02:36</em>
+				</span>
+				<span class="input_btn expand">
+					<a href="javascript:void(0);" class="btn_default_primary inline disabled"><span>인증하기</span></a>
+				</span>
+			</div>
+			<p class="input_msg">에러메시지</p>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+<div class="input_box">
+	<div class="input_inner">
+		<span class="input_item">
+			<input type="text" title="OO 입력란" placeholder="입력해주세요">
+		</span>
+		<span class="input_btn">
+			<button type="button" class="btn_input_clear">
+				<i class="icon_input_clear"></i>
+				<span class="hide">내용 지우기</span>
+			</button>
+		</span>
+		<span class="input_btn expand">
+			<a href="javascript:void(0);" class="btn_default_primary inline"><span>인증</span></a>
+		</span>
+	</div>
+	<p class="input_msg">에러메시지</p>
+</div>
+
+<div class="input_box">
+	<div class="input_inner">
+		<span class="input_item">
+			<input type="tel" title="OO 입력란" placeholder="입력해주세요">
+		</span>
+		<span class="input_btn">
+			<button type="button" class="btn_input_clear">
+				<i class="icon_input_clear"></i>
+				<span class="hide">내용 지우기</span>
+			</button>
+		</span>
+		<span class="input_util">
+			<em class="count">02:36</em>
+		</span>
+		<span class="input_btn expand">
+			<a href="javascript:void(0);" class="btn_default_primary inline disabled"><span>인증하기</span></a>
+		</span>
+	</div>
+	<p class="input_msg">에러메시지</p>
+</div>
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 파일첨부</h2>
+	<div class="d_view">
+		<div class="input_box type_file"> <!-- .type_file -->
+			<div class="input_inner">
+				<span class="input_item">
+					<input type="text" title="첨부 파일명" placeholder="10M 미만의 JPEG, GIF, PNG" readonly>
+				</span>
+				<span class="input_btn expand">
+					<input type="file" accept=".jpg, .jpeg, .png, .gif" title="파일 첨부란">
+					<a href="javascript:void(0);" class="btn_default_primary inline ctrlFile"><span>이미지 첨부</span></a> <!-- .ctrlFile -->
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+<div class="input_box type_file"> <!-- .type_file -->
+	<div class="input_inner">
+		<span class="input_item">
+			<input type="text" title="첨부 파일명" placeholder="10M 미만의 JPEG, GIF, PNG" readonly>
+		</span>
+		<span class="input_btn expand">
+			<input type="file" accept=".jpg, .jpeg, .png, .gif" title="파일 첨부란">
+			<a href="javascript:void(0);" class="btn_default_primary inline ctrlFile"><span>이미지 첨부</span></a> <!-- .ctrlFile -->
+		</span>
+	</div>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 입력 필드 리스트</h2>
+	<div class="d_view">
+		<ul class="form_wrap">
+			<li>
+				<strong class="form_tit">
+					<label for="inp01">타이틀</label>
+					<em class="tag_necessary"><span class="hide">필수 입력</span></em>
+				</strong>
+				<div class="input_box">
+					<div class="input_inner">
+						<span class="input_item">
+							<input type="text" title="OO 입력란" placeholder="OO을 입력해 주세요." id="inp01">
+						</span>
+						<span class="input_btn">
+							<button type="button" class="btn_input_clear">
+								<i class="icon_input_clear"></i>
+								<span class="hide">내용 지우기</span>
+							</button>
+						</span>
+					</div>
+					<p class="input_msg">에러메시지</p>
+				</div>
+			</li>
+			<li>
+				<strong class="form_tit">
+					<label for="inp02">타이틀</label>
+					<a href="javascript:void(0);" class="btn_reference">참고 링크</a>
+				</strong>
+				<div class="input_box">
+					<div class="input_inner">
+						<span class="input_item">
+							<input type="text" title="OO 입력란" placeholder="OO을 입력해 주세요." id="inp02">
+						</span>
+						<span class="input_btn">
+							<button type="button" class="btn_input_clear">
+								<i class="icon_input_clear"></i>
+								<span class="hide">내용 지우기</span>
+							</button>
+						</span>
+					</div>
+					<p class="input_msg">에러메시지</p>
+				</div>
+			</li>
+			<li>
+				<strong class="form_tit">
+					<span>타이틀</span>
+				</strong>
+				<div class="control_box col2">
+					<span class="radiobox">
+						<input type="radio" name="rdoTmp01" id="rdoTmp01_1">
+						<label for="rdoTmp01_1">radio 1</label>
+					</span>
+					<span class="radiobox">
+						<input type="radio" name="rdoTmp01" id="rdoTmp01_2" checked>
+						<label for="rdoTmp01_2">radio 2</label>
+					</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="d_desc">
+<xmp>
+<ul class="form_wrap">
+	<li>
+		<strong class="form_tit">
+			<label for="inp01">타이틀</label>
+			<em class="tag_necessary"><span class="hide">필수 입력</span></em>
+		</strong>
+		<div class="input_box">
+			<div class="input_inner">
+				<span class="input_item">
+					<input type="text" title="OO 입력란" placeholder="OO을 입력해 주세요." id="inp01">
+				</span>
+				<span class="input_btn">
+					<button type="button" class="btn_input_clear">
+						<i class="icon_input_clear"></i>
+						<span class="hide">내용 지우기</span>
+					</button>
+				</span>
+			</div>
+			<p class="input_msg">에러메시지</p>
+		</div>
+	</li>
+	<li>
+		<strong class="form_tit">
+			<span>타이틀</span>
+		</strong>
+		<div class="input_box">
+			<div class="input_inner">
+				<span class="input_item">
+					<input type="text" title="OO 입력란" placeholder="OO을 입력해 주세요." id="inp02">
+				</span>
+				<span class="input_btn">
+					<button type="button" class="btn_input_clear">
+						<i class="icon_input_clear"></i>
+						<span class="hide">내용 지우기</span>
+					</button>
+				</span>
+			</div>
+			<p class="input_msg">에러메시지</p>
+		</div>
+	</li>
+</ul>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+</div>
+
+</body>
+</html>

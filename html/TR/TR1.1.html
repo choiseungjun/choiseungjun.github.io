@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>트래킹 | 러너블</title>
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/page.css">
+	<script src="/js/jquery-3.6.0.min.js"></script>
+	<script src="/js/swiper-6.7.5.min.js"></script>
+	<script src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="skipnavi">
+	<ul>
+		<li><a href="#container_title">본문바로가기</a></li>
+	</ul>
+</div>
+<div id="wrap">
+	<!-- header -->
+	<header id="header" class="type_profile">
+		<div class="header_inner">
+			<h1 class="hide">러너블</h1>
+			<div class="header_left">
+				<a href="javascript:void(0);">
+					<span class="thumbnail" style="background-image:url(/images/temp/@sample_profile_thumbnail.png);">
+						<i class="hide">프로필</i>
+					</span>
+				</a>
+			</div>
+			<div class="header_right">
+				<a href="javascript:void(0);">
+					<i class="icon_gnb_opinion"></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<section id="container">
+		<div id="container_title" class="hide" tabindex="-1">본문 시작</div>
+
+		<!-- content -->
+		<div id="content" class="full">
+			<div class="tracking_main_wrap uiTR1_1">
+				<div class="map_area">
+					<!-- Map API -->
+					<div style="display:flex; justify-content:center; align-items:center; height:100%; background:url(/images/temp/@sample_map.png) 50% 50% no-repeat; background-size:cover;"></div>
+					<!-- //Map API -->
+					<!-- Map API: 현재지점 -->
+					<div style="position:absolute; top:190px; left:24px;">
+						<img src="/images/icon_map_pin.png" alt="현재지점" width="52" height="52">
+					</div>
+					<!-- //Map API: 현재지점 -->
+				</div>
+				<div class="swiper_area">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="swiper_item">
+									<div class="item_info">
+										<span class="date">2021.11.07</span>
+										<strong class="title ellipsis">2021 JTBC 서울 마라톤 2021 JTBC 서울 마라톤</strong>
+										<p class="course"><i class="icon_running_track"></i>7K</p>
+										<div class="btn_wrap">
+											<div class="btn_type_col">
+												<a href="javascript:void(0);" class="btn_default_primary small"><span>레이스 참여하기</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper_item">
+									<div class="item_info">
+										<span class="date">2021.11.07</span>
+										<strong class="title ellipsis">2021 JTBC 서울 마라톤 2021 JTBC 서울 마라톤</strong>
+										<p class="course"><i class="icon_running_track"></i>7K</p>
+										<div class="btn_wrap">
+											<div class="btn_type_col">
+												<a href="javascript:void(0);" class="btn_default_primary small"><span>레이스 참여하기</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper_item">
+									<div class="item_info">
+										<span class="date">2021.11.07</span>
+										<strong class="title ellipsis">2021 JTBC 서울 마라톤 2021 JTBC 서울 마라톤</strong>
+										<p class="course"><i class="icon_running_track"></i>7K / TEST / TEST / TEST / TEST / TEST / TEST /</p>
+										<div class="btn_wrap">
+											<div class="btn_type_col">
+												<a href="javascript:void(0);" class="btn_default_primary small"><span>레이스 참여하기</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="control_area">
+					<button type="button" class="btn_tracking_default"><span><i class="icon_control_play"></i> 시작</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- //content -->
+	</section>
+
+	<!-- Coach mark -->
+	<div class="coachmark_wrap tracking_main"> <!-- 비노출 : .hide 클래스 추가 -->
+		<div class="tooltip_wrap type_right" data-tooltip="1">
+			<dl>
+				<dt class="hide">오른쪽 상단 말풍선 아이콘 버튼</dt>
+				<dd class="tooltip_txt">트래커 사용성 개선을 위한 의견을 보내보세요.</dd>
+			</dl>
+		</div>
+		<div class="tooltip_wrap type_swiper" data-tooltip="2">
+			<dl>
+				<dt class="hide">좌우 스와이프 대회 선택 영역</dt>
+				<dd class="tooltip_txt">레이스에 참여하는 경우,<br> 이곳에 뜨는 배너를 선택해주세요.</dd>
+			</dl>
+		</div>
+	</div>
+	<!-- //Coach mark -->
+</div>
+</body>
+</html>

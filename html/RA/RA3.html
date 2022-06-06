@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>참가신청-1단계: 약관 동의 | 러너블</title>
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/page.css">
+	<script src="/js/jquery-3.6.0.min.js"></script>
+	<script src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="skipnavi">
+	<ul>
+		<li><a href="#container_title">본문바로가기</a></li>
+	</ul>
+</div>
+<div id="wrap">
+	<!-- header -->
+	<header id="header">
+		<div class="header_inner">
+			<h1>참가신청</h1>
+			<div class="header_left">
+				<a href="javascript:void(0);">
+					<i class="icon_gnb_back"><span class="hide">뒤로가기</span></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<section id="container">
+		<div id="container_title" class="hide" tabindex="-1">본문 시작</div>
+
+		<!-- content -->
+		<div id="content">
+			<div class="apply_wrap">
+				<ol class="step_bar_wrap">
+					<li class="active">
+						<strong class="hide">1단계 약관동의</strong>
+						<em class="hide">진행중</em>
+					</li>
+					<li><span class="hide">2단계 개인정보입력</span></li>
+					<li><span class="hide">3단계 대회정보입력</span></li>
+					<li><span class="hide">4단계 보험가입</span></li>
+					<li><span class="hide">5단계 결제정보입력</span></li>
+					<li><span class="hide">6단계 입력정보최종확인</span></li>
+				</ol>
+
+				<h2 class="head_tit">마라톤 참가 신청 약관에<br> 동의해 주세요.</h2>
+
+				<div class="terms_wrap">
+					<div class="terms_single">
+						<p class="terms_item">
+							<span class="checkbox">
+								<input type="checkbox" id="chk01">
+								<label for="chk01">[필수] 참가자 유의사항</label>
+							</span>
+							<a href="javascript:void(0);" class="btn_text"><span>보기</span></a>
+						</p>
+					</div>
+					<div class="terms_single">
+						<p class="terms_item">
+							<span class="checkbox">
+								<input type="checkbox" id="chk02">
+								<label for="chk02">[필수] 고유식별 정보 수집 및 이용에 대한 동의</label>
+							</span>
+							<a href="javascript:void(0);" class="btn_text"><span>보기</span></a>
+						</p>
+					</div>
+					<div class="terms_single">
+						<p class="terms_item">
+							<span class="checkbox">
+								<input type="checkbox" id="chk03">
+								<label for="chk03">[필수] 참가자 초상등의 사용에 대한 동의</label>
+							</span>
+							<a href="javascript:void(0);" class="btn_text"><span>보기</span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //content -->
+
+		<!-- Fixed Bottom Area -->
+		<div class="fixed_bottom_area">
+			<div class="btn_wrap">
+				<div class="btn_type_col">
+					<a href="javascript:void(0);" class="btn_default_secondary"><span>취소</span></a>
+					<a href="javascript:void(0);" class="btn_default_primary disabled"><span>다음</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- //Fixed Bottom Area -->
+	</section>
+</div>
+
+<!-- 퍼블 확인용 -->
+<script>
+	var $checkbox = $('input[type=checkbox]');
+	var checked = false;
+	$checkbox.on('click', function(e) {
+		for (var i = 0; i < $checkbox.length; i++) {
+			if ( !$checkbox.eq(i).prop('checked') ) {
+				checked = false;
+				break;
+			} else {
+				checked = true;
+			}
+		}
+		if (checked) {
+			$('.btn_default_primary').removeClass('disabled');
+		} else {
+			$('.btn_default_primary').addClass('disabled');
+		}
+	});
+</script>
+<!-- //퍼블 확인용 -->
+
+</body>
+</html>

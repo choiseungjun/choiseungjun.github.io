@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>러너블</title>
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/page.css">
+	<script src="/js/jquery-3.6.0.min.js"></script>
+	<script src="/js/swiper-6.7.5.min.js"></script>
+	<script src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="skipnavi">
+	<ul>
+		<li><a href="#container_title">본문바로가기</a></li>
+	</ul>
+</div>
+<div id="wrap" class="main">
+	<!-- header -->
+	<header id="header" class="type_profile">
+		<div class="header_inner">
+			<h1 class="hide">러너블</h1>
+			<div class="header_left">
+				<a href="javascript:void(0);">
+					<span class="thumbnail" style="background-image:url(/images/temp/@sample_profile_thumbnail.png);">
+						<i class="hide">프로필</i>
+					</span>
+				</a>
+			</div>
+			<div class="header_right">
+				<a href="javascript:void(0);">
+					<span class="notice new">
+						<i class="icon_notification"><span class="hide">알림</span></i>
+					</span>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<section id="container">
+		<h2 id="container_title" class="hide" tabindex="-1">본문 시작</h2>
+
+		<!-- content -->
+		<div id="content">
+			<div class="app_main_wrap">
+				<header class="title_area">
+					<!-- @ 문구 가이드
+							<br> : 내려쓰기 필요시
+							<mark>{ text }</mark> : 강조문구 표시
+					-->
+					<!-- case1. 이름 + 텍스트 -->
+					<div>
+						<strong class="head_tit">김러너님,<br> <mark>러너블</mark>에 오신 것을 환영합니다!</strong>
+					</div>
+					<!-- //case1. 이름 + 텍스트 -->
+					<!-- case2. only 텍스트 -->
+					<div>
+						<strong class="head_tit">접수 중인 <mark>버추얼 레이스</mark>가 있습니다. 레이스 정보 확인해보세요.</strong>
+					</div>
+					<!-- //case2. only 텍스트 -->
+					<!-- case3. 텍스트 + 버튼 -->
+					<div>
+						<strong class="head_tit">우먼스 버추얼 마라톤이 <mark>종료</mark>되었습니다. 레이스 결과를 확인해보세요.</strong>
+						<a href="javascript:void(0);" class="btn_skew"><span>레이스 결과 보러가기<i class="icon_arrow_half_white"></i></span></a>
+					</div>
+					<!-- //case3. 텍스트 + 버튼 -->
+				</header>
+				<section class="cont_area">
+					<h2 class="cont_tit">김러너님의 레이스</h2>
+					<ul class="my_race_list">
+						<li>
+							<div class="list_inner type_d_day"> <!-- 강조시 .type_d_day 추가 -->
+								<div class="list_d_day">
+									<em>D-DAY</em>
+								</div>
+								<p class="list_date">2021.11.05 ~ 2021.11.08</p>
+								<strong class="list_tit">2021 Woman’s Virtual Race</strong>
+								<p class="list_course"><i class="icon_running_track"></i>Full</p>
+							</div>
+						</li>
+						<li>
+							<div class="list_inner">
+								<div class="list_d_day">
+									<em>D-15</em>
+								</div>
+								<p class="list_date">2021.11.05 ~ 2021.11.08</p>
+								<strong class="list_tit">2021 JTBC 서울 마라톤</strong>
+								<p class="list_course"><i class="icon_running_track"></i>Half</p>
+							</div>
+						</li>
+						<li>
+							<div class="list_inner">
+								<div class="list_d_day">
+									<em>D-15</em>
+								</div>
+								<p class="list_date">2021.11.05 ~ 2021.11.08</p>
+								<strong class="list_tit">2021 JTBC 서울 마라톤</strong>
+								<p class="list_course"><i class="icon_running_track"></i>Full</p>
+							</div>
+						</li>
+					</ul>
+					<div class="my_race_more">
+						<a href="javascript:void(0);" class="btn_outline_blue inline small round shadow border_none"><span><i class="icon_more_blue"></i>더 보기</span></a>
+					</div>
+				</section>
+				<section class="cont_area">
+					<h2 class="cont_tit">참여가능 레이스</h2>
+					<!--
+						1. 비활성시
+						- .run_able_list 에 .masking_disable 추가.
+						- swiperApplyRace.disable() 실행.
+
+						2. 활성시
+						- .run_able_list 에 .masking_disable 제거.
+						- swiperApplyRace.enable() 실행.
+					-->
+					<!-- [대회목록 영역 가이드]
+						1. 스와이프 영역은 1개만 존재해야함 (case1, case2 중 택1)
+						2. 목록없을때(case2)는 대회데이터 1개만 노출해야함
+					-->
+					<!-- case1. 목록 있을 시 -->
+					<p class="nolist_txt" style="display:none;">현재 참여 가능한 레이스가 없습니다</p>
+					<div class="run_able_list swiper-container" id="swiper01"> <!-- .masking_disable -->
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="competition_list has_ing"> <!-- 접수시 .has_ing 추가 -->
+									<div class="list_bg"><img src="/images/temp/@RA1_01.png" alt="샘플이미지"></div>
+									<div class="list_badge">
+										<span class="badge_item"><i class="icon_alarm_white"></i>접수중</span> <!-- 접수시 아이콘 변경 -->
+										<span class="badge_item">~10/30</span>
+									</div>
+									<div class="list_info">
+										<p class="info_date"><span class="hide">대회기간</span> 2021.11.07 ~ 2021.11.10</p>
+										<strong class="info_tit">2021 JTBC 서울마라톤 2021 JTBC 서울마라톤</strong>
+										<p class="info_course">
+											<i class="icon_running_track"></i>
+											<span>7K / 10K / Half / Full</span>
+										</p>
+										<div class="btn_wrap">
+											<div class="btn_type_col">
+												<a href="javascript:void(0);" class="btn_default_secondary small"><span>자세히 보기</span></a>
+												<a href="javascript:void(0);" class="btn_default_primary small"><span>참가 신청</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="competition_list has_done"> <!-- 접수마감시 .has_ing 추가 -->
+									<div class="list_bg"><img src="/images/temp/@RA1_01.png" alt="샘플이미지"></div>
+									<div class="list_badge">
+										<span class="badge_item"><i class="icon_alarm_white"></i>접수마감</span> <!-- 접수마감시 아이콘 변경 -->
+									</div>
+									<div class="list_info">
+										<p class="info_date"><span class="hide">대회기간</span> 2021.11.07 ~ 2021.11.10</p>
+										<strong class="info_tit">2021 JTBC 서울마라톤</strong>
+										<p class="info_course">
+											<i class="icon_running_track"></i>
+											<span>7K / 10K / Half / Full</span>
+										</p>
+										<div class="btn_wrap">
+											<div class="btn_type_col">
+												<a href="javascript:void(0);" class="btn_default_secondary small"><span>자세히 보기</span></a>
+												<a href="javascript:void(0);" class="btn_default_primary small"><span>참가 신청</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="competition_list">
+									<div class="list_bg"><img src="/images/temp/@RA1_02.png" alt="샘플이미지"></div>
+									<div class="list_badge">
+										<span class="badge_item"><i class="icon_alarm_blue"></i>진행예정</span>
+									</div>
+									<div class="list_info">
+										<p class="info_date"><span class="hide">대회기간</span> 2021.11.07 ~ 2021.11.10</p>
+										<strong class="info_tit">2021 Woman’s virtual marathon</strong>
+										<p class="info_course">
+											<i class="icon_running_track"></i>
+											<span>7K / 10K / Half / Full</span>
+										</p>
+										<div class="btn_wrap">
+											<div class="btn_type_col">
+												<a href="javascript:void(0);" class="btn_default_secondary small"><span>자세히 보기</span></a>
+												<a href="javascript:void(0);" class="btn_default_primary small"><span>참가 신청</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="competition_list has_deadline"> <!-- 마감시 .has_deadline 추가 -->
+									<div class="list_bg"><img src="/images/temp/@RA1_02.png" alt="샘플이미지"></div>
+									<div class="list_badge">
+										<span class="badge_item"><i class="icon_alarm_deadline"></i>마감</span> <!-- 마감시 아이콘 변경 -->
+									</div>
+									<div class="list_info">
+										<p class="info_date"><span class="hide">대회기간</span> 2021.11.07 ~ 2021.11.10</p>
+										<strong class="info_tit">2021 Woman’s virtual marathon</strong>
+										<p class="info_course">
+											<i class="icon_running_track"></i>
+											<span>7K / 10K / Half / Full</span>
+										</p>
+										<div class="btn_wrap">
+											<div class="btn_type_col">
+												<a href="javascript:void(0);" class="btn_default_secondary small"><span>자세히 보기</span></a>
+												<a href="javascript:void(0);" class="btn_default_primary small"><span>참가 신청</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="masking_btn">
+							<a href="javascript:void(0);" class="btn_outline_blue inline small round shadow border_none"><span>전체 레이스 리스트 보러가기<i class="icon_arrow_half last"></i></span></a>
+						</div>
+					</div>
+					<!-- //case1. 목록 있을 시 -->
+
+					<!-- case2. 목록 없을 시 -->
+					<p class="nolist_txt">현재 참여 가능한 레이스가 없습니다</p>
+					<div class="run_able_list swiper-container masking_disable" id="swiper02"> <!-- .masking_disable -->
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="competition_list has_deadline"> <!-- 마감시 .has_deadline 추가 -->
+									<div class="list_bg"><img src="/images/temp/@RA1_01.png" alt="샘플이미지"></div>
+									<div class="list_badge">
+										<span class="badge_item"><i class="icon_alarm_deadline"></i>마감</span> <!-- 마감시 아이콘 변경 -->
+									</div>
+									<div class="list_info">
+										<p class="info_date"><span class="hide">대회기간</span> 2021.11.07 ~ 2021.11.10</p>
+										<strong class="info_tit">2021 JTBC 서울마라톤</strong>
+										<p class="info_course">
+											<i class="icon_running_track"></i>
+											<span>7K / 10K / Half / Full</span>
+										</p>
+										<div class="btn_wrap">
+											<div class="btn_type_col">
+												<a href="javascript:void(0);" class="btn_default_secondary small"><span>자세히 보기</span></a>
+												<a href="javascript:void(0);" class="btn_default_primary small"><span>참가 신청</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="masking_btn">
+							<a href="javascript:void(0);" class="btn_outline_blue inline small round shadow border_none"><span>전체 레이스 리스트 보러가기<i class="icon_arrow_half last"></i></span></a>
+						</div>
+					</div>
+					<!-- //case2. 목록 없을 시 -->
+				</section>
+				<section class="cont_area">
+					<h2 class="cont_tit">김러너님의 러닝 기록</h2>
+					<div class="tr_comingsoon_wrap">
+						<strong class="tr_tit">Coming Soon</strong>
+						<p class="tr_txt">10월부터<br> 러닝 기록 측정을<br> 하실 수 있어요!</p>
+						<p class="tr_info_txt">(2021-10-01 ~ 2021-10-08 베타테스트 중)</p>
+						<div class="tr_img">
+							<img src="/images/img_tracking_badge.png" width="136" alt="RUN">
+						</div>
+					</div>
+					<div class="run_record_list">
+						<!-- case1. 목록 있을시 -->
+						<ul>
+							<!-- 일반 트레이닝 기록 모듈 -->
+							<li>
+								<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+									<strong class="record_tit ellipsis">일반 트레이닝 기록 모듈</strong>
+									<p class="record_date">2022.01.01 12:00</p>
+									<dl class="record_info">
+										<dt class="hide">러닝 기록</dt>
+										<dd>00.00km</dd>
+										<dt class="hide">러닝 시간</dt>
+										<dd>00:00:00</dd>
+										<dt class="hide">평균 레이스</dt>
+										<dd>00’00”</dd>
+									</dl>
+								</a>
+							</li>
+							<!-- //일반 트레이닝 기록 모듈 -->
+							<!-- 대회 트레이닝 기록 모듈 -->
+							<li>
+								<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+									<em class="record_category">
+										<span>2021 ELLE RUN</span>
+									</em>
+									<strong class="record_tit ellipsis">대회 트레이닝 기록 모듈</strong>
+									<p class="record_date">2022.01.01 12:00</p>
+									<dl class="record_info">
+										<dt class="hide">러닝 부문</dt>
+										<dd>20K</dd>
+										<dt class="hide">러닝 시간</dt>
+										<dd>00:00:00</dd>
+										<dt class="hide">평균 레이스</dt>
+										<dd>00’00”</dd>
+									</dl>
+								</a>
+							</li>
+							<!-- //대회 트레이닝 기록 모듈 -->
+							<!-- 대회 트레이닝 기록 제출 모듈 -->
+							<li>
+								<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+									<em class="record_category">
+										<span>2021 ELLE RUN</span>
+										<span>기록제출</span>
+									</em>
+									<strong class="record_tit ellipsis">대회 트레이닝 기록 제출 모듈</strong>
+									<p class="record_date">2022.01.01 12:00</p>
+									<dl class="record_info">
+										<dt class="hide">러닝 부문</dt>
+										<dd>Full</dd>
+										<dt class="hide">러닝 기록</dt>
+										<dd>00:00:00</dd>
+										<dt class="hide">평균 레이스</dt>
+										<dd>00’00”</dd>
+									</dl>
+								</a>
+							</li>
+							<!-- //대회 트레이닝 기록 제출 모듈 -->
+						</ul>
+						<!-- //case1. 목록 있을시 -->
+						<!-- case2. 목록 없을시 -->
+						<div class="nodata">
+							<i class="icon_no_data"></i>
+							<p class="nodata_msg">러닝 기록이 없네요, 한 번 달려볼까요?</p>
+							<a href="javascript:void(0);" class="btn_text">
+								<span>트래커 바로가기</span>
+								<i class="icon_arrow_link2"></i>
+							</a>
+						</div>
+						<!-- //case2. 목록 없을시 -->
+					</div>
+				</section>
+			</div>
+		</div>
+		<!-- //content -->
+	</section>
+</div>
+
+<script>
+	// swiper init
+	var swiperApplyRace = new Swiper('#swiper01', {
+		direction: 'horizontal',	// 가로 방향
+		spaceBetween: 12,			// 아이템 간격
+		resistanceRatio: 0,			// 처음,끝 바운스 제거
+	});
+</script>
+
+<!-- 퍼블확인용 -->
+<script>
+	var swiperApplyRace2 = new Swiper('#swiper02', {
+		direction: 'horizontal',
+		spaceBetween: 12,
+		resistanceRatio: 0,
+	});
+	swiperApplyRace2.disable();
+	$('.banner_area a').on('click', function() {
+		alert('pub log: clicked banner');
+	});
+</script>
+<!-- //퍼블확인용 -->
+</body>
+</html>

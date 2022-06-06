@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>Guide - layer popup (full)</title>
+	<link rel="stylesheet" href="/css/common.css">
+	<script src="/js/jquery-3.6.0.min.js"></script>
+	<script src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="skipnavi">
+	<ul>
+		<li><a href="#container_title">본문바로가기</a></li>
+	</ul>
+</div>
+<div id="wrap">
+	<!-- header -->
+	<header id="header">
+		<div class="header_inner">
+			<h1>레이어 팝업 (full)</h1>
+			<div class="header_left">
+				<a href="javascript:void(0);">
+					<i class="icon_gnb_back"><span class="hide">뒤로가기</span></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<section id="container">
+		<div id="container_title" class="hide" tabindex="-1">본문 시작</div>
+		<!-- content -->
+		<div id="content">
+			<button type="button" id="openFullPop01">풀팝업 열기 (click)</button>
+		</div>
+		<!-- //content -->
+	</section>
+
+	<!-- # 풀팝업 가이드
+
+		0. 개요
+		- .layer_popup_full 에 고유한 ID를 부여하고, 함수실행으로 컨트롤합니다.
+
+		1. 해당 팝업 열기
+		app.fullPopup.setOpen('#팝업ID');
+
+		2. 해당 팝업 닫기
+		app.fullPopup.setClose('#팝업ID');
+		
+	-->
+
+	<!-- layer popup (full) -->
+	<article class="layer_popup_full" id="fullPop01"> <!-- 활성시 .active 추가 -->
+		<header class="popup_header">
+			<div class="header_inner">
+				<h1>타이틀</h1>
+				<div class="header_right">
+					<a href="javascript:void(0);">
+						<i class="icon_gnb_close"><span class="hide">닫기</span></i>
+					</a>
+				</div>
+			</div>
+		</header>
+		<section class="popup_body">
+			<div class="popup_scroll">
+				<div style="display:flex; justify-content:center; align-items:center; height:800px; background:pink; text-align:center;">
+					[popup contents]<br><br>
+					풀팝업 고정버튼은 둥근스타일을 사용한다.
+				</div>
+			</div>
+
+			<div class="fixed_bottom_area">
+				<div class="btn_wrap">
+					<div class="btn_type_col">
+						<a href="javascript:void(0);" class="btn_default_secondary"><span>button</span></a>
+					<a href="javascript:void(0);" class="btn_default_primary"><span>button</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</article>
+	<!-- //layer popup (full) -->
+</div>
+
+<script>
+	$(function() {
+		$('#openFullPop01').on('click', function() {
+			app.fullPopup.setOpen('#fullPop01');
+		})
+		$('#fullPop01 .popup_header a').on('click', function() {
+			app.fullPopup.setClose('#fullPop01');
+		})
+	})
+</script>
+</body>
+</html>

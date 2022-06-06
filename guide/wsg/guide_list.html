@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge ,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>Guide - list</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" type="text/css" href="/guide/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="/js/ui.js"></script>
+	<style>
+		/* 가이드용 */
+		.define_list,
+		.notice_list,
+		.question_list {background:#fff;}
+	</style>
+</head>
+
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">List</h1>
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide">#설정 리스트 - default</h2>
+	<div class="d_view">
+		<ul class="setting_list">
+			<li class="item">
+				<h2 class="list_tit">서비스 약관</h2>
+				<ul class="detail_list">
+					<li>
+						<strong class="detail_tit">서비스 이용약관</strong>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="btn_link">
+							<strong class="detail_tit">서비스 이용약관</strong>
+						</a>
+					</li>
+					<li class="notice">
+						<strong class="detail_tit">대회 정보 수신 설정</strong>
+						<div class="toggle_wrap uiSwitchBtn" data-off-text="해제됨" data-on-text="설정됨">
+							<button class="btn_toggle">
+								<span class="handle">해제됨</span>
+							</button>
+						</div>
+					</li>
+					<li class="new">
+						<strong class="detail_tit">앱 버전 v1.2.0</strong>
+						<div class="new_wrap">
+							<span class="new_msg">새로운 버전이 있습니다</span>
+							<button class="btn_new">업데이트</button>
+						</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div class="d_desc">
+<xmp>
+<ul class="setting_list">
+	<li class="item">
+		<h2 class="list_tit">서비스 약관</h2>
+		<ul class="detail_list">
+			<li>
+				<strong class="detail_tit">서비스 이용약관</strong>
+			</li>
+			<li>
+				<a href="javascript:void(0);" class="btn_link">
+					<strong class="detail_tit">서비스 이용약관</strong>
+				</a>
+			</li>
+			<li class="notice">
+				<strong class="detail_tit">대회 정보 수신 설정</strong>
+				<div class="toggle_wrap">
+					<button class="btn_toggle active">
+						<span class="handle">선택됨</span>
+					</button>
+				</div>
+			</li>
+			<li class="new">
+				<strong class="detail_tit">앱 버전 v1.2.0</strong>
+				<div class="new_wrap">
+					<span class="new_msg">새로운 버전이 있습니다</span>
+					<button class="btn_new">업데이트</button>
+				</div>
+			</li>
+		</ul>
+	</li>
+</ul>
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 정의형 리스트 - default</h2>
+	<div class="d_view">
+		<dl class="define_list">
+			<div class="define_item">
+				<dt>제목</dt>
+				<dd>내용 내용 내용 내용</dd>
+			</div>
+			<div class="define_item">
+				<dt>제목/제목</dt>
+				<dd>내용 내용 내용 내용 내용 내용 내용 내용</dd>
+			</div>
+		</dl>
+	</div>
+	<div class="d_desc">
+<xmp>
+<dl class="define_list">
+	<div class="define_item">
+		<dt>제목</dt>
+		<dd>내용</dd>
+	</div>
+	<div class="define_item">
+		<dt>제목</dt>
+		<dd>내용</dd>
+	</div>
+</dl>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 정의형 리스트 - line (사용안함)</h2>
+	<div class="d_view">
+		<dl class="define_list line">
+			<div class="define_item">
+				<dt>제목</dt>
+				<dd>내용 내용 내용 내용</dd>
+			</div>
+			<div class="define_item">
+				<dt>제목/제목</dt>
+				<dd>내용 내용 내용 내용 내용 내용 내용 내용</dd>
+			</div>
+		</dl>
+	</div>
+	<div class="d_desc">
+<xmp>
+// .define_list 에 .line 추가하여 이용.
+
+<dl class="define_list line">
+	<div class="define_item">
+		<dt>제목</dt>
+		<dd>내용</dd>
+	</div>
+	<div class="define_item">
+		<dt>제목</dt>
+		<dd>내용</dd>
+	</div>
+</dl>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 공지사항 리스트</h2>
+	<div class="d_view">
+		<div class="notice_list">
+			<ul>
+				<li>
+					<a href="javascript:void(0);" class="link">
+						<strong class="notice_tit ellipsis">2019 JTBC 서울마라톤 참가수기 공모 당선자 안내 2019 JTBC 서울마라톤 참가수기 공모 당선자 안내</strong>
+						<p class="notice_txt">2021.06.12</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="link">
+						<strong class="notice_tit ellipsis">2019 JTBC 서울마라톤 참가수기 공모 당선자 안내</strong>
+						<p class="notice_txt">2021.06.12</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+<div class="notice_list">
+	<ul>
+		<li>
+			<a href="javascript:void(0);" class="link">
+				<strong class="notice_tit ellipsis">2019 JTBC 서울마라톤 참가수기 공모 당선자 안내 2019 JTBC 서울마라톤 참가수기 공모 당선자 안내</strong>
+				<p class="notice_txt">2021.06.12</p>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="link">
+				<strong class="notice_tit ellipsis">2019 JTBC 서울마라톤 참가수기 공모 당선자 안내</strong>
+				<p class="notice_txt">2021.06.12</p>
+			</a>
+		</li>
+	</ul>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 질문사항 리스트</h2>
+	<div class="d_view">
+		<div class="question_list">
+			<ul>
+				<li>
+					<a href="javascript:void(0);" class="link">
+						<strong class="question_tit">
+							<i class="icon_question"><span class="hide">질문:</span></i>
+							기록증 발급은 어떻게 하나요? 기록증 발급은 어떻게 하나요? 기록증 발급은 어떻게 하나요?
+						</strong>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="link">
+						<strong class="question_tit">
+							<i class="icon_question"><span class="hide">질문:</span></i>
+							기록증 발급은 어떻게 하나요?
+						</strong>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+<div class="question_list">
+	<ul>
+		<li>
+			<a href="javascript:void(0);" class="link">
+				<strong class="question_tit">
+					<i class="icon_question"><span class="hide">질문:</span></i>
+					기록증 발급은 어떻게 하나요? 기록증 발급은 어떻게 하나요? 기록증 발급은 어떻게 하나요?
+				</strong>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="link">
+				<strong class="question_tit">
+					<i class="icon_question"><span class="hide">질문:</span></i>
+					기록증 발급은 어떻게 하나요?
+				</strong>
+			</a>
+		</li>
+	</ul>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 링크 리스트</h2>
+	<div class="d_view">
+		<ul class="text_link_list">
+			<li>
+				<a href="javascript:void(0);" class="btn_text_link">
+					<span>대회 참여 기록 제출하기</span>
+					<i class="icon_arrow_link"></i>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);" class="btn_text_link">
+					<span>다른 앱으로 제출하기</span>
+					<i class="icon_arrow_link"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="d_desc">
+<xmp>
+<ul class="text_link_list">
+	<li>
+		<a href="javascript:void(0);" class="btn_text_link">
+			<span>대회 참여 기록 제출하기</span>
+			<i class="icon_arrow_link"></i>
+		</a>
+	</li>
+	<li>
+		<a href="javascript:void(0);" class="btn_text_link">
+			<span>다른 앱으로 제출하기</span>
+			<i class="icon_arrow_link"></i>
+		</a>
+	</li>
+</ul>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+</div>
+
+</body>
+</html>

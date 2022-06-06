@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>베타 테스트 의견 접수 완료 | 러너블</title>
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/page.css">
+	<script src="/js/jquery-3.6.0.min.js"></script>
+	<script src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="skipnavi">
+	<ul>
+		<li><a href="#container_title">본문바로가기</a></li>
+	</ul>
+</div>
+<div id="wrap">
+	<!-- header -->
+	<header id="header">
+		<div class="header_inner">
+			<h1>트래커 베타 테스트</h1>
+			<div class="header_right">
+				<a href="javascript:void(0);">
+					<i class="icon_gnb_close"><span class="hide">닫기</span></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<section id="container">
+		<div id="container_title" class="hide" tabindex="-1">본문 시작</div>
+
+		<!-- content -->
+		<div id="content">
+			<button type="button" class="btn_text" id="bsPop01">TR2.1-베타 테스트 의견 접수 완료 (CLICK)</button>
+		</div>
+		<!-- //content -->
+	</section>
+
+	<!-- Bottom Sheet -->
+	<!--
+		1. javascript function
+			바텀시트 열기 : app.bottomSheet.setOpen(ID);
+			바텀시트 닫기 : app.bottomSheet.setClose(ID);
+	-->
+	<div class="bs_wrap">
+		<div class="bs_container active"> <!-- .active: 열기 -->
+			<div class="bs_scroll">
+				<div class="bs_header">
+					<h1 class="bs_tit">의견이 접수되었습니다</h1>
+				</div>
+				<div class="bs_body">
+					<p class="bs_txt">보내주신 의견은 트래커 사용성 개선을 위해 사용됩니다.</p>
+				</div>
+			</div>
+			<div class="btn_wrap">
+				<div class="btn_type_col">
+					<a href="javascript:void(0);" class="btn_default_primary"><span>확인</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="bs_dim"></div>
+	</div>
+	<!-- //Bottom Sheet -->
+	
+</div>
+
+<!-- 퍼블확인용 -->
+<script>
+	$('#bsPop01').on('click', function() {
+		app.bottomSheet.setOpen('.bs_wrap');
+	});
+	$('.bs_wrap .btn_wrap a').on('click', function() {
+		app.bottomSheet.setClose('.bs_wrap');
+	});
+</script>
+<!-- //퍼블확인용 -->
+</body>
+</html>

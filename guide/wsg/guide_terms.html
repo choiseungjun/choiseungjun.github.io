@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge ,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>Guide - terms</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" type="text/css" href="/guide/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Terms</h1>
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 약관 - 리스트형</h2>
+	<div class="d_view">
+		<div class="terms_wrap">
+			<div class="terms_single">
+				<p class="terms_item">
+					<span class="checkbox">
+						<input type="checkbox" id="chk11">
+						<label for="chk11">[필수] 참가자 유의사항</label>
+					</span>
+					<a href="javascript:void(0);" class="btn_text"><span>보기</span></a>
+				</p>
+			</div>
+			<div class="terms_single">
+				<p class="terms_item">
+					<span class="checkbox">
+						<input type="checkbox" id="chk12">
+						<label for="chk12">[필수] 고유식별 정보 수집 및 이용에 대한 동의</label>
+						<span class="terms_info">미동의 시 일부 서비스의 사용에 제약이 있을 수 있습니다.</span>
+					</span>
+					<a href="javascript:void(0);" class="btn_text"><span>보기</span></a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="d_desc">
+<xmp>
+<div class="terms_wrap">
+	// start: 단일 사용
+	<div class="terms_single">
+		<p class="terms_item">
+			<span class="checkbox">
+				<input type="checkbox" id="chk11">
+				<label for="chk11">[필수] 참가자 유의사항</label>
+				<span class="terms_info">미동의 시 일부 서비스의 사용에 제약이 있을 수 있습니다.</span> // 서브텍스트
+			</span>
+			<a href="javascript:void(0);" class="btn_text"><span>보기</span></a>
+		</p>
+	</div>
+	// end: 단일 사용
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 약관 - 그룹핑</h2>
+	<div class="d_view">
+		<div class="terms_wrap">
+			<div class="terms_header">
+				<p class="terms_all">
+					<span class="checkbox">
+						<input type="checkbox" id="chkAll">
+						<label for="chkAll">모든 약관에 전체 동의합니다</label>
+					</span>
+				</p>
+			</div>
+			<div class="terms_body">
+				<p class="terms_item">
+					<span class="checkbox">
+						<input type="checkbox" id="chk01">
+						<label for="chk01">서비스 이용약관 (필수)</label>
+					</span>
+					<a href="#" class="btn_text"><span>보기</span></a>
+				</p>
+				<p class="terms_item">
+					<span class="checkbox">
+						<input type="checkbox" id="chk02">
+						<label for="chk02">개인정보 처리방침 (필수)</label>
+					</span>
+					<a href="#" class="btn_text"><span>보기</span></a>
+				</p>
+				<p class="terms_item">
+					<span class="checkbox">
+						<input type="checkbox" id="chk03">
+						<label for="chk03">위치 정보 수집 및 활용 동의(선택)</label>
+					</span>
+					<a href="#" class="btn_text"><span>보기</span></a>
+				</p>
+				<p class="terms_item">
+					<span class="checkbox">
+						<input type="checkbox" id="chk04">
+						<label for="chk04">마케팅 정보 수신 및 활용 동의(선택)</label>
+					</span>
+					<a href="#" class="btn_text"><span>보기</span></a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="d_desc">
+<xmp>
+<div class="terms_wrap">
+	// start: 그룹핑 헤더
+	<div class="terms_header">
+		<p class="terms_all">
+			<span class="checkbox">
+				<input type="checkbox" id="chkAll">
+				<label for="chkAll">모든 약관에 전체 동의합니다</label>
+			</span>
+		</p>
+	</div>
+	// end: 그룹핑 헤더
+
+	// start: 그룹핑 본문
+	<div class="terms_body">
+		<p class="terms_item">
+			<span class="checkbox">
+				<input type="checkbox" id="chk01">
+				<label for="chk01">서비스 이용약관 (필수)</label>
+			</span>
+			<a href="#" class="btn_text"><span>보기</span></a>
+		</p>
+		<p class="terms_item">
+			<span class="checkbox">
+				<input type="checkbox" id="chk02">
+				<label for="chk02">개인정보 처리방침 (필수)</label>
+			</span>
+			<a href="#" class="btn_text"><span>보기</span></a>
+		</p>
+	</div>
+	// end: 그룹핑 본문
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 약관 내용 스크롤 박스</h2>
+	<div class="d_view">
+		<div class="terms_wrap">
+			<div class="terms_view">
+				<div class="terms_scroll">
+					<strong class="terms_vtit">약관 타이틀 텍스트</strong>
+					<p class="terms_vtxt">약관 본문 텍스트</p>
+					<strong class="terms_vtit">약관 타이틀 텍스트</strong>
+					<p class="terms_vtxt">약관 본문 텍스트</p>
+					<strong class="terms_vtit">약관 타이틀 텍스트</strong>
+					<p class="terms_vtxt">약관 본문 텍스트</p>
+					<strong class="terms_vtit">약관 타이틀 텍스트</strong>
+					<p class="terms_vtxt">약관 본문 텍스트</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="d_desc">
+<xmp>
+// 본문 내용이 166px 이상이면 스크롤 생김.
+
+<div class="terms_wrap">
+	<div class="terms_view">
+		<div class="terms_scroll">
+			<strong class="terms_vtit">약관 타이틀 텍스트</strong>
+			<p class="terms_vtxt">약관 본문 텍스트</p>
+		</div>
+	</div>
+</div>
+
+</xmp>
+	</div>
+	
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 약관 본문 (.terms_cont_wrap)</h2>
+	<div class="d_view">
+		<div class="terms_cont_wrap">
+			.terms_cont_wrap > 본문 마크업
+		</div>
+	</div>
+
+	<div class="d_desc">
+<xmp>
+// 풀팝업 약관에 사용되는 클래스
+
+<div class="terms_cont_wrap">
+	본문 마크업
+</div>
+
+</xmp>
+	</div>
+
+	<div class="d_view">
+		<div class="terms_cont_wrap">
+			<h2 class="terms_cont_mtit">약관 본문 대타이틀</h2>
+		</div>
+	</div>
+
+	<div class="d_desc">
+<xmp>
+// 대타이틀이 있으면 h2 부터 마크업.
+// 보통은 대타이틀이 나오는 경우는 드뭄.
+
+<h2 class="terms_cont_mtit">약관 본문 대타이틀</h2>
+
+</xmp>
+	</div>
+
+	<div class="d_view">
+		<div class="terms_cont_wrap">
+			<h2 class="terms_cont_tit">약관 본문 타이틀</h2>
+		</div>
+	</div>
+
+	<div class="d_desc">
+<xmp>
+<h2 class="terms_cont_tit">약관 본문 타이틀</h2>
+
+</xmp>
+	</div>
+
+	<div class="d_view">
+		<div class="terms_cont_wrap">
+			<h3 class="terms_cont_subtit">약관 본문 서브타이틀</h3>
+		</div>
+	</div>
+
+	<div class="d_desc">
+<xmp>
+<h3 class="terms_cont_subtit">약관 본문 서브타이틀</h3>
+
+</xmp>
+	</div>
+
+	<div class="d_view">
+		<div class="terms_cont_wrap">
+			<p class="terms_cont_txt">약관 본문 텍스트</p>
+		</div>
+	</div>
+
+	<div class="d_desc">
+<xmp>
+<p class="terms_cont_txt">약관 본문 텍스트</p>
+
+</xmp>
+	</div>
+
+	<div class="d_view">
+		<div class="terms_cont_wrap">
+			<ul class="dot_list">
+				<li>불릿 리스트 텍스트</li>
+				<li>불릿 리스트 텍스트</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="d_desc">
+<xmp>
+<ul class="dot_list">
+	<li>불릿 리스트 텍스트</li>
+	<li>불릿 리스트 텍스트</li>
+</ul>
+
+</xmp>
+	</div>
+
+	<div class="d_view">
+		<div class="terms_cont_wrap">
+			<ul class="num_list">
+				<li>
+					<span class="num">1.</span>
+					<span class="txt">숫자 리스트 텍스트</span>
+				</li>
+				<li>
+					<span class="num">2.</span>
+					<span class="txt">숫자 리스트 텍스트</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="d_desc">
+<xmp>
+<ul class="num_list">
+	<li>
+		<span class="num">1.</span>
+		<span class="txt">숫자 리스트 텍스트</span>
+	</li>
+	<li>
+		<span class="num">2.</span>
+		<span class="txt">숫자 리스트 텍스트</span>
+	</li>
+</ul>
+
+</xmp>
+	</div>
+
+	<div class="d_view">
+		<div class="terms_cont_wrap">
+			<div class="terms_table_wrap">
+				<table>
+					<caption>테이블 제목, 설명글</caption>
+					<colgroup>
+						<col style="width:50%;">
+						<col style="">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">테이블 헤더</th>
+							<th scope="col">테이블 헤더</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>테이블 본문</td>
+							<td>테이블 본문</td>
+						</tr>
+						<tr>
+							<td>테이블 본문</td>
+							<td>테이블 본문</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="d_desc">
+<xmp>
+<div class="terms_table_wrap">
+	<table>
+		<caption>테이블 제목, 설명글</caption>
+		<colgroup>
+			<col style="width:50%;">
+			<col style="">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">테이블 헤더</th>
+				<th scope="col">테이블 헤더</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>테이블 본문</td>
+				<td>테이블 본문</td>
+			</tr>
+			<tr>
+				<td>테이블 본문</td>
+				<td>테이블 본문</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+</div>
+
+</body>
+</html>

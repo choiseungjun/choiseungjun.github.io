@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge ,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>Guide - step</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" type="text/css" href="/guide/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Step</h1>
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 순차적 단계 - 기본</h2>
+	<div class="d_view">
+		<ol class="step_bar_wrap">
+			<li class="active">
+				<strong class="hide">1단계 약관동의</strong>
+				<em class="hide">진행중</em>
+			</li>
+			<li><span class="hide">2단계 개인정보입력</span></li>
+			<li><span class="hide">3단계 대회정보입력</span></li>
+			<li><span class="hide">4단계 보험가입</span></li>
+			<li><span class="hide">5단계 결제정보입력</span></li>
+			<li><span class="hide">6단계 입력정보최종확인</span></li>
+		</ol>
+		<br>
+		<ol class="step_bar_wrap">
+			<li><span class="hide">1단계 약관동의</span></li>
+			<li class="active">
+				<strong class="hide">2단계 개인정보입력</strong>
+				<em class="hide">진행중</em>
+			</li>
+			<li><span class="hide">3단계 대회정보입력</span></li>
+			<li><span class="hide">4단계 보험가입</span></li>
+			<li><span class="hide">5단계 결제정보입력</span></li>
+			<li><span class="hide">6단계 입력정보최종확인</span></li>
+		</ol>
+		<br>
+		<ol class="step_bar_wrap">
+			<li><span class="hide">1단계 약관동의</span></li>
+			<li><span class="hide">2단계 개인정보입력</span></li>
+			<li class="active">
+				<strong class="hide">3단계 대회정보입력</strong>
+				<em class="hide">진행중</em>
+			</li>
+			<li><span class="hide">4단계 보험가입</span></li>
+			<li><span class="hide">5단계 결제정보입력</span></li>
+			<li><span class="hide">6단계 입력정보최종확인</span></li>
+		</ol>
+		<br>
+		<ol class="step_bar_wrap">
+			<li><span class="hide">1단계 약관동의</span></li>
+			<li><span class="hide">2단계 개인정보입력</span></li>
+			<li><span class="hide">3단계 대회정보입력</span></li>
+			<li class="active">
+				<strong class="hide">4단계 보험가입</strong>
+				<em class="hide">진행중</em>
+			</li>
+			<li><span class="hide">5단계 결제정보입력</span></li>
+			<li><span class="hide">6단계 입력정보최종확인</span></li>
+		</ol>
+		<br>
+		<ol class="step_bar_wrap">
+			<li><span class="hide">1단계 약관동의</span></li>
+			<li><span class="hide">2단계 개인정보입력</span></li>
+			<li><span class="hide">3단계 대회정보입력</span></li>
+			<li><span class="hide">4단계 보험가입</span></li>
+			<li class="active">
+				<strong class="hide">5단계 결제정보입력</strong>
+				<em class="hide">진행중</em>
+			</li>
+			<li><span class="hide">6단계 입력정보최종확인</span></li>
+		</ol>
+		<br>
+		<ol class="step_bar_wrap">
+			<li><span class="hide">1단계 약관동의</span></li>
+			<li><span class="hide">2단계 개인정보입력</span></li>
+			<li><span class="hide">3단계 대회정보입력</span></li>
+			<li><span class="hide">4단계 보험가입</span></li>
+			<li><span class="hide">5단계 결제정보입력</span></li>
+			<li class="active">
+				<strong class="hide">6단계 입력정보최종확인</strong>
+				<em class="hide">진행중</em>
+			</li>
+		</ol>
+	</div>
+
+	<div class="d_desc">
+<xmp>
+<ol class="step_bar_wrap">
+	// start: 활성 단계
+	<li class="active">
+		<strong class="hide">1단계 약관동의</strong>
+		<em class="hide">진행중</em>
+	</li>
+	// end: 활성 단계
+
+	// start: 비활성 단계
+	<li><span class="hide">2단계 개인정보입력</span></li>
+	<li><span class="hide">3단계 대회정보입력</span></li>
+	<li><span class="hide">4단계 보험가입</span></li>
+	<li><span class="hide">5단계 결제정보입력</span></li>
+	<li><span class="hide">6단계 입력정보최종확인</span></li>
+	// end: 비활성 단계
+</ol>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 순차적 단계 - 좌우 확장</h2>
+	<div class="d_view">
+		<ol class="step_bar_wrap full">
+			<li class="active">
+				<strong class="hide">1단계 약관동의</strong>
+				<em class="hide">진행중</em>
+			</li>
+			<li><span class="hide">2단계 개인정보입력</span></li>
+			<li><span class="hide">3단계 대회정보입력</span></li>
+			<li><span class="hide">4단계 보험가입</span></li>
+			<li><span class="hide">5단계 결제정보입력</span></li>
+			<li><span class="hide">6단계 참가신청완료</span></li>
+		</ol>
+		<br>
+		<ol class="step_bar_wrap full">
+			<li><span class="hide">1단계 약관동의</span></li>
+			<li class="active">
+				<strong class="hide">2단계 개인정보입력</strong>
+				<em class="hide">진행중</em>
+			</li>
+			<li><span class="hide">3단계 대회정보입력</span></li>
+			<li><span class="hide">4단계 보험가입</span></li>
+			<li><span class="hide">5단계 결제정보입력</span></li>
+			<li><span class="hide">6단계 참가신청완료</span></li>
+		</ol>
+	</div>
+
+	<div class="d_desc">
+<xmp>
+// .content 좌우 여백까지 확장시 .full 추가하여 사용.
+
+<ol class="step_bar_wrap full">
+	<li>...</li>
+</ol>
+
+</xmp>
+	</div>
+	
+	<!-- **************************************************************** -->
+</div>
+
+</body>
+</html>

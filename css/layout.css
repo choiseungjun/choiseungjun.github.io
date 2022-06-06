@@ -1,0 +1,105 @@
+@charset 'utf-8';
+
+/* skip navigation */
+#skipnavi a {display:block; position:absolute; z-index:100; top:-1000em; left:0; padding:10px; background-color:#000; color:#fff; text-align:center;}
+#skipnavi a:focus {position:relative; top:0; width:100%; height:auto; margin:0; padding:10px;}
+
+/* common */
+#wrap {position:relative; height:100%; background:#fff;}
+#wrap.bg_gray {background:#f0f0f0;}
+#wrap.bg_light_gray {background:#f5f5f5;}
+
+/* header */
+#header {position:fixed; top:0; left:0; width:100%; z-index:100; height:56px; background:#fff;}
+#header .header_inner {display:flex; justify-content:space-between; padding:0 16px; height:100%;}
+#header h1 {position:relative; flex-grow:1; order:2; height:100%; padding:16px 8px; font-weight:700; font-size:16px; line-height:24px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+#header .header_left {display:inline-flex; align-items:center; order:1; padding-right:4px;}
+#header .header_right {position:relative; display:inline-flex; align-items:center; order:3; padding-left:4px;}
+#header .header_left > a,
+#header .header_right > a {position:relative;}
+#header .header_left > a + a {margin-right:16px;}
+#header .header_right > a + a {margin-left:16px;}
+#header .header_left > a:after,
+#header .header_right > a:after {content:''; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:100%; height:100%; padding:10px 10px;}
+#header .type_text {padding:8px; font-weight:400; font-size:14px; color:#979797;}
+#header .thumbnail {display:block; overflow:hidden; width:32px; height:32px; border-radius:50%; background:url('/images/icon_profile_default.svg') 50% 50% no-repeat; background-size:cover;}
+#header .notice {position:relative; display:inline-block; width:32px; height:32px;}
+#header .notice.new:after {content:''; position:absolute; top:3px; right:3px; width:6px; height:6px; border:2px solid #fff; border-radius:50%; background:#f00;}
+#header.hide + #container {padding-top:0;}
+#header.hide + #container #content {padding-top:56px;}
+
+/* container */
+#container {position:relative; height:100%; padding-top:56px;}
+#container > .fixed_bottom_area {position:fixed; left:0; bottom:0; z-index:10; width:100%;}
+#container > .fixed_bottom_area .btn_wrap {z-index:2;}
+#container > .fixed_bottom_area .btn_wrap [class*='btn_'] {margin:0; border-radius:0;}
+#container > .fixed_bottom_area .btn_wrap [class*='btn_'] .bar {border-radius:0;}
+#content {position:relative; overflow-x:hidden; overflow-y:auto; flex-grow:1; height:100%; padding:0 24px 40px; -webkit-overflow-scrolling:touch;}
+#content.full {padding:0 !important;}
+.tabs_wrap + #content {height:calc(100% - 54px);}
+
+/* top bar - type main */
+#header.type_profile.bg_blue {background:transparent;}
+#header.type_profile.bg_blue.setBg {background:#0132fd;}
+#header.type_profile .header_left {margin-left:8px;}
+#header.type_profile .header_right {margin-right:4px;}
+
+/* popup - layer full */
+.layer_popup_full {display:none; position:fixed; top:0; left:0; z-index:200; width:100%; height:100%; background:#fff;}
+.layer_popup_full.active {display:block;}
+.layer_popup_full .popup_header {position:fixed; top:0; left:0; width:100%; z-index:100; height:56px; background:#fff;}
+.layer_popup_full .popup_header .header_inner {display:flex; padding:0 16px; height:inherit;}
+.layer_popup_full .popup_header h1 {position:relative; flex-grow:1; order:2; height:100%; padding:16px 8px; font-weight:700; font-size:16px; line-height:24px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.layer_popup_full .popup_header .header_left {display:inline-flex; align-items:center; order:1; padding-right:4px;}
+.layer_popup_full .popup_header .header_right {display:inline-flex; align-items:center; order:3; padding-left:4px;}
+.layer_popup_full .popup_header .header_left > a,
+.layer_popup_full .popup_header .header_right > a {position:relative;}
+.layer_popup_full .popup_header .header_left > a + a {margin-right:16px;}
+.layer_popup_full .popup_header .header_right > a + a {margin-left:16px;}
+.layer_popup_full .popup_header .header_left > a:after,
+.layer_popup_full .popup_header .header_right > a:after {content:''; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:100%; height:100%; padding:10px;}
+.layer_popup_full .popup_body {height:100%; padding-top:56px;}
+.layer_popup_full .popup_body > .fixed_bottom_area {position:fixed; left:0; bottom:0; width:100%; padding:0 16px 24px;}
+.layer_popup_full .popup_body > .fixed_bottom_area:after {content:''; position:absolute; top:-32px; left:0; bottom:0; width:100%; background:#fff; background:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,0) 100%);}
+.layer_popup_full .popup_body > .fixed_bottom_area .btn_wrap {z-index:2;}
+.layer_popup_full .popup_body .popup_scroll {position:relative; overflow-y:auto; flex-grow:1; height:100%; padding:0 24px 40px; -webkit-overflow-scrolling:touch;}
+
+/* popup - bottom sheet */
+.bs_wrap .bs_dim {display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:202; background:rgba(0,0,0,0.3); transform:translateZ(0);}
+.bs_wrap .bs_container {display:flex; flex-direction:column; position:fixed; left:0; bottom:0; z-index:204; transform:translateY(100%); width:100%; max-height:100%; border-radius:20px 20px 0 0; background:#fff; transition:transform .4s;}
+.bs_wrap .bs_scroll {overflow-y:auto; max-height:100%; padding:32px 24px 40px; -webkit-overflow-scrolling:touch;}
+.bs_wrap .bs_body {margin-top:16px}
+.bs_wrap .bs_body .terms_wrap:first-child {margin-top:24px}
+.bs_wrap .bs_tit {display:block; font-weight:700; font-size:20px; line-height:28px; letter-spacing:-0.5px; color:#111;}
+.bs_wrap .bs_txt {display:block; font-weight:400; font-size:14px; line-height:22px; color:#3c3c3c;}
+.bs_wrap .bs_txt + .control_box {margin-top:16px;}
+.bs_wrap .bs_txt + .bs_link {margin-top:6px; color:#333;}
+.bs_wrap .em {font-weight:700; color:#0132fd;}
+.bs_wrap p + .bs_info_txt,
+.bs_wrap div + .bs_info_txt {margin-top:8px;}
+.bs_wrap .bs_info_txt {font-weight:400; font-size:12px; line-height:24px; color:#818181;}
+.bs_wrap .bs_container > .btn_wrap {flex-shrink:0; height:80px; padding:0 16px 24px;}
+.bs_wrap .bs_container > .btn_wrap:after {content:''; position:absolute; top:-32px; left:0; bottom:0; z-index:0; width:100%; background:#fff; background:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);}
+.bs_wrap .bs_container > .btn_wrap [class*='btn_type_'] {position:relative; z-index:2;}
+.bs_wrap .bs_container > .btn_wrap [class*='btn_default_'] {padding-left:12px; padding-right:12px;}
+.bs_wrap .bs_container.active {transform:translateY(0); box-shadow:0px -4px 20px rgba(0,0,0,0.12);}
+.bs_wrap .bs_container.active + .bs_dim {display:block;}
+
+/* gnb tooltip */
+#header .header_right .tooltip_wrap {position:absolute; top:calc(100% - 5px); right:-8px;}
+.tooltip_wrap {display:inline-block; position:relative; max-width:calc(100vw - 24px); padding:8px 12px; background:#fff; border-radius:8px; background:rgba(0,0,0,0.6);}
+.tooltip_wrap:before {content:''; position:absolute; top:-7px; left:20px; border-bottom:7px solid rgba(0,0,0,0.6); border-left:5px solid transparent; border-right:5px solid transparent;}
+.tooltip_wrap .tooltip_txt {font-weight:400; font-size:11px; line-height:20px; color:#fff;}
+.tooltip_wrap.type_right:before {left:auto; right:20px;}
+.tooltip_wrap.type_right .tooltip_txt {text-align:right;}
+body.fixedDocument {overflow:hidden; position:fixed; top:0; left:0; width:100%; height:100%; cursor:pointer; -webkit-tap-highlight-color:transparent;}
+
+/* 개발용 스타일 ********************************************* */
+/*
+	@ 이슈 : #container > spring > .fixed_bottom_area - spring 태그가 끼어 들어옴
+	@ 해결 : .fixed_bottom_area 에 .hasFixedForce 추가하여, 리스타일링
+*/
+#container .fixed_bottom_area.hasFixedForce {position:fixed; left:0; bottom:0; z-index:10; width:100%;}
+#container .fixed_bottom_area.hasFixedForce .btn_wrap {z-index:2;}
+#container .fixed_bottom_area.hasFixedForce .btn_wrap [class*='btn_'] {margin:0; border-radius:0;}
+#container .fixed_bottom_area.hasFixedForce .btn_wrap [class*='btn_'] .bar {border-radius:0;}

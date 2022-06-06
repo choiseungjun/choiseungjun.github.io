@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>참가 신청 공유 | 러너블</title>
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/page.css">
+	<script src="/js/jquery-3.6.0.min.js"></script>
+	<script src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="skipnavi">
+	<ul>
+		<li><a href="#container_title">본문바로가기</a></li>
+	</ul>
+</div>
+<div id="wrap" class="full_popup">
+	<!-- header -->
+	<header id="header">
+		<div class="header_inner">
+			<h1>타이틀</h1>
+			<div class="header_left">
+				<a href="javascript:void(0);">
+					<i class="icon_gnb_back"><span class="hide">뒤로가기</span></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<section id="container">
+		<div id="container_title" class="hide" tabindex="-1">본문 시작</div>
+
+		<!-- content -->
+		<div id="content">
+			본문
+		</div>
+		<!-- //content -->
+	</section>
+
+	<!-- @ 팝업은 함수로 여닫습니다.
+			열기 : app.fullPopup.setOpen(팝업아이디);
+			닫기 : app.fullPopup.setClose(팝업아이디);
+	-->
+	<!-- layer popup (full) -->
+	<article class="layer_popup_full active" id=""> <!-- 개발시 .active 제거 후 사용 -->
+		<header class="popup_header">
+			<div class="header_inner">
+				<h1>참가 신청 공유하기</h1>
+				<div class="header_right">
+					<a href="javascript:void(0);">
+						<i class="icon_gnb_close"><span class="hide">닫기</span></i>
+					</a>
+				</div>
+			</div>
+		</header>
+		<section class="popup_body">
+			<div class="popup_scroll">
+				<div class="share_entry_wrap">
+					<div class="capture_area">
+						<!-- 캡쳐 영역 -->
+						<div class="capture_canvas">
+							<canvas id="drawCanvas" width="936" height="936"></canvas>
+						</div>
+					</div>
+					<h2 class="head_tit">나에게 보내는 각오 한마디</h2>
+					<ul class="form_wrap">
+						<li>
+							<strong class="form_tit hide">각오</strong>
+							<div class="input_box">
+								<div class="input_inner">
+									<span class="input_item">
+										<input id="txtInput" type="text" title="각오 입력란" maxlength="18" placeholder="최대 18자까지 입력할 수 있어요." value="">
+									</span>
+									<span class="input_btn">
+										<button type="button" class="btn_input_clear ui_input_clear_btn">
+											<i class="icon_input_clear"></i>
+											<span class="hide">내용 지우기</span>
+										</button>
+									</span>
+								</div>
+								<p class="input_msg">에러메시지</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="fixed_bottom_area">
+				<div class="btn_wrap">
+					<div class="btn_type_col">
+						<a href="javascript:void(0);" class="btn_default_secondary"><span>내 폰에 저장</span></a>
+						<a href="javascript:void(0);" class="btn_default_primary ui_save_btn"><span>공유</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</article>
+	<!-- //layer popup (full) -->
+</div>
+
+<script>
+	$(function() {
+
+		function drawText(ctx, distance, userName, msg){
+
+			var width = 936;
+			var height = 936;
+
+			ctx.font = 'bold 45px Roboto, NotoSansKR, sans-serif';
+			ctx.fillStyle = "#ffffff";
+			ctx.textAlign = "center";
+			ctx.fillText(distance, parseInt(width/2), parseInt(height/2)-30);
+
+			ctx.font = 'bold 110px Roboto, NotoSansKR, sans-serif';
+			ctx.fillStyle = "#ffffff";
+			ctx.textAlign = "center";
+			ctx.fillText(userName, parseInt(width/2), parseInt(height/2)+100);
+
+			ctx.font = 'bold 40px Roboto, NotoSansKR, sans-serif';
+			ctx.fillStyle = "#ffffff";
+			ctx.textAlign = "center";
+			ctx.fillText(msg, parseInt(width/2), height-180);
+
+		}
+
+		/* Drawing Canvas */
+		function drawCanvas(imagePath, distance, userName) {
+			var ctx = document.getElementById('drawCanvas').getContext('2d');
+
+			var width = 936;
+			var height = 936;
+
+			var img = new Image();
+			img.onload = function(e) {
+
+				ctx.drawImage(img, 0, 0);
+				drawText(ctx, distance, userName, '각오 한마디');
+
+				$('#txtInput').on('keyup', function(e){
+					ctx.drawImage(img, 0, 0);
+					var value = e.currentTarget.value;
+					drawText(ctx, distance, userName, value);
+				});
+
+				$(document).on('canvasClearInput', function(e){
+					ctx.drawImage(img, 0, 0);
+					drawText(ctx, distance, userName, '각오 한마디');
+				});
+
+			};
+			img.src = imagePath;
+		}
+
+		function saveImage(){
+
+			var canvas = document.getElementById('drawCanvas');
+			var imgDataUrl = canvas.toDataURL('image/png');
+
+			var blobBin = atob(imgDataUrl.split(',')[1]);	// base64 데이터 디코딩
+			var array = [];
+			for (var i = 0; i < blobBin.length; i++) {
+				array.push(blobBin.charCodeAt(i));
+			}
+
+			var file = new Blob([new Uint8Array(array)], {type: 'image/png'});	// Blob 생성
+			var formdata = new FormData();	// formData 생성
+			formdata.append("file", file);	// file data 추가
+
+			$.ajax({
+				type : 'post',
+				url : '/saveImage',
+				data : formdata,
+				processData : false,	// data 파라미터 강제 string 변환 방지!!
+				contentType : false,	// application/x-www-form-urlencoded; 방지!!
+				success : function (data) {
+					// 처리 영역
+
+				}
+			});
+
+			/* https://samanoske.tistory.com/94 참고 링크
+			@RequestMapping("/saveIamge")
+			public String saveIamge(@RequestParam(value="file", required=true) MultipartFile [] file) {
+				...
+				logger.debug("file size : ", file[0].getSize());	// 서버로 무사히 안착됨
+				...
+			}
+			*/
+
+		}
+
+		/* draw canvas */
+		drawCanvas('/images/temp/@img_share01.png', '7K 참가신청 완료', '김비닐');
+
+		/* 저장 */
+		$('.ui_save_btn').on('click', function(e){
+			e.preventDefault();
+			saveImage();
+		});
+
+		/* 글지우기 */
+		$('.ui_input_clear_btn').on('click', function(e){
+			e.preventDefault();
+			$(document).trigger('canvasClearInput');
+		});
+
+	});
+</script>
+
+</body>
+</html>

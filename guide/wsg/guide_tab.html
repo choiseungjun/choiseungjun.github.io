@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge ,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>Guide - Tab</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" type="text/css" href="/guide/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="/js/ui.js"></script>
+	<style>
+		/* 가이드용 */
+		.tabs_wrap {position:relative; background:#fff;}
+	</style>
+</head>
+
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Tab Menu</h1>
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 기본</h2>
+	<div class="d_view">
+		<div class="tabs_wrap">
+			<ul class="tabs_menu">
+				<li class="active"> <!-- 활성시 .active -->
+					<a href="javascript:void(0);" class="btn_tab"><span>대회 소개</span></a><!-- a 태그 사용 -->
+				</li>
+				<li>
+					<button class="btn_tab"><span>대회 참가</span></button><!-- button 태그 사용 -->
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="btn_tab"><span>기념품</span></a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="btn_tab"><span>공지/FAQ</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+// 기본적으로 상단고정 영역이므로 .content 밖에서 사용됨.
+
+<div class="tabs">
+	<ul class="tabs_menu">
+		<li class="active"> <!-- 활성시 .active -->
+			<a href="#" class="btn_tab"><span>대회 소개</span></a>
+		</li>
+		<li>
+			<button class="btn_tab"><span>대회 참가</span></button> //버튼도 사용 가능
+		</li>
+		<li>
+			<a href="#" class="btn_tab"><span>기념품</span></a>
+		</li>
+		<li>
+			<a href="#" class="btn_tab"><span>공지/FAQ</span></a>
+		</li>
+	</ul>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 스크립트 적용</h2>
+	<div class="d_view">
+		<div class="tabs_wrap uiTabs">
+			<ul class="tabs_menu">
+				<li class="active">
+					<a href="javascript:void(0);" class="btn_tab"><span>대회 소개</span></a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="btn_tab"><span>대회 참가</span></a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="btn_tab"><span>기념품</span></a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="btn_tab"><span>공지/FAQ</span></a>
+				</li>
+			</ul>
+			<div class="tabs_cont active">1</div>
+			<div class="tabs_cont">2</div>
+			<div class="tabs_cont">3</div>
+			<div class="tabs_cont">4</div>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+// .tabs_wrap 에 .uiTabs 추가하여 이용.
+
+<div class="tabs_wrap uiTabs">
+	<ul class="tabs_menu">
+		<li class="active">
+			<a href="javascript:void(0);" class="btn_tab"><span>대회 소개</span></a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="btn_tab"><span>대회 참가</span></a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="btn_tab"><span>기념품</span></a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="btn_tab"><span>공지/FAQ</span></a>
+		</li>
+	</ul>
+	<div class="tabs_cont active">1</div>
+	<div class="tabs_cont">2</div>
+	<div class="tabs_cont">3</div>
+	<div class="tabs_cont">4</div>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 좌우여백 조정</h2>
+	<div class="d_view">
+		<div class="tabs_wrap full">
+			<ul class="tabs_menu">
+				<li class="active"><a href="javascript:void(0);" class="btn_tab"><span>menu01</span></a></li>
+				<li><a href="javascript:void(0);" class="btn_tab"><span>menu02</span></a></li>
+				<li><a href="javascript:void(0);" class="btn_tab"><span>menu03</span></a></li>
+				<li><a href="javascript:void(0);" class="btn_tab"><span>menu04</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="d_desc">
+<xmp>
+// .content 안에서 사용시: 좌우 여백만틈 탭메뉴 확장 .full 추가.
+
+<div class="tabs_wrap full">
+	<ul class="tabs_menu">
+		<li>...</li>
+	</ul>
+</div>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+</div>
+
+</body>
+</html>

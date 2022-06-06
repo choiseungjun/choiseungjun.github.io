@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>상세 이미지 | 러너블</title>
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/page.css">
+	<script src="/js/jquery-3.6.0.min.js"></script>
+	<script src="/js/swiper-6.7.5.min.js"></script>
+	<script src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="skipnavi">
+	<ul>
+		<li><a href="#container_title">본문바로가기</a></li>
+	</ul>
+</div>
+<div id="wrap">
+	<!-- header -->
+	<header id="header">
+		<div class="header_inner">
+			<h1>타이틀</h1>
+			<div class="header_left">
+				<a href="javascript:void(0);">
+					<i class="icon_gnb_back"><span class="hide">뒤로가기</span></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<section id="container">
+		<div id="container_title" class="hide" tabindex="-1">본문 시작</div>
+		<!-- content -->
+		<div id="content">
+			본문
+		</div>
+		<!-- //content -->
+	</section>
+
+	<!-- layer popup (full) -->
+	<article class="layer_popup_full active" id="fullPop01"> <!-- 활성시 .active 추가 -->
+		<header class="popup_header">
+			<div class="header_inner">
+				<h1>상세 이미지</h1>
+				<div class="header_right">
+					<a href="javascript:void(0);">
+						<i class="icon_gnb_close"><span class="hide">닫기</span></i>
+					</a>
+				</div>
+			</div>
+		</header>
+		<section class="popup_body">
+			<div class="popup_scroll">
+				<div class="detail_img_wrap">
+					<section class="pack_cont_wrap">
+						<h2 class="pack_tit">나이키 남성용 티셔츠 <span class="sub">(Nike Man’s Top)</span></h2>
+						<div class="pack_swiper swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="javascript:void(0);" title="상세이미지 보기"><img src="/images/temp/@sample_racepack_swiper01.png" alt="샘플이미지"></a>
+								</div>
+							</div>
+							<div class="swiper-button-prev"><i class="icon_swiper_arrow_prev"></i></div>
+							<div class="swiper-button-next"><i class="icon_swiper_arrow_next"></i></div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</section>
+					<section class="pack_cont_wrap">
+						<h2 class="pack_tit">나이키 여성용 티셔츠 <span class="sub">(Nike Woman’s Top)</span></h2>
+						<div class="pack_swiper swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="javascript:void(0);" title="상세이미지 보기"><img src="/images/temp/@sample_racepack_swiper02.png" alt="샘플이미지"></a>
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:void(0);" title="상세이미지 보기"><img src="/images/temp/@sample_racepack_swiper02.png" alt="샘플이미지"></a>
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:void(0);" title="상세이미지 보기"><img src="/images/temp/@sample_racepack_swiper02.png" alt="샘플이미지"></a>
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:void(0);" title="상세이미지 보기"><img src="/images/temp/@sample_racepack_swiper02.png" alt="샘플이미지"></a>
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:void(0);" title="상세이미지 보기"><img src="/images/temp/@sample_racepack_swiper02.png" alt="샘플이미지"></a>
+								</div>
+							</div>
+							<div class="swiper-button-prev"><i class="icon_swiper_arrow_prev"></i></div>
+							<div class="swiper-button-next"><i class="icon_swiper_arrow_next"></i></div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<p class="pack_txt">장거리 러닝도 가볍게. 나이키 드라이 핏 마일러 탑은 초경량 메쉬 소재로 러닝의 열기를 식혀줍니다.<br> 땀 발산 기술이 출발선부터 결승선까지 한결같은 쾌적함을 선사합니다. (소재: 100% 폴리에스테르)</p>
+						<p class="pack_txt">두 사이즈의 중간인 경우, 타이트한 핏을 원하면 더 작은 사이즈를, 루즈한 핏을 원하면 더 큰 사이즈를 주문하면 좋습니다.</p>
+					</section>
+				</div>
+			</div>
+		</section>
+	</article>
+	<!-- //layer popup (full) -->
+</div>
+
+<script>
+	var swiper = new Swiper('.swiper-container',{
+		direction: 'horizontal',	// 가로 방향
+		resistanceRatio: 0,			// 처음,끝 바운스 제거
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		},
+		on: {
+			afterInit: function (swiper) {
+				if (swiper.slides.length == 1) {
+					swiper.pagination.$el.addClass('hide');
+				}
+			}
+		},
+	});
+</script>
+</body>
+</html>

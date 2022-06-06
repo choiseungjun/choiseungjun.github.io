@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge ,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>Guide - element</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" type="text/css" href="/guide/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="/js/swiper-6.7.5.min.js"></script>
+	<script type="text/javascript" src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Element</h1>
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 대회목록 카드형태</h2>
+	<div class="d_view">
+		<div class="competition_list has_ing"> <!-- 접수시 .has_ing 추가 -->
+			<div class="list_bg"><img src="/images/temp/@RA1_01.png" alt="샘플이미지"></div>
+			<div class="list_badge">
+				<span class="badge_item"><i class="icon_alarm_white"></i>접수중</span> <!-- 접수시 아이콘 변경 -->
+				<span class="badge_item">~10/30</span>
+			</div>
+			<div class="list_info">
+				<p class="info_date"><span class="hide">대회기간</span> 2021.11.07 ~ 2021.11.10</p>
+				<strong class="info_tit">2021 JTBC 서울마라톤</strong>
+				<p class="info_course">
+					<i class="icon_running_track"></i>
+					<span>7K / 10K / Half / Full</span>
+				</p>
+				<div class="btn_wrap">
+					<div class="btn_type_col">
+						<a href="javascript:void(0);" class="btn_default_secondary small"><span>자세히 보기</span></a>
+						<a href="javascript:void(0);" class="btn_default_primary small"><span>참가 신청</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="competition_list has_done"> <!-- 접수마감시 .has_done 추가 -->
+			<div class="list_bg"><img src="/images/temp/@RA1_02.png" alt="샘플이미지"></div>
+			<div class="list_badge">
+				<span class="badge_item"><i class="icon_alarm_white"></i>접수마감</span> <!-- 접수마감시 아이콘 변경 -->
+			</div>
+			<div class="list_info">
+				<p class="info_date"><span class="hide">대회기간</span> 2021.11.07 ~ 2021.11.10</p>
+				<strong class="info_tit">2021 JTBC 서울마라톤</strong>
+				<p class="info_course">
+					<i class="icon_running_track"></i>
+					<span>7K / 10K / Half / Full</span>
+				</p>
+				<div class="btn_wrap">
+					<div class="btn_type_col">
+						<a href="javascript:void(0);" class="btn_default_secondary small"><span>자세히 보기</span></a>
+						<a href="javascript:void(0);" class="btn_default_primary small"><span>참가 신청</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="competition_list">
+			<div class="list_bg"><img src="/images/temp/@RA1_02.png" alt="샘플이미지"></div>
+			<div class="list_badge">
+				<span class="badge_item"><i class="icon_alarm_blue"></i>진행예정</span>
+			</div>
+			<div class="list_info">
+				<p class="info_date"><span class="hide">대회기간</span> 2021.11.07 ~ 2021.11.10</p>
+				<strong class="info_tit">2021 Woman’s virtual marathon</strong>
+				<p class="info_course">
+					<i class="icon_running_track"></i>
+					<span>7K / 10K / Half / Full</span>
+				</p>
+				<div class="btn_wrap">
+					<div class="btn_type_col">
+						<a href="javascript:void(0);" class="btn_default_secondary small"><span>자세히 보기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="competition_list has_deadline"> <!-- 마감시 .has_deadline 추가 -->
+			<div class="list_bg"><img src="/images/temp/@RA1_02.png" alt="샘플이미지"></div>
+			<div class="list_badge">
+				<span class="badge_item"><i class="icon_alarm_deadline"></i>마감</span> <!-- 마감시 아이콘 변경 -->
+			</div>
+			<div class="list_info">
+				<p class="info_date"><span class="hide">대회기간</span> 2021.11.07 ~ 2021.11.10</p>
+				<strong class="info_tit">2021 Woman’s virtual marathon</strong>
+				<p class="info_course">
+					<i class="icon_running_track"></i>
+					<span>7K / 10K / Half / Full</span>
+				</p>
+				<div class="btn_wrap">
+					<div class="btn_type_col">
+						<a href="javascript:void(0);" class="btn_default_secondary small"><span>자세히 보기</span></a>
+						<a href="javascript:void(0);" class="btn_default_primary small"><span>참가신청</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="d_desc">
+<xmp>
+</xmp>
+	</div> -->
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 레이스팩 스와이프</h2>
+	<div class="d_view">
+		<section class="pack_cont_wrap">
+			<h3 class="pack_tit">타이틀 <span class="sub">(서브타이틀)</span></h3>
+			<div class="pack_swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="javascript:void(0);" title="상세이미지 보기"><img src="/images/temp/@sample_racepack_swiper01.png" alt="샘플이미지"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="javascript:void(0);" title="상세이미지 보기"><img src="/images/temp/@sample_racepack_swiper01.png" alt="샘플이미지"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="javascript:void(0);" title="상세이미지 보기"><img src="/images/temp/@sample_racepack_swiper01.png" alt="샘플이미지"></a>
+					</div>
+				</div>
+				<div class="swiper-button-prev"><i class="icon_swiper_arrow_prev"></i></div>
+				<div class="swiper-button-next"><i class="icon_swiper_arrow_next"></i></div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<p class="pack_txt">본문 텍스트 본문 텍스트 본문 텍스트 본문 텍스트 본문 텍스트 본문 텍스트 본문 텍스트</p>
+		</section>
+		<script>
+			var swiper = new Swiper('.swiper-container',{
+				direction: 'horizontal',	// 가로 방향
+				resistanceRatio: 0,			// 처음,끝 바운스 제거
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+				},
+			});
+		</script>
+	</div>
+	<!-- <div class="d_desc">
+<xmp>
+</xmp>
+	</div> -->
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 레이스 참여기록 리스트</h2>
+	<div class="d_view">
+		<div class="run_record_list">
+			<ul>
+				<!-- 레이스 참여없음 -->
+				<li>
+					<div class="record_item type_best">
+						<div class="record_badge"><em>최고 기록</em></div>
+						<div class="record_nodata">
+							<i class="icon_no_data"></i>
+							<p class="nodata_msg">레이스 기록이 없네요.</p>
+						</div>
+					</div>
+				</li>
+				<!-- //레이스 참여없음 -->
+				<!-- 레이스 최고기록 -->
+				<li>
+					<div class="record_item type_best">
+						<div class="record_badge"><em>최고 기록</em></div>
+						<strong class="record_stit ellipsis">2019 JTBC 서울 마라톤</strong>
+						<dl class="record_count">
+							<dt>대회기록</dt>
+							<dd>00:52:43</dd>
+						</dl>
+					</div>
+				</li>
+				<!-- //레이스 최고기록 -->
+				<!-- 대회기록 승인대기중 모듈 -->
+				<li>
+					<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+						<em class="record_category"><span>승인 대기 중</span></em>
+						<strong class="record_tit ellipsis">대회 기록 "승인 대기 중" 모듈</strong>
+						<p class="record_date">2022.01.01 12:00</p>
+						<dl class="record_info">
+							<dt class="hide">러닝 부문</dt>
+							<dd>Full</dd>
+							<dt class="hide">러닝 시간</dt>
+							<dd>00:00:00</dd>
+						</dl>
+					</a>
+				</li>
+				<!-- //대회기록 승인대기중 모듈 -->
+				<!-- 대회기록 승인반려 모듈 -->
+				<li>
+					<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+						<em class="record_category"><span class="reject">승인 반려</span></em>
+						<strong class="record_tit ellipsis">대회 기록 "승인 반려" 모듈</strong>
+						<p class="record_date">2022.01.01 12:00</p>
+						<dl class="record_info">
+							<dt class="hide">러닝 부문</dt>
+							<dd>Full</dd>
+							<dt class="hide">러닝 시간</dt>
+							<dd>00:00:00</dd>
+						</dl>
+					</a>
+				</li>
+				<!-- //대회기록 승인반려 모듈 -->
+				<!-- 대회기록 승인완료 모듈 -->
+				<li>
+					<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+						<strong class="record_tit ellipsis">대회 기록 "승인 완료" 모듈</strong>
+						<p class="record_date">2022.01.01 12:00</p>
+						<dl class="record_info">
+							<dt class="hide">러닝 부문</dt>
+							<dd>Full</dd>
+							<dt class="hide">러닝 시간</dt>
+							<dd>00:00:00</dd>
+						</dl>
+					</a>
+				</li>
+				<!-- //대회기록 승인완료 모듈 -->
+				<!-- 대회기록 승인대기중 모듈(타앱) -->
+				<li>
+					<div class="record_item type_disabled"> <!-- .type_disabled -->
+						<em class="record_category"><span>승인 대기 중</span></em>
+						<strong class="record_tit ellipsis">대회 기록 "승인 대기 중" 모듈(타앱)</strong>
+						<p class="record_date">2022.01.01 12:00</p>
+						<dl class="record_info">
+							<dt class="hide">러닝 부문</dt>
+							<dd>Full</dd>
+						</dl>
+						<div class="record_bottom">
+							<p class="record_warn">다른 앱 기록으로 참여 시, 상세 정보가 제공되지 않습니다.</p>
+						</div>
+					</div>
+				</li>
+				<!-- //대회기록 승인대기중 모듈(타앱) -->
+				<!-- 대회기록 승인반려 모듈(타앱) -->
+				<li>
+					<div class="record_item type_disabled"> <!-- .type_disabled -->
+						<em class="record_category"><span class="reject">승인 반려</span></em>
+						<strong class="record_tit ellipsis">대회 기록 "승인 반려" 모듈(타앱)</strong>
+						<p class="record_date">2022.01.01 12:00</p>
+						<dl class="record_info">
+							<dt class="hide">러닝 부문</dt>
+							<dd>Full</dd>
+						</dl>
+						<div class="record_bottom">
+							<p class="record_warn">다른 앱 기록으로 참여 시, 상세 정보가 제공되지 않습니다.</p>
+						</div>
+					</div>
+				</li>
+				<!-- //대회기록 승인반려 모듈(타앱) -->
+				<!-- 대회기록 승인완료 모듈(타앱) -->
+				<li>
+					<div class="record_item type_disabled"> <!-- .type_disabled -->
+						<strong class="record_tit ellipsis">대회 기록 "승인 완료" 모듈(타앱)</strong>
+						<p class="record_date">2022.01.01 12:00</p>
+						<dl class="record_info">
+							<dt class="hide">러닝 부문</dt>
+							<dd>Full</dd>
+						</dl>
+						<div class="record_bottom">
+							<p class="record_warn">다른 앱 기록으로 참여 시, 상세 정보가 제공되지 않습니다.</p>
+						</div>
+					</div>
+				</li>
+				<!-- //대회기록 승인완료 모듈(타앱) -->
+			</ul>
+		</div>
+	</div>
+	<!-- <div class="d_desc">
+<xmp>
+
+</xmp>
+	</div> -->
+
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 트레이닝 기록 리스트</h2>
+	<div class="d_view">
+		<div class="run_record_list">
+			<ul>
+				<!-- 트레이닝 기록없음 -->
+				<li>
+					<div class="record_item type_best">
+						<div class="record_badge"><em>최고 기록</em></div>
+						<div class="select_box type_inline type_white">
+							<div class="select_inner">
+								<p class="select_txt">최근 7일 이내</p>
+								<select name="" id="">
+									<option value="" selected>최근 7일 이내</option>
+									<option value="">최근 1달 이내</option>
+									<option value="">최근 1년 이내</option>
+								</select>
+							</div>
+						</div>
+						<div class="record_nodata">
+							<i class="icon_no_data"></i>
+							<p class="nodata_msg">최근 7일 이내, 러닝 기록이 없네요.</p>
+						</div>
+					</div>
+				</li>
+				<!-- //트레이닝 기록없음 -->
+				<!-- 트레이닝 최고기록 -->
+				<li>
+					<div class="record_item type_best">
+						<div class="record_badge"><em>최고 기록</em></div>
+						<div class="select_box type_inline type_white">
+							<div class="select_inner">
+								<p class="select_txt">최근 7일 이내</p>
+								<select name="" id="">
+									<option value="" selected>최근 7일 이내</option>
+									<option value="">최근 1달 이내</option>
+									<option value="">최근 1년 이내</option>
+								</select>
+							</div>
+						</div>
+						<strong class="record_tit ellipsis">1월 둘째주 달리기</strong>
+						<p class="record_date">2022.01.01 12:00</p>
+						<dl class="record_info">
+							<dt class="hide">러닝 거리(부문)</dt>
+							<dd>00.00km</dd>
+							<dt class="hide">러닝 시간</dt>
+							<dd>00:00:00</dd>
+							<dt class="hide">평균 레이스</dt>
+							<dd>00’00”</dd>
+						</dl>
+					</div>
+				</li>
+				<!-- //트레이닝 최고기록 -->
+				<!-- 일반 트레이닝 기록 모듈 -->
+				<li>
+					<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+						<strong class="record_tit ellipsis">일반 트레이닝 기록 모듈</strong>
+						<p class="record_date">2022.01.01 12:00</p>
+						<dl class="record_info">
+							<dt class="hide">러닝 기록</dt>
+							<dd>00.00km</dd>
+							<dt class="hide">러닝 시간</dt>
+							<dd>00:00:00</dd>
+							<dt class="hide">평균 레이스</dt>
+							<dd>00’00”</dd>
+						</dl>
+					</a>
+				</li>
+				<!-- //일반 트레이닝 기록 모듈 -->
+				<!-- 대회 트레이닝 기록 모듈 -->
+				<li>
+					<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+						<em class="record_category">
+							<span>2021 ELLE RUN</span>
+						</em>
+						<strong class="record_tit ellipsis">대회 트레이닝 기록 모듈</strong>
+						<p class="record_date">2022.01.01 12:00</p>
+						<dl class="record_info">
+							<dt class="hide">러닝 부문</dt>
+							<dd>20K</dd>
+							<dt class="hide">러닝 시간</dt>
+							<dd>00:00:00</dd>
+							<dt class="hide">평균 레이스</dt>
+							<dd>00’00”</dd>
+						</dl>
+					</a>
+				</li>
+				<!-- //대회 트레이닝 기록 모듈 -->
+				<!-- 대회 트레이닝 기록 제출 모듈 -->
+				<li>
+					<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+						<em class="record_category">
+							<span>2021 ELLE RUN</span>
+							<span>기록제출</span>
+						</em>
+						<strong class="record_tit ellipsis">대회 트레이닝 기록 제출 모듈</strong>
+						<p class="record_date">2022.01.01 12:00</p>
+						<dl class="record_info">
+							<dt class="hide">러닝 부문</dt>
+							<dd>Full</dd>
+							<dt class="hide">러닝 기록</dt>
+							<dd>00:00:00</dd>
+							<dt class="hide">평균 레이스</dt>
+							<dd>00’00”</dd>
+						</dl>
+					</a>
+				</li>
+				<!-- //대회 트레이닝 기록 제출 모듈 -->
+			</ul>
+		</div>
+	</div>
+	<!-- <div class="d_desc">
+<xmp>
+
+</xmp>
+	</div> -->
+
+	<!-- **************************************************************** -->
+</div>
+
+</body>
+</html>

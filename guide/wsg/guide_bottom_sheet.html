@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>Guide - bottom sheet</title>
+	<link rel="stylesheet" href="/css/common.css">
+	<script src="/js/jquery-3.6.0.min.js"></script>
+	<script src="/js/ui.js"></script>
+	<style>
+		#content button {height:40px; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+	</style>
+</head>
+
+<body>
+
+<div id="skipnavi">
+	<ul>
+		<li><a href="#container_title">본문바로가기</a></li>
+	</ul>
+</div>
+<div id="wrap">
+	<!-- header -->
+	<header id="header">
+		<div class="header_inner">
+			<h1>바텀시트</h1>
+			<div class="header_left">
+				<a href="javascript:void(0);">
+					<i class="icon_gnb_back"><span class="hide">뒤로가기</span></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<section id="container">
+		<div id="container_title" class="hide" tabindex="-1">본문 시작</div>
+		<!-- content -->
+		<div id="content">
+			<div style="display:flex; justify-content:center; align-items:center; height:800px; background:pink;;">
+				<button type="button" onclick="app.bottomSheet.setOpen('#testBS')">
+					[click: bottom sheet]<br><br>
+					바텀시트 고정버튼은 둥근스타일을 사용한다.
+				</button>
+			</div>
+		</div>
+		<!-- //content -->
+	</section>
+
+	<!-- bottom sheet -->
+	<article class="bs_wrap" id="testBS"> <!-- 활성시 .active -->
+		<section class="bs_container">
+			<div class="bs_scroll">
+				<div class="bs_header">
+					<h1 class="bs_tit">문의가 접수되었습니다.</h1>
+				</div>
+				<div class="bs_body">
+					<p class="bs_txt">확인 후 답변 드릴께요.<br> 답변은 문의 내용에 작성해 주신 이메일로 발송됩니다.</p>
+				</div>
+			</div>
+			<div class="btn_wrap">
+				<div class="btn_type_col">
+					<!-- <a href="javascript:void(0);" class="btn_default_secondary large"><span>취소</span></a> -->
+					<a href="javascript:void(0);" class="btn_default_primary large"><span>확인</span></a>
+				</div>
+			</div>
+		</section>
+		<div class="bs_dim"></div>
+	</article>
+	<script>
+		$('#testBS .btn_wrap a').on('click', function() {
+			app.bottomSheet.setClose('#testBS');
+		});
+	</script>
+	<!-- //bottom sheet -->
+</div>
+
+</body>
+</html>

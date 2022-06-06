@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>무료 참가권 목록 | 러너블</title>
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/page.css">
+	<script src="/js/jquery-3.6.0.min.js"></script>
+	<script src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="skipnavi">
+	<ul>
+		<li><a href="#container_title">본문바로가기</a></li>
+	</ul>
+</div>
+<div id="wrap">
+	<!-- header -->
+	<header id="header">
+		<div class="header_inner">
+			<h1>무료 참가권</h1>
+			<div class="header_left">
+				<a href="javascript:void(0);">
+					<i class="icon_gnb_back"><span class="hide">뒤로가기</span></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<section id="container">
+		<div id="container_title" class="hide" tabindex="-1">본문 시작</div>
+
+		<!-- content -->
+		<div id="content">
+			<div class="reg_coupon_wrap">
+				<div class="coupon_top_area">
+					<h2 class="head_tit">무료 참가권을 등록해 주세요.</h2>
+					<ul class="form_wrap">
+						<li>
+							<strong class="form_tit hide">무료 참가권번호</strong>
+							<div class="input_box">
+								<div class="input_inner">
+									<span class="input_item">
+										<input type="text" title="무료 참가권 입력란" placeholder="무료 참가권를 입력해 주세요">
+									</span>
+									<span class="input_btn">
+										<button type="button" class="btn_input_clear">
+											<i class="icon_input_clear"></i>
+											<span class="hide">내용 지우기</span>
+										</button>
+									</span>
+									<span class="input_btn expand">
+										<a href="javascript:void(0);" class="btn_default_primary inline disabled"><span>등록</span></a> <!-- 활성시 .disabled 제거 -->
+									</span>
+								</div>
+								<!-- @에러 메시지 가이드
+									1. 사용 유효기간 초과한 경우
+										- "유효하지 않은 무료 참가권입니다."
+									2. 1인/동일 레이스/N개 등록 시도할 경우
+										- "동일 레이스에 한 개의 무료 참가권만 등록 가능합니다."
+								-->
+								<p class="input_msg">유효하지 않은 무료 참가권입니다.</p>
+							</div>
+						</li>
+					</ul>
+					<hr class="divide_line full">
+				</div>
+				<div class="coupon_cont_area">
+					<h2 class="hide">무료 참가권 목록</h2>
+					<!-- case1. 목록 있을시 -->
+					<ul class="coupon_list_wrap">
+						<!-- case1-1. 참가신청 가능 -->
+						<li>
+							<div class="list_item">
+								<div class="item_info">
+									<strong class="tit">2021 ELLE RUN</strong>
+									<span class="serial">qsyk-UNo2-aHsO-beiK</span>
+									<div class="btn_wrap">
+										<a href="javascript:void(0);" class="btn_default_secondary inline round xsmall"><span>참가신청</span></a>
+									</div>
+								</div>
+								<div class="item_warn">
+									<p>참가신청 취소 시 <em>재사용 불가</em></p>
+								</div>
+							</div>
+						</li>
+						<!-- //case1-1. 참가신청 가능 -->
+						<!-- case1-2. 참가신청 불가 -->
+						<li class="type_deadline">
+							<div class="list_item">
+								<div class="item_info">
+									<strong class="tit">2021 ELLE RUN with lululemon</strong>
+									<span class="serial">qsyk-UNo2-aHsO-beiK</span>
+									<div class="btn_wrap">
+										<a href="javascript:void(0);" class="btn_default_secondary inline round xsmall disabled"><span>참가신청</span></a>
+									</div>
+								</div>
+								<div class="item_warn">
+									<p>참가신청 취소 시 <em>재사용 불가</em></p>
+								</div>
+							</div>
+						</li>
+						<!-- //case1-2. 참가신청 불가 -->
+						<!-- case1-3. 사용완료 -->
+						<li class="type_use">
+							<div class="list_item">
+								<div class="item_info">
+									<strong class="tit">2021 ELLE RUN</strong>
+									<span class="serial">qsyk-UNo2-aHsO-beiK</span>
+									<div class="btn_wrap">
+										<a href="javascript:void(0);" class="btn_default_secondary inline round xsmall disabled"><span>사용완료</span></a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- //case1-3. 사용완료 -->
+						<!-- case1-4. 미사용 -->
+						<li class="type_unuse">
+							<div class="list_item">
+								<div class="item_info">
+									<strong class="tit">2021 ELLE RUN with lululemon</strong>
+									<span class="serial">qsyk-UNo2-aHsO-beiK</span>
+									<div class="btn_wrap">
+										<a href="javascript:void(0);" class="btn_default_secondary inline round xsmall disabled"><span>미사용</span></a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- //case1-4. 미사용 -->
+					</ul>
+					<!-- //case1. 목록 있을시 -->
+					<!-- case2. 목록 없을시 -->
+					<div class="nodata">
+						<div class="nodata_inner">
+							<i class="icon_no_data"></i>
+							<p class="nodata_msg">등록된 무료 참가권이 없어요.</p>
+						</div>
+					</div>
+					<!-- //case2. 목록 없을시 -->
+				</div>
+			</div>
+		</div>
+		<!-- //content -->
+	</section>
+</div>
+
+<!-- 퍼블확인용 -->
+<script>
+$(function() {
+	$('.input_item input').on('keyup', function() {
+		if ($(this).val().length > 0 || $(this).val() !== '') {
+			$('.input_btn.expand a').removeClass('disabled');
+		} else {
+			$('.input_btn.expand a').addClass('disabled');
+			$('.input_box').removeClass('error');
+		}
+	});
+
+	$('.btn_input_clear').on('click', function() {
+		$('.input_btn.expand a').addClass('disabled');
+	});
+
+	$('.input_btn.expand a').on('click', function() {
+		$('.input_box').addClass('error');
+	});
+});
+</script>
+<!-- //퍼블확인용 -->
+</body>
+</html>

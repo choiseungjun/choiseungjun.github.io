@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>러너블 2021 UI개발 진행표</title>
+<link rel="stylesheet" type="text/css" href="/guide/css/base.css">
+	<script>
+		function getCookieValue(a) {
+			var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
+			return b ? b.pop() : '';
+		}
+
+		var width = getCookieValue('colWidth');
+		width && document.addEventListener("DOMContentLoaded", function(){
+			document.querySelector('#colsFrame').setAttribute('cols', width + ',*');
+		});
+	</script>
 </head>
-<body>
-    <h1>Hello World</h1>
-    <p>테스트 메세지 작성</p>
-</body>
+
+<frameset rows="50,*" frameborder="0" framespacing="0">
+	<frame src="/coding_top.html" name="topFrame" scrolling="no">
+	<frameset cols="400,*" frameborder="0" framespacing="0" id="colsFrame">
+		<frame src="/coding_left.html" name="leftFrame" scrolling="auto">
+		<frame src="/coding_main.html" name="mainFrame">
+	</frameset>
+</frameset>
+<noframes></noframes>
+
 </html>

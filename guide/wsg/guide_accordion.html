@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge ,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>Guide - accordion</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" type="text/css" href="/guide/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="/js/ui.js"></script>
+	<style>
+		/* 가이드용 */
+		.acc_wrap {background:#fff;}
+	</style>
+</head>
+
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Accordion</h1>
+	<!-- **************************************************************** -->
+
+	<h2 class="h2_guide"># 기본</h2>
+	<div class="d_view">
+		<ul class="acc_wrap uiAccordion">
+			<li class="active"> <!-- .active 클래스 추가-->
+				<h3 class="acc_btn">
+					<a href="javascript:void(0);" class="btn_acc">타이틀 (a태그)</a>
+				</h3>
+				<div class="acc_info" style="display:block;">
+					<div class="acc_info_inner">
+						<section>
+							<h4 class="acc_tit">아코디언 본문 타이틀 (대제목 + 본문)</h4>
+							<p class="acc_txt">아코디언 본문 텍스트</p>
+						</section>
+						<section>
+							<h4 class="acc_tit">아코디언 본문 타이틀 (대제목 + 본문 + 본문 + 안내)</h4>
+							<p class="acc_txt">아코디언 본문 텍스트</p>
+							<p class="acc_txt">아코디언 본문 텍스트</p>
+							<p class="acc_warn_txt">※ 아코디언 안내 텍스트</p>
+						</section>
+						<section>
+							<h4 class="acc_tit">아코디언 본문 타이틀 (대제목 + 소제목 + 본문 + 소제목 + 본문)</h4>
+							<h5 class="acc_sub_tit">아코디언 본문 서브 타이틀</h5>
+							<p class="acc_txt">아코디언 본문 텍스트</p>
+							<h5 class="acc_sub_tit">아코디언 본문 서브 타이틀</h5>
+							<p class="acc_txt">아코디언 본문 텍스트</p>
+						</section>
+						<section>
+							<h4 class="acc_tit">아코디언 본문 타이틀 (대제목 + 숫자리스트 + 본문)</h4>
+							<ul class="num_list">
+								<li>숫자 리스트</li>
+								<li>숫자 리스트</li>
+								<li>숫자 리스트</li>
+							</ul>
+							<p class="acc_txt">아코디언 본문 텍스트</p>
+						</section>
+					</div>
+				</div>
+			</li>
+			<li>
+				<h3 class="acc_btn">
+					<button type="button" class="btn_acc">타이틀 (button태그)</button>
+				</h3>
+				<div class="acc_info">
+					<div class="acc_info_inner">
+						<section>
+							<strong class="acc_tit">아코디언 본문 타이틀</strong>
+							<p class="acc_txt">아코디언 본문 텍스트</p>
+						</section>
+						<section>
+							<strong class="acc_tit">아코디언 본문 타이틀</strong>
+							<p class="acc_txt">아코디언 본문 텍스트</p>
+						</section>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="d_desc">
+<xmp>
+// 스크립트 적용 시 .uiAccordion 추가.
+// 메뉴 활성시 : <li class="active">...</li>, <div class="acc_info" style="display:block;">...</div>
+
+<ul class="acc_wrap uiAccordion">
+	<li class="active"> <!-- .active 클래스 추가-->
+		<h3 class="acc_btn">
+			<a href="javascript:void(0);" class="btn_acc">타이틀 (a태그)</a>
+		</h3>
+		<div class="acc_info" style="display:block;">
+			<div class="acc_info_inner">
+				<section>
+					가이드 본문
+				</section>
+			</div>
+		</div>
+	</li>
+	<li>
+		<h3 class="acc_btn">
+			<button type="button" class="btn_acc">타이틀 (button태그)</button>
+		</h3>
+		<div class="acc_info">
+			<div class="acc_info_inner">
+				<section>
+					가이드 본문
+				</section>
+			</div>
+		</div>
+	</li>
+</ul>
+
+</xmp>
+	</div>
+
+	<!-- **************************************************************** -->
+</div>
+
+</body>
+</html>

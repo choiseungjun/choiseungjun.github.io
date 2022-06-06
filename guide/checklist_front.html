@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge ,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>UI개발 체크리스트</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" type="text/css" href="/guide/css/base.css">
+</head>
+
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">UI개발 체크리스트</h1>
+
+	<h2 class="h2_guide">기본 사항</h2>
+	<div class="d_desc">
+		<p>- 모든 경로는 절대경로로 지정합니다.</p>
+	</div>
+
+	<h3 class="h3_guide">1. 이미지 저장</h3>
+	<div class="d_desc">
+		<p class="t_point">공통사항</p>
+		<ol class="num_list">
+			<li>기본 svg 로 추출합니다.</li>
+			<li>svg 이외의 이미지는 .png(PNG-24)로 저장합니다.</li>
+		</ol>
+	</div>
+
+	<h3 class="h3_guide">2. html 페이지 명</h3>
+	<div class="d_desc">
+		- 각각의 html산출물에는 각각의 화면명을 적용합니다.(화면명은 화면명세서 참조)<br>
+	</div>
+
+	<h3 class="h3_guide">3. Validation체크</h3>
+	<div class="d_desc">
+		- 필수적으로 체크하여 전달하여, 최고의 산출물을 유지 합니다.
+	</div>
+
+	<h3 class="h3_guide">4. Browser 체크</h3>
+	<div class="d_desc">
+		- Browser 체크는 설치되어 있는 각각의 최신 브라우저를 체크합니다.<br>
+	</div>
+
+	<h3 class="h3_guide">5. CSS 기법 및 문법</h3>
+	<div class="d_desc">
+		<ol class="num_list">
+			<li>z-index는 9999를 넘지 않으며, 증가간격은 10단뒤로 합니다. 다만, 주변 obj보다 위로 표현이 되어야 할 경우에는 2부터 시작합니다.</li>
+			<li>모든 property에 세미콜론(;)을 추가합니다.</li>
+		</ol>
+	</div>
+
+	<h3 class="h3_guide">6. CSS Property순서</h3>
+	<div class="d_desc">
+		<p class="t_point">- 기본 아래의 순서로 적용하되 css3 속성은 비슷한 속성 뒤에 작성(<strong>예 : border:1px solid #eee; border-radius:5px</strong>)하며, transition등은 etc와 동일한 위치에 적용합니다.</p>
+		<ol class="num_list">
+			<li>display</li>
+			<li>position</li>
+			<li>float</li>
+			<li>clear</li>
+			<li>width</li>
+			<li>height</li>
+			<li>margin</li>
+			<li>padding</li>
+			<li>border</li>
+			<li>background</li>
+			<li>color</li>
+			<li>font</li>
+			<li>text-align</li>
+			<li>vertical-align</li>
+			<li>etc</li>
+		</ol>
+	</div>
+
+	<h3 class="h3_guide">7. 가이드(WSG) 추가 및 수정</h3>
+	<div class="d_desc">
+		- 어떠한 경우라도 가이드가 추가 및 수정이 이루어질 경우 해당 단위에 대해서 <strong>세부적인 내용을 메일로 공유</strong>한다.
+	</div>
+
+	<h3 class="h3_guide">8. 테스트</h3>
+	<div class="d_desc">
+		- 테스트가 필요한 경우 서버에 적용을 해도 무관하나, 가능하면 로컬에서만 진행합니다.
+	</div>
+</div>
+
+</body>
+</html>

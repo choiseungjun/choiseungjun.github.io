@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>내 정보 | 러너블</title>
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/page.css">
+	<script src="/js/jquery-3.6.0.min.js"></script>
+	<script src="/js/ui.js"></script>
+</head>
+
+<body>
+
+<div id="skipnavi">
+	<ul>
+		<li><a href="#container_title">본문바로가기</a></li>
+	</ul>
+</div>
+<div id="wrap">
+	<!-- header -->
+	<header id="header">
+		<div class="header_inner">
+			<h1>마이페이지</h1>
+			<div class="header_left">
+				<a href="javascript:void(0);">
+					<i class="icon_gnb_back"><span class="hide">뒤로가기</span></i>
+				</a>
+			</div>
+			<div class="header_right">
+				<a href="javascript:void(0);">
+					<i class="icon_gnb_option"><span class="hide">설정</span></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<section id="container">
+		<div id="container_title" class="hide" tabindex="-1">본문 시작</div>
+
+		<!-- content -->
+		<div id="content" style="padding-bottom:0;">
+			<div class="mypage_wrap">
+				<div class="profile_wrap">
+					<div class="profile_box">
+						<div class="profile_thumbnail">
+							<a href="javascript:void(0);" class="btn_modify">
+								<span class="thumbnail" style="background-image:url(/images/temp/@sample_profile_thumbnail.png);">
+									<i class="hide">프로필</i>
+								</span>
+								<i class="icon_profile_change" style="display:none;"></i> <!-- 이미지 등록시 hidden -->
+							</a>
+						</div>
+						<div class="name_area">
+							<!--
+								1. SNS 아이콘
+									<i class="icon_profile_apple"></i>
+									<i class="icon_profile_google"></i>
+									<i class="icon_profile_kakao"></i>
+									<i class="icon_profile_naver"></i>
+							-->
+							<strong class="name">김러너</strong><i class="icon_profile_kakao"></i>
+						</div>
+						<a href="javascript:void(0);" class="btn_default_white inline xsmall outline round">
+							<span>프로필 수정</span>
+						</a>
+					</div>
+					<ul class="partcipation_area">
+						<li><em>12회</em> 레이스</li>
+						<li><em>502회</em> 트레이닝</li>
+					</ul>
+				</div>
+				<span class="divide_line"></span>
+				<!-- @ 탭컨텐츠 내부 구조
+						- "노데이터 영역"과 "데이터 목록 영역"이 .tabs_cont_section 로 그룹핑 되어있음.
+							=> .tabs_cont_section(노데이터) + .tabs_cont_section(데이터)
+						- 데이터 목록 영역에 아이템 갯수는 5개까지 노출.
+						- "전체기록 보러가기" 버튼은 무조건 활성화.
+				-->
+				<div class="tabs_wrap uiTabs">
+					<ul class="tabs_menu">
+						<li class="active">
+							<a href="javascript:void(0);" class="btn_tab"><span>인증 기록</span></a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="btn_tab"><span>트레이닝 기록</span></a>
+						</li>
+					</ul>
+					<div class="tabs_cont active">
+						<h2 class="hide">레이스 참여기록</h2>
+
+						<!-- case1. 기록 없을시 -->
+						<div class="tabs_cont_section">
+							<div class="run_record_list">
+								<div class="record_item type_best">
+									<div class="record_badge"><em>최고 기록</em></div>
+									<div class="record_nodata">
+										<i class="icon_no_data"></i>
+										<p class="nodata_msg">레이스 기록이 없네요.</p>
+									</div>
+								</div>
+							</div>
+							<div class="data_wrap">
+								<i class="icon_no_data"></i>
+								<p class="record_msg">참여하신 레이스 기록이 없습니다.<br> 진행 중인 레이스 확인 후 참여해보시겠어요?</p>
+								<a href="javascript:void(0);" class="btn_outline_blue inline small round shadow border_none">
+									<span>진행중인 레이스보기<i class="icon_arrow_half last"></i></span>
+								</a>
+							</div>
+						</div>
+						<!-- //case1. 기록 없을시 -->
+
+						<!-- case2. 기록 있을시 -->
+						<div class="tabs_cont_section">
+							<!-- 레이스 최고기록 -->
+							<div class="run_record_list">
+								<div class="record_item type_best">
+									<div class="record_badge"><em>최고 기록</em></div>
+									<strong class="record_stit ellipsis">2019 JTBC 서울 마라톤</strong>
+									<dl class="record_count">
+										<dt>레이스기록</dt>
+										<dd>00:52:43</dd>
+									</dl>
+								</div>
+								<ul class="dot_list">
+									<li>다른 앱 기록으로 레이스에 참여하거나, 승인 반려된 기록은 최고 기록 정보에 반영되지 않습니다.</li>
+								</ul>
+							</div>
+							<!-- //레이스 최고기록 -->
+							<h3 class="cont_tit">참여 완료 레이스</h3>
+							<div class="run_record_list">
+								<ul>
+									<!-- 대회기록 승인대기중 모듈 -->
+									<li>
+										<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+											<em class="record_category"><span>승인 대기 중</span></em>
+											<strong class="record_tit ellipsis">대회 기록 "승인 대기 중" 모듈</strong>
+											<p class="record_date">2022.01.01 12:00</p>
+											<dl class="record_info">
+												<dt class="hide">러닝 부문</dt>
+												<dd>Full</dd>
+												<dt class="hide">러닝 시간</dt>
+												<dd>00:00:00</dd>
+											</dl>
+										</a>
+									</li>
+									<!-- //대회기록 승인대기중 모듈 -->
+									<!-- 대회기록 승인반려 모듈 -->
+									<li>
+										<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+											<em class="record_category"><span class="reject">승인 반려</span></em>
+											<strong class="record_tit ellipsis">대회 기록 "승인 반려" 모듈</strong>
+											<p class="record_date">2022.01.01 12:00</p>
+											<dl class="record_info">
+												<dt class="hide">러닝 부문</dt>
+												<dd>Full</dd>
+												<dt class="hide">러닝 시간</dt>
+												<dd>00:00:00</dd>
+											</dl>
+										</a>
+									</li>
+									<!-- //대회기록 승인반려 모듈 -->
+									<!-- 대회기록 승인완료 모듈 -->
+									<li>
+										<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+											<strong class="record_tit ellipsis">대회 기록 "승인 완료" 모듈</strong>
+											<p class="record_date">2022.01.01 12:00</p>
+											<dl class="record_info">
+												<dt class="hide">러닝 부문</dt>
+												<dd>Full</dd>
+												<dt class="hide">러닝 시간</dt>
+												<dd>00:00:00</dd>
+											</dl>
+										</a>
+									</li>
+									<!-- //대회기록 승인완료 모듈 -->
+									<!-- 대회기록 승인대기중 모듈(타앱) -->
+									<li>
+										<div class="record_item type_disabled"> <!-- .type_disabled -->
+											<em class="record_category"><span>승인 대기 중</span></em>
+											<strong class="record_tit ellipsis">대회 기록 "승인 대기 중" 모듈(타앱)</strong>
+											<p class="record_date">2022.01.01 12:00</p>
+											<dl class="record_info">
+												<dt class="hide">러닝 부문</dt>
+												<dd>Full</dd>
+											</dl>
+											<div class="record_bottom">
+												<p class="record_warn">다른 앱 기록으로 참여 시, 상세 정보가 제공되지 않습니다.</p>
+											</div>
+										</div>
+									</li>
+									<!-- //대회기록 승인대기중 모듈(타앱) -->
+									<!-- 대회기록 승인반려 모듈(타앱) -->
+									<li>
+										<div class="record_item type_disabled"> <!-- .type_disabled -->
+											<em class="record_category"><span class="reject">승인 반려</span></em>
+											<strong class="record_tit ellipsis">대회 기록 "승인 반려" 모듈(타앱)</strong>
+											<p class="record_date">2022.01.01 12:00</p>
+											<dl class="record_info">
+												<dt class="hide">러닝 부문</dt>
+												<dd>Full</dd>
+											</dl>
+											<div class="record_bottom">
+												<p class="record_warn">다른 앱 기록으로 참여 시, 상세 정보가 제공되지 않습니다.</p>
+											</div>
+										</div>
+									</li>
+									<!-- //대회기록 승인반려 모듈(타앱) -->
+									<!-- 대회기록 승인완료 모듈(타앱) -->
+									<li>
+										<div class="record_item type_disabled"> <!-- .type_disabled -->
+											<strong class="record_tit ellipsis">대회 기록 "승인 완료" 모듈(타앱)</strong>
+											<p class="record_date">2022.01.01 12:00</p>
+											<dl class="record_info">
+												<dt class="hide">러닝 부문</dt>
+												<dd>Full</dd>
+											</dl>
+											<div class="record_bottom">
+												<p class="record_warn">다른 앱 기록으로 참여 시, 상세 정보가 제공되지 않습니다.</p>
+											</div>
+										</div>
+									</li>
+									<!-- //대회기록 승인완료 모듈(타앱) -->
+								</ul>
+								<div class="record_btn_wrap">
+									<a href="javascript:void(0);" class="btn_outline_blue inline small round shadow border_none">
+										<span>전체 기록 보러가기<i class="icon_arrow_half last"></i></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- //case2. 기록 있을시 -->
+					</div>
+					<div class="tabs_cont">
+						<h2 class="hide">트레이닝 참여기록</h2>
+
+						<!-- case1. 기록 없을시 -->
+						<div class="tabs_cont_section">
+							<div class="run_record_list">
+								<div class="record_item type_best">
+									<div class="record_badge"><em>최고 기록</em></div>
+									<div class="select_box type_inline type_white">
+										<div class="select_inner">
+											<p class="select_txt">최근 7일 이내</p>
+											<select name="" id="">
+												<option value="" selected>최근 7일 이내</option>
+												<option value="">최근 1달 이내</option>
+												<option value="">최근 1년 이내</option>
+											</select>
+										</div>
+									</div>
+									<div class="record_nodata">
+										<i class="icon_no_data"></i>
+										<p class="nodata_msg">러닝 기록이 없네요.</p>
+									</div>
+								</div>
+							</div>
+							<div class="data_wrap">
+								<i class="icon_no_data"></i>
+								<p class="record_msg">트래킹 기록이 없습니다.<br>트래커를 켜고 달리시면 기록을 측정해드려요.</p>
+								<a href="javascript:void(0);" class="btn_outline_blue inline small round shadow border_none">
+									<span>트래킹하며 달리기<i class="icon_arrow_half last"></i></span>
+								</a>
+							</div>
+						</div>
+						<!-- //case1. 기록 없을시 -->
+
+						<!-- case2. 기록 있을시 -->
+						<div class="tabs_cont_section">
+							<!-- 트레이닝 최고기록 -->
+							<div class="run_record_list">
+								<div class="record_item type_best">
+									<div class="record_badge"><em>최고 기록</em></div>
+									<div class="select_box type_inline type_white">
+										<div class="select_inner">
+											<p class="select_txt">최근 7일 이내</p>
+											<select name="" id="">
+												<option value="" selected>최근 7일 이내</option>
+												<option value="">최근 1달 이내</option>
+												<option value="">최근 1년 이내</option>
+											</select>
+										</div>
+									</div>
+									<strong class="record_tit ellipsis">1월 1일 수요일 달리기</strong>
+									<p class="record_date">2022.01.01 12:00</p>
+									<dl class="record_info">
+										<dt class="hide">러닝 거리(부문)</dt>
+										<dd>00.00km</dd>
+										<dt class="hide">러닝 시간</dt>
+										<dd>00:00:00</dd>
+										<dt class="hide">평균 레이스</dt>
+										<dd>00’00”</dd>
+									</dl>
+								</div>
+							</div>
+							<!-- //트레이닝 최고기록 -->
+							<!-- @기획의도
+								1. 제출할 것이 0개 일때 : .num 영역 비노출
+								2. 제출할 것이 1개 이상 일때 : .num 영역 노출
+							-->
+							<h3 class="cont_tit">레이스 기록을 제출해주세요! <span class="num">(<em>1</em>개)</span></h3>
+							<ul class="text_link_list">
+								<li>
+									<a href="javascript:void(0);" class="btn_text_link">
+										<span>러너블 앱 기록 제출하기</span>
+										<i class="icon_arrow_link"></i>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="btn_text_link">
+										<span>이미지로 기록 제출하기</span>
+										<i class="icon_arrow_link"></i>
+									</a>
+								</li>
+							</ul>
+							<h3 class="cont_tit">기록 리스트</h3>
+							<div class="run_record_list">
+								<ul>
+									<!-- 일반 트레이닝 기록 모듈 -->
+									<li>
+										<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+											<strong class="record_tit ellipsis">일반 트레이닝 기록 모듈</strong>
+											<p class="record_date">2022.01.01 12:00</p>
+											<dl class="record_info">
+												<dt class="hide">러닝 기록</dt>
+												<dd>00.00km</dd>
+												<dt class="hide">러닝 시간</dt>
+												<dd>00:00:00</dd>
+												<dt class="hide">평균 레이스</dt>
+												<dd>00’00”</dd>
+											</dl>
+										</a>
+									</li>
+									<!-- //일반 트레이닝 기록 모듈 -->
+									<!-- 대회 트레이닝 기록 모듈 -->
+									<li>
+										<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+											<em class="record_category">
+												<span>2021 ELLE RUN</span>
+											</em>
+											<strong class="record_tit ellipsis">대회 트레이닝 기록 모듈</strong>
+											<p class="record_date">2022.01.01 12:00</p>
+											<dl class="record_info">
+												<dt class="hide">러닝 부문</dt>
+												<dd>20K</dd>
+												<dt class="hide">러닝 시간</dt>
+												<dd>00:00:00</dd>
+												<dt class="hide">평균 레이스</dt>
+												<dd>00’00”</dd>
+											</dl>
+										</a>
+									</li>
+									<!-- //대회 트레이닝 기록 모듈 -->
+									<!-- 대회 트레이닝 기록 제출 모듈 -->
+									<li>
+										<a href="javascript:void(0);" class="record_item" title="상세기록보기">
+											<em class="record_category">
+												<span>2021 ELLE RUN</span>
+												<span>기록제출</span>
+											</em>
+											<strong class="record_tit ellipsis">대회 트레이닝 기록 제출 모듈</strong>
+											<p class="record_date">2022.01.01 12:00</p>
+											<dl class="record_info">
+												<dt class="hide">러닝 부문</dt>
+												<dd>Full</dd>
+												<dt class="hide">러닝 기록</dt>
+												<dd>00:00:00</dd>
+												<dt class="hide">평균 레이스</dt>
+												<dd>00’00”</dd>
+											</dl>
+										</a>
+									</li>
+									<!-- //대회 트레이닝 기록 제출 모듈 -->
+								</ul>
+								<div class="record_btn_wrap">
+									<a href="javascript:void(0);" class="btn_outline_blue inline small round shadow border_none">
+										<span>전체 기록 보러가기<i class="icon_arrow_half last"></i></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- //case2. 기록 있을시 -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //content -->
+	</section>
+</div>
+
+</body>
+</html>
