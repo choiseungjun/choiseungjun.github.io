@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tooltip</title>
+<link rel="stylesheet" type="text/css" href="./css/common.css">
+<style type="text/css">
+.container {position: relative; margin: 0px;}
+.tip_style {max-width:300px; background-color:rgba(255,255,255,1); box-shadow: 0px 0px 2px 2px lightgray; border-radius: 4px; padding: 8px 10px;}
+
+
+</style>
+<script type="text/javascript" src="./js/libs/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="./js/vcui.js"></script>
+</head>
+<body>
+<h1>Tooltip</h1>
+<div class="container">
+	<input type="text" name="" data-tooltip="툴팁 테스트">
+	<input type="text" name="" data-tooltip="We ask for your age only for statistical purposes.">
+</div>
+
+<div class="code_sec">
+<xmp>
+	<input type="text" name="" data-tooltip="툴팁 테스트">
+	<input type="text" name="" data-tooltip="We ask for your age only for statistical purposes.">
+</xmp>
+</div>
+
+<div class="code_sec">
+	<p class="t_green">** 자바스크립트 적용부분 **</p>
+<xmp>
+	<script type='text/javascript'>
+	$(function() {
+		vcui.importJs([
+			"js/modules/tooltip"
+		   ], function () {
+				$('.container').vcTooltip({"tipClass":"tip_style"}); // tipClass 추가로 스타일을 적용.
+		   });
+
+	});
+</xmp>
+</div>
+
+<script type='text/javascript'>
+$(function() {
+	vcui.importJs([
+		"js/modules/tooltip"
+	   ], function () {
+			$('.container').vcTooltip({"tipClass":"tip_style"});
+	   });
+
+});
+
+
+//-->
+</script>
+
+</body>
+</html>

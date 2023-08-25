@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>블릿리스트</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+	<link rel="stylesheet" type="text/css" href="../../css/library.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li class="on"><a href="../library/layout_lnb.html">HTML DOM Library</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li ><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li class="on"><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li class="depth"><a href="">레이아웃</a>
+						<ul>
+							<li><a href="../library/layout_lnb.html">좌측</a></li>
+							<li><a href="../library/layout.html">비좌측</a></li>
+							<li><a href="../library/layout_winpop.html">윈도우팝업</a></li>
+							<li><a href="../library/layout_laypop.html">레이어팝업</a></li>
+						</ul>
+					</li>
+					<li><a href="../library/acordion.html">아코디언</a></li>
+					<li><a href="../library/thumbnail.html">썸네일</a></li>
+					<li><a href="../library/video.html">비디오&amp;플레이어</a></li>
+					<li><a href="../library/button.html">버튼</a></li>
+					<li><a href="../library/calender.html">캘린더</a></li>
+					<li class="depth"><a href="#">게시판</a>
+						<ul>
+							<li><a href="../library/board01.html">기본형</a></li>
+							<li><a href="../library/board02.html">입력형</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">테이블</a>
+						<ul>
+							<li><a href="../library/table05.html">세로형</a></li>
+							<li><a href="../library/table06.html">가로형</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">폼</a>
+						<ul>
+							<li><a href="../library/selectbox.html">셀렉트박스(디자인)</a></li>
+							<li><a href="../library/checkbox.html">Check/Radio(디자인)</a></li>
+							<li><a href="../library/login.html">로그인</a></li>
+							<li><a href="../library/join.html">회원가입</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">탭</a>
+						<ul>
+							<li><a href="../library/percent_tab.html">100%탭</a></li>
+							<li><a href="../library/fixed_tab.html">고정탭</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">페이징</a>
+						<ul>
+							<li><a href="../library/paging.html">기본형</a></li>
+							<li><a href="../library/paging_input.html">입력형</a></li>
+						</ul>
+					</li>
+					<li class="on"><a href="../library/bullet.html">블릿리스트</a></li>
+					<li><a href="../library/banner_01.html">슬라이드배너</a></li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<!-- Contents -->
+			<div id="contents">
+				<h3 class="tit_2dep">블릿리스트</h3>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 블릿 기호는 background 로 작업하여 padding으로 들여쓰기 하는 것으로 기본으로 한다.</p>
+						</li>
+						<li>
+							<p>- 디바이스마다 text-indent 의 간격을 다르게 랜더링 하는 문제가 있어서 text-indent 로 들여쓰는 방법은 사용하지 않는다.</p>
+						</li>
+						<li>
+							<p>- 단, 약관과 같은 예외적인 케이스에서만 text-indent 로 들여쓰기도 가능하다.</p>
+						</li>
+					</ul>
+				</div>
+
+				<h4 class="tit_3dep">예제1</h4>
+				<h5 class="tit_4dep">[VIEW]</h5>
+				<div class="library_box">
+					<ul class="bul_list01_bk">
+						<li>예제 1 테스트입니다. 예제 1 테스트입니다.<br>예제 1 테스트입니다. 예제 1 테스트입니다.</li>
+					</ul>
+
+					<ul class="bul_list01_rd">
+						<li>예제 1 테스트입니다. 예제 1 테스트입니다.<br>예제 1 테스트입니다. 예제 1 테스트입니다.</li>
+					</ul>
+
+					<ul class="bul_list02_bk">
+						<li><span class="hide">주의사항 : </span>예제 1 테스트입니다. 예제 1 테스트입니다.(알림 문구 테스트)<br>예제 1 테스트입니다. 예제 1
+							테스트입니다.</li>
+					</ul>
+
+					<ul class="bul_list02_rd">
+						<li><span class="hide">주의사항 : </span>예제 1 테스트입니다. 예제 1 테스트입니다.(알림 문구 테스트)<br>예제 1 테스트입니다. 예제 1
+							테스트입니다.</li>
+					</ul>
+
+					<ul class="bul_list03_bk">
+						<li>예제 1 테스트입니다. 예제 1 테스트입니다.<br>예제 1 테스트입니다. 예제 1 테스트입니다.</li>
+					</ul>
+
+					<ul class="bul_list03_rd">
+						<li>예제 1 테스트입니다. 예제 1 테스트입니다.<br>예제 1 테스트입니다. 예제 1 테스트입니다.</li>
+					</ul>
+				</div>
+
+				<h5 class="tit_4dep">[CODE]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp>[예제 1]
+							(CSS)
+							.bul_list01_bk li{padding:0 0 4px 12px; background:url('../images/sp_bullet.png') no-repeat
+							-120px 6px; line-height:24px;}
+
+							(Html)
+							<ul class="bul_list01_bk">
+								<li>예제 1 테스트입니다. 예제 1 테스트입니다.</li>
+							</ul>
+						</xmp>
+					</div>
+				</div>
+
+				<h4 class="tit_3dep">예제2</h4>
+				<h5 class="tit_4dep">[VIEW]</h5>
+				<div class="library_box">
+					<ul>
+						<li class="bul_list01_bk">예제 2 테스트입니다. 예제 2 테스트입니다.<br>예제 2 테스트입니다. 예제 2 테스트입니다.</li>
+						<li class="bul_list01_rd">예제 2 테스트입니다. 예제 2 테스트입니다.<br>예제 2 테스트입니다. 예제 2 테스트입니다.</li>
+						<li class="bul_list02_bk"><span class="hide">주의사항 : </span>예제 2 테스트입니다. 예제 2 테스트입니다.(알림 문구
+							테스트)<br>예제 2 테스트입니다. 예제 2 테스트입니다.</li>
+						<li class="bul_list02_rd"><span class="hide">주의사항 : </span>예제 2 테스트입니다. 예제 2 테스트입니다.(알림 문구
+							테스트)<br>예제 2 테스트입니다. 예제 2 테스트입니다.</li>
+						<li class="bul_list03_bk">예제 2 테스트입니다. 예제 2 테스트입니다.<br>예제 2 테스트입니다. 예제 2 테스트입니다.</li>
+						<li class="bul_list03_rd">예제 2 테스트입니다. 예제 2 테스트입니다.<br>예제 2 테스트입니다. 예제 2 테스트입니다.</li>
+					</ul>
+				</div>
+
+				<h5 class="tit_4dep">[CODE]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp>[예제 2]
+							(CSS)
+							li.bul_list01_bk{padding:0 0 4px 12px; background:url('../images/sp_bullet.png') no-repeat
+							-120px 6px; line-height:24px;}
+
+							(Html)
+							<ul>
+								<li class="bul_list03_bk">예제 2 테스트입니다. 예제 2 테스트입니다.</li>
+								<li class="bul_list03_rd">예제 2 테스트입니다. 예제 2 테스트입니다.</li>
+							</ul>
+						</xmp>
+					</div>
+				</div>
+
+				<h4 class="tit_3dep">예제3</h4>
+				<h5 class="tit_4dep">[VIEW]</h5>
+				<div class="library_box">
+					<p class="bul_list01_bk">예제 3 테스트입니다. 예제 3 테스트입니다.<br>예제 3 테스트입니다. 예제 3 테스트입니다.</p>
+					<p class="bul_list01_rd">예제 3 테스트입니다. 예제 3 테스트입니다.<br>예제 3 테스트입니다. 예제 3 테스트입니다.</p>
+					<p class="bul_list02_bk"><span class="hide">주의사항 : </span>예제 3 테스트입니다. 예제 3 테스트입니다.(알림 문구 테스트)<br>예제
+						3 테스트입니다. 예제 3 테스트입니다.</p>
+					<p class="bul_list02_rd"><span class="hide">주의사항 : </span>예제 3 테스트입니다. 예제 3 테스트입니다.(알림 문구 테스트)<br>예제
+						3 테스트입니다. 예제 3 테스트입니다.</p>
+					<p class="bul_list03_bk">예제 3 테스트입니다. 예제 3 테스트입니다.<br>예제 3 테스트입니다. 예제 3 테스트입니다.</p>
+					<p class="bul_list03_rd">예제 3 테스트입니다. 예제 3 테스트입니다.<br>예제 3 테스트입니다. 예제 3 테스트입니다.</p>
+				</div>
+
+				<h5 class="tit_4dep">[CODE]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp>[예제 3]
+							(CSS)
+							p.bul_list01_bk, div.bul_list01_bk{padding:0 0 4px 12px;
+							background:url('../images/sp_bullet.png') no-repeat -120px 6px; line-height:24px;}
+
+							(Html)
+							<p class="bul_list01_bk">예제 3 테스트입니다. 예제 3 테스트입니다.</p>
+							<p class="bul_list02_rd"><span class="hide">주의사항 : </span>예제 3 테스트입니다. 예제 3 테스트입니다.(알림 문구
+								테스트)</p>
+						</xmp>
+					</div>
+				</div>
+
+				<h4 class="tit_3dep">약관과 같은 예외 case</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 이 케이스에서만 예외로 text-indent 로 들여쓰기 가능하며 그 외에서는 사용하지 않는다.</p>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">[VIEW]</h5>
+				<div class="library_box">
+					<ul class="bul_list_etc">
+						<li>- 테스트입니다. 테스트입니다.<br>테스트입니다. 테스트입니다.</li>
+					</ul>
+				</div>
+
+				<h5 class="tit_4dep">[CODE]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp>[text-indent 사용 예제]
+							<ul class="bul_list_etc">
+								<li>- 테스트입니다. 테스트입니다.</li>
+							</ul>
+						</xmp>
+					</div>
+				</div>
+
+				<h4 class="tit_3dep">[Tip] : 이미지 스프라이트 시 블릿 기호 배치 추천 방법</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 아래와 같이 블릿 기호를 배치하면 블릿 기호를 감싸는 span 이나 CSS에서 :before와 :after를 사용하지 않고도<br>단독 블릿 기호 이미지
+								이용해 표현했을 때처럼 문장의 열과 행 수가 늘어날 경우를 고려하지 않아도 된다.</p>
+							<div class="exmp pre"><img src="../../images/library/sp_bullet.png" alt=""></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //Contents -->
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

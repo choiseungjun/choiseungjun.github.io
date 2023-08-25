@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <circle id="Oval" fill="#202020" cx="45" cy="45" r="45"></circle>
+            <g id="txt" transform="translate(19.454545, 27.579162)" fill="#FFFFFF">
+                <text id="TOP" font-family="Avenir-Black, Avenir" font-size="20" font-weight="700" letter-spacing="-1.25">
+                    <tspan x="7.62863636" y="20.4208376">TOP</tspan>
+                </text>
+                <rect id="Rectangle" fill-rule="nonzero" x="1" y="29.6935649" width="51.1363636" height="4.09090909"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

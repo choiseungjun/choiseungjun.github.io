@@ -1,0 +1,19 @@
+{
+    "responsestatus":0,
+    "result":[
+        {"keyword":"AppleScript2","count":4978,"type":1,"linkname":"","linkurl":""},
+        {"keyword":"Asp2","count":1716,"type":1,"linkname":"","linkurl":""},
+        {"keyword":"BASIC2","count":1075,"type":1,"linkname":"","linkurl":""},
+        {"keyword":"C2","count":283,"type":1,"linkname":"","linkurl":""},
+        {"keyword":"C++2","count":1,"type":1,"linkname":"","linkurl":""},
+        {"keyword":"Clojure2","count":1,"type":1,"linkname":"","linkurl":""},
+        {"keyword":"COBOL2","count":1,"type":1,"linkname":"","linkurl":""},
+        {"keyword":"ColdFusion2","count":1,"type":1,"linkname":"","linkurl":""},
+        {"keyword":"Erlang2","count":1,"type":1,"linkname":"","linkurl":""},
+        {"keyword":"Fortran2","count":1,"type":1,"linkname":"","linkurl":""},
+        {"keyword":"Groovy2","count":1,"type":1,"linkname":"","linkurl":""},
+        {"keyword":"Haskell2","count":1,"type":1,"linkname":"","linkurl":""},
+        {"keyword":"Java2","count":1,"type":1,"linkname":"","linkurl":""}
+
+    ]
+}

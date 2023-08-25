@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Slider</title>
+<link rel="stylesheet" type="text/css" href="./css/common.css">
+<link rel="stylesheet" type="text/css" href="./assets/styles/component.css">
+
+<style type="text/css">
+.container { position: relative; margin: 0px;}
+.ui_output {display: block;	font-size: 30px;margin: 10px;}
+.ui_update {font-size: 16px;font-weight: bold;	width: 70px;height: 30px;margin: 10px;}
+
+</style>
+<script type="text/javascript" src="./js/libs/jquery-1.11.2.min.js"></script>
+
+<script>
+	var vcuiConfigs = {
+		importBasePath: './assets/scripts',
+	};
+</script>
+<script src="./assets/scripts/vcui.js"></script>
+
+</head>
+<body>
+
+<h1>RangeSlider</h1>
+
+<div class="container">
+	<div class="ui_slider" data-input="50" data-range="0,100"></div>
+	<!-- start : output code -->
+	<div class="code_sec">
+	<xmp>
+	<div class="ui_slider" data-input="50" data-range="0,100"></div>
+	</xmp>
+	</div>
+	<!-- end : output code -->
+
+	<div class="ui_slider" data-input="50" data-range="0,100" 
+    data-values='[{"value":"0","title":"0만원"},{"value":"25","title":"25만원"},{"value":"50","title":"50만원"},{"value":"75","title":"75만원"},{"value":"100","title":"100만원"}]'>    
+    </div>
+
+	<!-- start : output code -->
+	<div class="code_sec">
+	<xmp>
+	<div class="ui_slider" data-input="50" data-range="0,100" 
+	data-values='[{"value":"0","title":"0만원"},{"value":"25","title":"25만원"},{"value":"50","title":"50만원"},{"value":"75","title":"75만원"},{"value":"100","title":"100만원"}]'>    
+	</div>
+	</xmp>
+	</div>
+	<!-- end : output code -->
+
+	<div class="ui_slider" data-input="25,100" data-range="0,100" 
+    data-values='[{"value":"0","title":"0만원"},{"value":"25","title":"25만원"},{"value":"50","title":"50만원"},{"value":"75","title":"75만원"},{"value":"100","title":"100만원"}]'> 
+	</div>
+	
+	<!-- start : output code -->
+	<div class="code_sec">
+	<xmp>
+	<div class="ui_slider" data-input="25,100" data-range="0,100" 
+	data-values='[{"value":"0","title":"0만원"},{"value":"25","title":"25만원"},{"value":"50","title":"50만원"},{"value":"75","title":"75만원"},{"value":"100","title":"100만원"}]'> 
+	</div>
+	</xmp>
+	</div>
+	<!-- end : output code -->
+
+
+	<div class="ui_slider" data-input="#startInput,#endInput" data-range="0,100" 
+    data-values='[{"value":"0","title":"0만원"},{"value":"25","title":"25만원"},{"value":"50","title":"50만원"},{"value":"75","title":"75만원"},{"value":"100","title":"100만원"}]'>    
+    <input type="hidden" id="startInput" value="0">
+    <input type="hidden" id="endInput" value="60">
+    </div>
+
+	<!-- start : output code -->
+	<div class="code_sec">
+	<xmp>
+	<div class="ui_slider" data-input="#startInput,#endInput" data-range="0,100" 
+	data-values='[{"value":"0","title":"0만원"},{"value":"25","title":"25만원"},{"value":"50","title":"50만원"},{"value":"75","title":"75만원"},{"value":"100","title":"100만원"}]'>    
+	<input type="hidden" id="startInput" value="0">
+	<input type="hidden" id="endInput" value="60">
+	</div>
+	</xmp>
+	</div>
+	<!-- end : output code -->
+</div>
+
+
+<div class="code_sec">
+	<p class="t_green">** 자바스크립트 적용부분 **</p>
+<xmp>
+	<script type='text/javascript'>
+	$(function() {
+		vcui.require(['ui/rangeSlider'], function () {
+			$('.ui_slider').vcRangeSlider().on('rangeSliderchanged', function(e, data){           
+			});
+		});
+	});
+	</script>
+</xmp>
+</div>
+
+
+<script type='text/javascript'>
+$(function() {
+	vcui.require(['ui/rangeSlider'], function () {
+        $('.ui_slider').vcRangeSlider().on('rangeSliderchanged', function(e, data){           
+        });
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>Choiseungjun Portpolio</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li class="on"><a href="../framework/intro.html">Intro</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li ><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li class="on"><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li><a href="../framework/intro.html">Intro</a></li>
+					<li class="depth"><a href="../framework/intro.html">개요</a>
+						<ul>
+							<li><a href="general.html#general01">Vue.js</a></li>
+							<li><a href="general.html#general02">Nuxt.js</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="../framework/setting.html">환경설정 가이드</a>
+						<ul>
+							<li><a href="setting.html#setting01">Node.js 설치하기</a></li>
+							<li><a href="setting.html#setting02">Vue.js 설치하기</a></li>
+						</ul>
+					</li>
+					<li class="on depth"><a href="../framework/project.html">프로젝트 생성</a>
+						<ul>
+							<li><a href="project.html#project01">Nuxt.js 이용 방법</a></li>
+							<li><a href="project.html#project02">Vue Cli 이용 방법</a></li>
+							<li><a href="project.html#project03">Reference</a></li>
+						</ul>
+					</li>
+					<li><a href="../framework/etc.html">기타</a></li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<div id="contents">
+				<h3 class="tit_2dep">프로젝트 생성</h3>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 프로젝트 생성은 크게 SPA(Single Page Application)웹, SSR(Server Side Rendering)웹 구축을 위한 생성 2가지 방법이 있습니다.<br>물론 SSR웹 구축을 위해서 아래에 명시된 Nuxt.js를 이용하지 않고도 충분히 SSR웹 구축은 가능합니다. 다만, Nuxt.js가 가지고 있는 몇 가지 장점때문에 Vue.js 프로젝트 생성은 Nuxt.js를 이용합니다.</p>
+						</li>
+					</ul>
+				</div>
+				
+				<h4 class="tit_3dep" id="project01">Nuxt.js를 이용한 프로젝트 생성</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 후술 할 Vue CLI를 이용한 프로젝트 생성과는 달리 중대형 프로젝트 구축 및 SSR웹 개발을 위한 프로젝트에 용이합니다.<br>그 외 SEO 등의 장점에 따라 특수한 경우를 제외하고 모든 프로젝트는 Nuxt.js를 이용하여 프로젝트를 생성합니다. <span class="exmp">또한, Nuxt.js는 기본적으로 Vue.js 2.x가 포함이 되어 있기에 따로 Vue.js를 따로 설치를 하지 않아도 됩니다.</span></p>
+						</li>
+					</ul>
+					<h5 class="tit_4dep">기본 프로젝트 생성</h5>
+					<ul>
+						<li>
+							<p>- 생성 시 일부 옵션에 대해서는 복수 선택을 할 수 있습니다. 복수 선택은 스페이스바를 통해 선택/취소를 할 수 있습니다.</p>
+						</li>
+						<li>
+							<p>
+								<img src="../../images/framework/img_vue04.png" alt="" style="margin:0 auto;">
+							</p>
+						</li>
+						<li>
+							<p>1. npm init nuxt-app 프로젝트 이름(폴더명)</p>
+							<img src="../../images/framework/img_vue05.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>2. Project name : 프로젝트 명을 기입합니다. 기입한 명은 브라우저 title가 되며, 기입하지 않을 경우 1번 항목의 프로젝트 이름(폴더명)으로 생성됩니다.</p>
+							<img src="../../images/framework/img_vue06.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>3. Programming language 선택 : 프로젝트에 사용할 Script언어를 선택합니다. 필요에 따라 TypeScript를 선택합니다.</p>
+							<img src="../../images/framework/img_vue07.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>4. Package manager : 패키지 관리자 선택으로 npm을 선택합니다.</p>
+							<img src="../../images/framework/img_vue08.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>5. UI framework : 사용할 UI프레임워크를 선택하며, 기본은 None를 선택합니다.</p>
+							<img src="../../images/framework/img_vue09.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>6. Nuxt.js modules : Nuxt.js 모듈 사용 여부 및 사용할 모듈 선택을 할 수 있으며, Axios는 필수로 선택합니다.</p>
+							<img src="../../images/framework/img_vue10.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>7. Linting tools : Lint 툴(tool) 사용 여부 및 사용할 툴 선택을 할 수 있으며, 기본 ESLint를 선택합니다.</p>
+							<img src="../../images/framework/img_vue11.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>8. Testing framework : 테스트 프레임워크 사용 여부 및 프레임워크를 선택할 수 있습니다. 프로젝트 상황에 따라 선택하지만 기본은 None를 선택합니다.</p>
+							<img src="../../images/framework/img_vue12.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>9. Rendering mode : SPA, SSR(SSG)을 선택할 수 있습니다. SSR선택을 기본을 합니다.</p>
+							<img src="../../images/framework/img_vue13.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>10. Deployment target : 배포대상을 선택을 합니다. Server (Node.js hosting)를 선택합니다.</p>
+							<img src="../../images/framework/img_vue14.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>11. Development tools : 개발도구를 선택합니다. 추천하고 typescript를 사용하지 않는다면 jsconfig.json을 선택합니다.</p>
+							<img src="../../images/framework/img_vue15.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>12. Continuous integration : CI(Continuous Integration) 사용 여부와 사용할 경우 CI서비스 선택을 할 수 있으며, None를 선택합니다.</p>
+							<img src="../../images/framework/img_vue16.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>13. What is your GitHub username? : 깃허브 정보를 입력합니다.</p>
+						</li>
+						<li>
+							<p>14. Version control system : 버전 컨트롤 시스템 사용여부 및 사용할 서비스를 선택합니다. <br>git를 사용한다면 선택 후 다음으로 넘어갑니다. 기본은 None를 선택합니다.</p>
+							<img src="../../images/framework/img_vue17.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>15. 설치 완료</p>
+							<img src="../../images/framework/img_vue18.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>16. 서버 실행</p>
+							<img src="../../images/framework/img_vue19.png" alt="" style="margin:0 auto;">
+						</li>
+					</ul>
+				</div>
+
+				<h4 class="tit_3dep" id="project02">Vue Cli를 이용한 프로젝트 생성</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- SPA 및 소규모의 프로젝트에 용이하며, 최초 단계인 프리셋(preset) 선택 단계에서 기본(Default)를 선택하여 생성할 수 있지만,<br> Vue Router 및 상태 관리 라이브러리인 Vuex를 프로젝트 생성 시에 설치를 할 수 있으니 프리셋(preset) 선택은 수동으로 생성합니다.</p>
+						</li>
+					</ul>
+					<h5 class="tit_4dep">기본 프로젝트 생성</h5>
+					<ul>
+						<li>
+							<p>1. vue create 프로젝트명(폴더명)<br>
+								-	프로젝트를 진행할 폴더는 따로 생성할 필요는 없으며, 터미널을 통해 명령어를 입력하기에 생성할 프로젝트명(폴더명) 상위 폴더에서 명령어를 입력합니다.
+							</p>
+						</li>
+						<li>
+							<p>2. 프리셋 선택 : Vue Route 및 Vuex을 기본으로 설치를 위해서는 Manually select features 선택<br>
+								-	방향키로 프리셋 선택 후 엔터
+							</p>
+							<img src="../../images/framework/img_vue20.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>3. 사용할 기능 선택 : 기본 선택된 값 외에 Router, Vuex를 선택하며 프로젝트에 따라 필요한 기능을 선택합니다.</p>
+							<img src="../../images/framework/img_vue21.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>4. 사용할 Vue.js 버전 선택 : 2.x를 사용하되 프로젝트에 따라 3.x를 선택합니다.</p>
+							<img src="../../images/framework/img_vue22.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>5. Vue Router Mode 선택 : 기본 history모드이며, 생성 후에 hash모드로 변경 가능합니다.</p>
+							<img src="../../images/framework/img_vue23.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>6. 코딩 포맷 설정 : 코드 작성 규칙 및 품질을 높일 수 있는 도구이며, 기본인 ESLint with error prevention only를 선택 합니다.</p>
+							<img src="../../images/framework/img_vue24.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>7. Lint 추가 기능 선택 : Lint on save를 선택 합니다.</p>
+							<img src="../../images/framework/img_vue25.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>8. Babel, ESLint 등의 설정 저장 파일 선택 : In package.json을 선택 합니다.</p>
+							<img src="../../images/framework/img_vue26.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>9. 프로젝트 사전 설정 저장 여부 : 앞서 설정했던 프로젝트 생성을 템플릿 형태로 저장여부를 선택할 수 있으며, 기본값인 N으로 진행합니다.</p>
+							<img src="../../images/framework/img_vue27.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>10. 생성 완료 : 생성 완료 후 폴더 진입 후 서버 실행</p>
+							<img src="../../images/framework/img_vue28.png" alt="" style="margin:0 auto;">
+						</li>
+						<li>
+							<p>11. 생성 완료 및 서버 실행 : 기본적으로 필요한 부분은 자동으로 설치를 해주며, 생성 완료 후 터미널 창에서 설치 완료 메시지와 함께 서버 실행 가이드 문구 확인이 가능합니다.</p>
+							<div class="exmp pre">
+								-	cd 프로젝트명(폴더명)<br>
+								-	npm run serve
+							</div>
+						</li>
+						<li>
+							<p>12. 완료</p>
+							<p>서버 실행(npm run serve) 후 <a href="http://localhost:8080/" class="exmp" target="_blank">http://localhost:8080/</a>를 입력하면 아래의 기본 화면을 확인 할 수 있습니다. (이때 포트번호(8080)이 기본입니다.)</p>
+							<img src="../../images/framework/img_vue29.png" alt="" style="margin:0 auto;">
+						</li>
+					</ul>
+					<h5 class="tit_4dep">https통신을 위한 Axios 설치</h5>
+					<ul>
+						<li>
+							<p>
+								- Axios는 브라우저, Node.js를 위한 Promise API를 활용하는 HTTP 비동기 통신 라이브러리 입니다.<br>
+								생성한 프로젝트(폴더)에서 터미널 실행 후 아래의 명령어를 입력하여 설치하며, 설치 후 package.json파일의 “dependencies”에 추가가 됩니다.
+							</p>
+						</li>
+					</ul>
+				</div>
+
+				<h4 class="tit_3dep" id="project03">Reference</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 삭제는 npm의 삭제 명령어를 통해 삭제를 할 수 있습니다.<br>아래 명령어 중 1번째 명령어 입력 후 에러(checkPermissions) 후 삭제가 되지 않는 경우가 있는데 이는 대부분 권한 문제이니 아래의 명령어 중 2번째 명령어를 입력 후 계정(컴퓨터) 비밀번호를 입력하면 삭제가 됩니다.</p>
+						</li>
+						<li>
+							<p>1. Node.js : <a href="https://nodejs.org/ko/" class="exmp" target="_blank">https://nodejs.org/ko/</a></p>
+						</li>
+						<li>
+							<p>2. Npm : <a href="https://www.npmjs.com/" class="exmp" target="_blank">https://www.npmjs.com/</a></p>
+						</li>
+						<li>
+							<p>3. Vue.js 공식<br>
+								- A. 2.x : <a href="https://vuejs.org/" class="exmp" target="_blank">https://vuejs.org/</a><br>
+								- B. 3.x : <a href="https://v3.vuejs.org/" class="exmp" target="_blank">https://v3.vuejs.org/</a>
+							</p>
+						</li>
+						<li>
+							<p>4. Vue Cli : <a href="https://cli.vuejs.org/" class="exmp" target="_blank">https://cli.vuejs.org/</a></p>
+						</li>
+						<li>
+							<p>5. Vuex :<a href="https://vuex.vuejs.org/" class="exmp" target="_blank">https://vuex.vuejs.org/</a></p>
+						</li>
+						<li>
+							<p>6. Vue Router :<a href="https://router.vuejs.org/" class="exmp" target="_blank">https://router.vuejs.org/</a></p>
+						</li>
+						<li>
+							<p>7. xios :<a href="https://axios-http.com/" class="exmp" target="_blank">https://axios-http.com/</a></p>
+						</li>
+						<li>
+							<p>8. Nuxt.js :<a href="https://nuxtjs.org/" class="exmp" target="_blank">https://nuxtjs.org/</a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

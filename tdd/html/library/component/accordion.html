@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="title" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="og:image" property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+
+    <title>Accordion</title>
+    <link rel="shortcut icon" href="../../../images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/content.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/library.css">
+
+    <script type="text/javascript" src="../../../js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/common.js"></script>
+    <script>
+        var vcuiConfigs = {
+            importBasePath: './assets/scripts',
+        };
+    </script>
+    <script src="./assets/scripts/vcui.js"></script>
+
+    <!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <!-- Skip Navigation -->
+    <div id="skipnavi">
+        <p><a href="#contents">skip navigation</a></p>
+    </div>
+    <!-- //Skip Navigation -->
+
+    <div id="wrap">
+        <!-- Header -->
+        <header id="header">
+            <div class="hd_wrap">
+                <h1 class="logo"><a href="/index.html"></a></h1>
+
+                <nav class="nav">
+                    <ul>
+                        <li><a href="../../library/layout_lnb.html">HTML DOM Library</a></li>
+                        <li class="on"><a href="../library/component/accordion.html">javascript Component</a></li>
+                    </ul>
+                </nav>
+
+                <button type="button" class="btn_nav_all">
+                    <span class="bar top"></span>
+                    <span class="bar bottom"></span>
+                </button>
+
+                <div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li ><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li class="on"><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+            </div>
+        </header>
+        <!-- //Header -->
+
+        <section id="container">
+            <!-- Sidebar -->
+            <div id="sidebar">
+                <button type="button" class="btn_sidebar"><span>MENU</span></button>
+                <ul>
+                    <li class="on"><a href="../component/accordion.html">Accordion</a></li>
+                    <li><a href="../component/autocomplete.html">AutoComplete</a></li>
+                    <li><a href="../component/calendar.html">Caledar</a></li>
+                    <li><a href="../component/selectbox.html">Selectbox</a></li>
+                    <li><a href="../component/rangeSlider.html">RangeSlider</a></li>
+                    <li><a href="../component/tab.html">Tab</a></li>
+                </ul>
+
+                <div class="other_conts">
+                    <a href="/tdd/download/working_package.zip">WORKING PACKAGE</a>
+                </div>
+            </div>
+            <div class="sidebar_dim"></div>
+            <!-- //Sidebar -->
+
+            <!-- Contents -->
+            <div id="contents">
+                <h3 class="tit_2dep">Accordion</h3>
+                <h5 class="tit_4dep">[VIEW]</h5>
+                <div class="library_box">
+                    <div class="ui_accordion" data-accord-group="info" data-open-index="1" data-single-open="true">
+                        <ul>
+                            <li>
+                                <div class="head">
+                                    <a href="#" class="ui_accord_toggle" data-open-text="내용 더 보기"
+                                        data-close-text="내용 닫기">
+                                        <span class="tit">아코디언.01</span>
+                                        <span class="hide ui_accord_text">내용 더 보기</span>
+                                    </a>
+                                </div>
+                                <div class="ui_accord_content" style="display:none;">
+                                    <p><strong>아코디언 내용.01</strong></p>
+                                    <div class="list_box_nt">
+                                        <ul class="txt_list">
+                                            <li><span class="txt_bar">아코디언 내용.01</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="head">
+                                    <a href="#" class="ui_accord_toggle" data-open-text="내용 더 보기"
+                                        data-close-text="내용 닫기">
+                                        <span class="tit">아코디언.02</span>
+                                        <span class="hide ui_accord_text">내용 더 보기</span>
+                                    </a>
+                                </div>
+                                <div class="ui_accord_content" style="display:none;">
+                                    <p><strong>아코디언 내용.02</strong></p>
+                                    <div class="list_box_nt solo">
+                                        <ul class="txt_list">
+                                            <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                            <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                            <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                            <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                            <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                            <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                            <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                            <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                            <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                            <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                            <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                            <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h5 class="tit_4dep">[CODE]</h5>
+                <div class="conts_box">
+                    <div class="exmp pre">
+                        <xmp>
+                            <div class="ui_accordion" data-accord-group="info" data-open-index="1"
+                                data-single-open="true">
+                                <ul>
+                                    <li>
+                                        <div class="head">
+                                            <a href="#" class="ui_accord_toggle" data-open-text="내용 더 보기"
+                                                data-close-text="내용 닫기">
+                                                <span class="tit">아코디언.01</span>
+                                                <span class="hide ui_accord_text">내용 더 보기</span>
+                                            </a>
+                                        </div>
+                                        <div class="ui_accord_content" style="display:none;">
+                                            <p><strong>아코디언 내용.01</strong></p>
+                                            <div class="list_box_nt">
+                                                <ul class="txt_list">
+                                                    <li><span class="txt_bar">아코디언 내용.01</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="head">
+                                            <a href="#" class="ui_accord_toggle" data-open-text="내용 더 보기"
+                                                data-close-text="내용 닫기">
+                                                <span class="tit">아코디언.02</span>
+                                                <span class="hide ui_accord_text">내용 더 보기</span>
+                                            </a>
+                                        </div>
+                                        <div class="ui_accord_content" style="display:none;">
+                                            <p><strong>아코디언 내용.02</strong></p>
+                                            <div class="list_box_nt solo">
+                                                <ul class="txt_list">
+                                                    <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                                    <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                                    <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                                    <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                                    <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                                    <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                                    <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                                    <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                                    <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                                    <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                                    <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                                    <li><span class="txt_bar">아코디언 내용.02</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </xmp>
+                    </div>
+                </div>
+                <div class="conts_box">
+                    <ul>
+                        <li>
+                            <p class="fc_point">자바스크립트 적용부분</p>
+                        </li>
+                        <li>
+                            <p>- data-accord-group="info" 그룹으로 다른 아코디언을 연결함.</br> data-open-index="1" 오픈 인텍스를 설정함 0시작.
+                                </br>data-single-open="true" false는 멀티오픈을 허용함.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="conts_box">
+                    <div class="exmp pre">
+                        <xmp>
+                            <script type='text/javascript'>
+
+                                $(function () {
+                                    vcui.require(['ui/accordion']).done(function () {
+                                        $('.ui_accordion').vcAccordion().on('accordionexpand', function (e, data) {
+                                        });
+                                    });
+                                });
+                            </script>
+                        </xmp>
+                    </div>
+                </div>
+                <!-- //Contents -->
+        </section>
+
+        <aside class="other_conts">
+            <a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+        </aside>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="conts">
+                <span class="ft_logo"><span class="hide">vinylc</span></span>
+                <p class="copy">© 2020. All rights reserved</p>
+            </div>
+        </footer>
+        <!-- //Footer -->
+    </div>
+
+    <script type='text/javascript'>
+        $(function () {
+            vcui.require(['ui/accordion'], function () {
+                $('.ui_accordion').vcAccordion().on('accordionexpand', function (e, data) {
+                    //$('#result').html('확장된 인덱스: ' + data.index);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

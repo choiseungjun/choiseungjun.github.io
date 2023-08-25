@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>버튼</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+	<link rel="stylesheet" type="text/css" href="../../css/library.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li class="on"><a href="../library/layout_lnb.html">HTML DOM Library</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li ><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li class="on"><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li class="depth"><a href="">레이아웃</a>
+						<ul>
+							<li><a href="../library/layout_lnb.html">좌측</a></li>
+							<li><a href="../library/layout.html">비좌측</a></li>
+							<li><a href="../library/layout_winpop.html">윈도우팝업</a></li>
+							<li><a href="../library/layout_laypop.html">레이어팝업</a></li>
+						</ul>
+					</li>
+					<li><a href="../library/acordion.html">아코디언</a></li>
+					<li><a href="../library/thumbnail.html">썸네일</a></li>
+					<li><a href="../library/video.html">비디오&amp;플레이어</a></li>
+					<li class="on"><a href="../library/button.html">버튼</a></li>
+					<li><a href="../library/calender.html">캘린더</a></li>
+					<li class="depth"><a href="#">게시판</a>
+						<ul>
+							<li><a href="../library/board01.html">기본형</a></li>
+							<li><a href="../library/board02.html">입력형</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">테이블</a>
+						<ul>
+							<li><a href="../library/table05.html">세로형</a></li>
+							<li><a href="../library/table06.html">가로형</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">폼</a>
+						<ul>
+							<li><a href="../library/selectbox.html">셀렉트박스(디자인)</a></li>
+							<li><a href="../library/checkbox.html">Check/Radio(디자인)</a></li>
+							<li><a href="../library/login.html">로그인</a></li>
+							<li><a href="../library/join.html">회원가입</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">탭</a>
+						<ul>
+							<li><a href="../library/percent_tab.html">100%탭</a></li>
+							<li><a href="../library/fixed_tab.html">고정탭</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">페이징</a>
+						<ul>
+							<li><a href="../library/paging.html">기본형</a></li>
+							<li><a href="../library/paging_input.html">입력형</a></li>
+						</ul>
+					</li>
+					<li><a href="../library/bullet.html">블릿리스트</a></li>
+					<li><a href="../library/banner_01.html">슬라이드배너</a></li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<!-- Contents -->
+			<div id="contents">
+				<h3 class="tit_2dep">버튼</h3>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 라운드 스타일 표현은 CSS를 기본으로 한다.</p>
+						</li>
+						<li>
+							<p>- 새 창 열림 기준은 target="_blank" 와 title="새 창"으로 둘 다 명시한다.(프로젝트에 따라 달라질 수 있습니다.)</p>
+						</li>
+					</ul>
+				</div>
+
+				<h4 class="tit_3dep">텍스트 버튼</h4>
+				<h5 class="tit_4dep">[VIEW]</h5>
+				<div class="library_box">
+					<button type="button" class="btn">버튼</button>
+					<a href="#" class="btn">버튼</a>
+					<span class="btn">버튼</span>
+					<br>
+					<button type="button" class="btn disabled" disabled="disabled">비활성 버튼</button>
+				</div>
+
+				<h5 class="tit_4dep">[CODE]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp><button type="button" class="btn">버튼</button>
+							<a href="#" class="btn">버튼</a>
+							<span class="btn">버튼</span>
+
+							<button type="button" class="btn disabled" disabled="disabled">비활성 버튼</button>
+						</xmp>
+					</div>
+				</div>
+
+				<h5 class="tit_4dep">[변경]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp><button type="button" class="btn">버튼</button>
+							<a href="#" class="btn" role="button">버튼</a>
+							<span class="btn" role="button">버튼</span>
+
+							<button type="button" class="btn disabled" disabled="disabled">비활성 버튼</button>
+							<a href="#" class="btn" role="button" aria-disabled="true">비활성화 버튼</a>
+							<span class="btn" role="button" aria-disabled="true">비활성화 버튼</span>
+						</xmp>
+					</div>
+				</div>
+
+				<h4 class="tit_3dep">아이콘 버튼</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 숨김텍스트는 버튼 용도에 따라 맞춰서 쓴다.</p>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">[VIEW]</h5>
+				<div class="library_box">
+					<button type="button" class="btn_ico facebook"><span class="hide">페이스북</span></button>
+					<a href="#" target="_blank" class="btn_ico facebook" title="페이스북 공유하기 - 새 창"><span
+							class="hide">페이스북</span></a>
+				</div>
+
+				<h5 class="tit_4dep">[CODE]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp><button type="button" class="btn_ico facebook"><span class="hide">페이스북</span></button>
+							<a href="#" target="_blank" class="btn_ico facebook" title="페이스북 공유하기 - 새 창"><span
+									class="hide">페이스북</span></a>
+						</xmp>
+					</div>
+				</div>
+
+				<h4 class="tit_3dep">아이콘+텍스트 버튼</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 숨김텍스트는 버튼 용도에 따라 맞춰서 쓴다.</p>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">[VIEW]</h5>
+				<div class="library_box">
+					<button type="button" class="btn" title="새 창"><span class="ico"></span> 버튼</button>
+					<a href="#" target="_blank" class="btn" title="새 창"><span class="ico"></span> 버튼</a>
+
+					<button type="button" class="btn ico" title="새 창"><span>버튼</span></button>
+					<a href="#" target="_blank" class="btn ico" title="새 창"><span>버튼</span></a>
+				</div>
+
+				<h5 class="tit_4dep">[CODE]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp><button type="button" class="btn" title="새 창"><span class="ico"></span> 버튼</button>
+							<a href="#" target="_blank" class="btn" title="새 창"><span class="ico"></span> 버튼</a>
+
+							<button type="button" class="btn ico" title="새 창"><span>버튼</span></button>
+							<a href="#" target="_blank" class="btn ico" title="새 창"><span>버튼</span></a>
+						</xmp>
+					</div>
+				</div>
+
+				<h4 class="tit_3dep">버튼 영역 정렬</h4>
+				<h5 class="tit_4dep">[VIEW]</h5>
+				<div class="library_box">
+					<div class="btn_wrap">
+						<div class="left"><button type="button" class="btn">버튼</button></div>
+						<button type="button" class="btn">버튼</button>
+						<div class="right"><button type="button" class="btn">버튼</button></div>
+					</div>
+				</div>
+
+				<h5 class="tit_4dep">[CODE]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp>
+							<div class="btn_wrap">
+								<div class="left"><button type="button" class="btn">버튼</button></div>
+								<button type="button" class="btn">버튼</button>
+								<div class="right"><button type="button" class="btn">버튼</button></div>
+							</div>
+						</xmp>
+					</div>
+				</div>
+
+			</div>
+			<!-- //Contents -->
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

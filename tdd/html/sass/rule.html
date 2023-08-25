@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>Choiseungjun Portpolio</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li><a href="../convention/intro.html">Convention</a></li>
+						<li><a href="../accessibility/intro.html">Accessibility</a></li>
+						<li><a href="../seo/seo.html">SEO</a></li>
+						<li class="on"><a href="../sass/intro.html">Sass</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li ><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li class="on"><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li><a href="../sass/intro.html">Intro</a></li>
+					<li><a href="../sass/basic_info.html">기본개념</a></li>
+					<li><a href="../sass/grammar.html">주요문법</a></li>
+					<li class="on"><a href="../sass/rule.html">규칙</a></li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<div id="contents">
+				<h3 class="tit_2dep">규칙</h3>
+				<h4 class="tit_3dep">기본규칙</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- <a href="../../2017_convention/html/convention.html#link05" target="_blank">VinylC CSS
+									규칙</a> 기본으로 합니다.</p>
+						</li>
+						<li>
+							<p>- VinylC CSS 규칙과 차이 있는 부분만 설명합니다.</p>
+						</li>
+						<li>
+							<p>- 프로젝트의 규칙과 다를 경우 프로젝트에서 정한 규칙이 우선합니다.</p>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">문법</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- SCSS 문법으로 사용합니다.</p>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">Output Style</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- compressed 으로 합니다.</p>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">SASS 그룹핑</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 속성과 속성은 줄바꿈합니다.</p>
+						</li>
+						<li>
+							<p>- 자식 속성 ‘Tab’ 키로 한번 들여쓰기합니다.</p>
+						</li>
+						<li>
+							<p>- 선택자와 중괄호 사이는 space로 한번 들여쓰기 합니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						예)<br>
+						<pre>@mixin tabs_active($color) {
+	border-bottom-color:$color;
+	color:$color;
+	font-weight:bold;
+	@content;
+}
+</pre>
+					</div>
+
+					<div class="exmp pre">
+						예)<br>
+						<pre>.bul_dot {
+	margin-top:6px;
+	padding-left:7px;
+	color:$Bull-color;
+	line-height:18px;
+	&amp;:first-child {
+		margin-top:0;
+	}
+	.bullet {
+		float:left;
+		width:2px;
+		height:2px;
+		margin:8px 0 0 -7px;
+		background-color:$Bull-color;
+	}
+}
+</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">Sass 주석</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 컴파일/컴파일되지 않는 주석을 사용자 판단에 따라 기입합니다.</p>
+						</li>
+						<li>
+							<p>- 수정주석은 // 컴파일되지 않는 주석으로 합니다.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

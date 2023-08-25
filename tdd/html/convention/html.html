@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>Choiseungjun Portpolio</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li class="on"><a href="../convention/intro.html">Convention</a></li>
+						<li><a href="../accessibility/intro.html">Accessibility</a></li>
+						<li><a href="../seo/seo.html">SEO</a></li>
+						<li><a href="../sass/intro.html">Sass</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li class="on"><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li><a href="intro.html">Intro</a></li>
+					<li class="depth"><a href="common.html">Common</a>
+						<ul>
+							<li><a href="common.html#common01">명명규칙</a></li>
+							<li><a href="common.html#common02">작업폴더구조</a></li>
+							<li><a href="common.html#common03">로컬서버세팅</a></li>
+							<li><a href="common.html#common04">특수문자표현</a></li>
+							<li><a href="common.html#common05">HTML문서세팅</a></li>
+							<li><a href="common.html#common06">들여쓰기</a></li>
+							<li><a href="common.html#common07">이미지저장</a></li>
+						</ul>
+					</li>
+					<li class="depth on"><a href="html.html">HTML</a>
+						<ul>
+							<li><a href="html.html#html01">문서구조</a></li>
+							<li><a href="html.html#html02">HTML주석</a></li>
+							<li><a href="html.html#html03">태그속성순서</a></li>
+							<li><a href="html.html#html04">이미지태그</a></li>
+							<li><a href="html.html#html05">label</a></li>
+							<li><a href="html.html#html06">table</a></li>
+						</ul>
+					</li>
+					<li><a href="html5.html">HTML5</a></li>
+					<li class="depth"><a href="css.html">CSS</a>
+						<ul>
+							<li><a href="css.html#css01">CSS 그룹핑</a></li>
+							<li><a href="css.html#css02">CSS 속성 나열 순서</a></li>
+							<li><a href="css.html#css03">주석</a></li>
+							<li><a href="css.html#css04">CSS (추천)약식</a></li>
+							<li><a href="css.html#css05">사용단위</a></li>
+							<li><a href="css.html#css06">미디어타입 CSS</a></li>
+							<li><a href="css.html#css07">폰트</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<div id="contents">
+				<h3 class="tit_2dep" id="html01">문서구조</h3>
+				<h4 class="tit_3dep">01. 코딩방식</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 코딩은 워지윅 방식이 아닌 Text-Editor를 이용한 하드코딩을 기준으로 합니다.</p>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">02. 크로스 브라우징을 원칙</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 제작 되는 모든 웹페이지는 아래 해당 웹브라우져 버전에서 호환되도록 제작하는 것을 원칙으로 하되, 프로젝트 성격에따라 다를 수도 있습니다. (국내
+								2009웹표준화 사업의 일환으로 최소 3개 브라우저에서 호환되도록 작업.)</p>
+						</li>
+						<li>
+							<p>- 각 최신버전 기준이며, IE의 경우 프로젝트에 따라서 다를 수 있음.</p>
+							<div class="exmp">Internet Explorer / Firefox / Mac Safari / Opera / Chrome</div>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">03. 문서 제작시 기본 문서</h4>
+				<div class="conts_box">
+					<div class="exmp pre">
+						&lt;!DOCTYPE html&gt;<br>
+						&lt;html lang="ko"&gt;<br>
+						&lt;head&gt;<br>
+						&lt;meta charset="UTF-8"&gt;<br>
+						&lt;title&gt;타이틀&lt;/title&gt;<br>
+						&lt;link rel="stylesheet" type="text/css" href="/css/common.css"&gt;<br>
+						&lt;script type="text/javascript" src="/js/common.js"&gt;&lt;/script&gt;<br>
+						&lt;/head&gt;<br>
+						&lt;body&gt;<br>
+						&lt;/body&gt;<br>
+						&lt;/html&gt;
+					</div>
+				</div>
+				<h4 class="tit_3dep">04. 각 태그의 어트리뷰트 속성들에 값들은 항상 "(따옴표)를 사용합니다.</h4>
+				<div class="conts_box">
+					<div class="exmp pre">
+						td class=a → (X)<br>
+						td class="a" → (O)<br>
+						a href=a → (X)<br>
+						a href="a" → (O)<br>
+						div id=a → (X)<br>
+						div id="a" → (O)
+					</div>
+				</div>
+				<h4 class="tit_3dep">05. 들여쓰기 (TAB키로구분 - 4 SPACE KEY).</h4>
+				<div class="conts_box">
+					<div class="pre">
+						<xmp>
+							<div class="wrap">
+								<div>
+									<h1><span>UID</span></h1>
+									<ul>
+										<li>list item1</li>
+										<li>list item2</li>
+										<li>list item3</li>
+									</ul>
+									<ol>
+										<li>list num1</li>
+										<li>list num2</li>
+										<li>list num3</li>
+									</ol>
+								</div>
+								<div>
+									<table>
+										<caption>테이블 제목, 설명글</caption>
+										<colgroup>
+											<col style="">
+											<col style="">
+											<col style="">
+											<col style="">
+										</colgroup>
+										<tfoot>
+											<tr>
+												<th scope="row">제목</th>
+												<td>내용</td>
+												<td>내용</td>
+												<td>내용</td>
+											</tr>
+										</tfoot>
+										<tbody>
+											<tr>
+												<th scope="row" rowspan="2">내용</th>
+												<td>내용</td>
+												<td>내용</td>
+												<td>내용</td>
+											</tr>
+											<tr>
+												<td>내용</td>
+												<td>내용</td>
+												<td>내용</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</xmp>
+					</div>
+				</div>
+				<h3 class="tit_2dep" id="html02">HTML 주석</h3>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 단락의 처음과 끝 영역에 대하여 간략한 설명과 같이 적어 놓습니다.</p>
+							<div class="exmp">예) &lt;!-- gnb --&gt; 내용 &lt;!-- //gnb --&gt; , &lt;!-- contents --&gt; 내용
+								&lt;!-- //contents --&gt;</div>
+						</li>
+						<li>
+							<p>- 수정주석은 수정된 단락의 처음부분과 끝나는 부분에 주석을 적어 놓습니다. 끝나는 부분의 주석은 // 처리를 하여 끝부분임을 알려줍니다.</p>
+							<div class="exmp">예) &lt;!-- YYMMDD_수정 --&gt; 내용 &lt;!-- //YYMMDD_수정 --&gt;</div>
+						</li>
+						<li>
+							<p>- 한줄만 수정되는 간략한 경우는 해당태그 맨끝에 공백(스페이스)후 주석을 넣어줍니다.</p>
+							<div class="exmp">&lt;p&gt;hellow world!&lt;/p&gt; &lt;!-- YYMMDD_수정 --&gt;</div>
+						</li>
+					</ul>
+				</div>
+				<h3 class="tit_2dep" id="html03">태그속성순서</h3>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- class를 가장 앞으로 두며 필요에 따른 값은 추가 되며 style은 가장 마지막에 적습니다.</p>
+							<div class="exmp pre">
+								&lt;input type=”text” class=”input” id=”” value=”” name=”” title=”” style=””&gt;<br>
+								&lt;input type="radio" class="rdo" id="" value="" name="" style=””&gt;<br>
+								&lt;input type="checkbox" class="chk" id="" value="" name="" style=""&gt;<br>
+								&lt;input type="file" class=”” id=”” value="" name="upload" title="" style=""&gt;
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h3 class="tit_2dep" id="html04">이미지태그</h3>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 의미없는 이미지라면 alt값을 <strong>공백</strong>으로 비워둡니다.</p>
+						</li>
+						<li>
+							<p>- 텍스트나 의미있는 이미지라면 해당 텍스트내용, 어떤 이미지인지에 대한 설명이 필요합니다.</p>
+						</li>
+						<li>
+							<p>- 예와 같이 이미지에 대한 설명을 적어주며, 이미지라는 단어는 적지 않아도 됩니다. 센스리더에서 읽어줄때 이미지 쏘나타 자동차 라고 읽어주기 때문에 이중으로
+								읽힘을 방지하기 위함 입니다.</p>
+							<div class="exmp">
+								예) &lt;img src=”/images/car/sonata.jpg” alt=”쏘나타 자동차”&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=”/images/car/sonata.jpg” alt=”쏘나타 자동차”
+								style=””&gt;
+							</div>
+						</li>
+						<li>
+							<p>- 이미지에 넓이와 높이값을 인라인으로 적용하여야 하는 경우는 아래와 같이 적용합니다.</p>
+							<div class="exmp">예) &lt;img src=”/images/car/sonata.jpg” width=”100” height=”50” alt=”쏘나타
+								자동차”&gt;</div>
+						</li>
+					</ul>
+				</div>
+				<h3 class="tit_2dep" id="html05">label</h3>
+				<h4 class="tit_3dep">01. input type</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- label 연결이 있는 경우</p>
+							<div class="exmp pre">&lt;label for="<strong>name</strong>"&gt;이름&lt;/label&gt;&lt;input
+								type="text" class="txt" value="" id="<strong>name</strong>"&gt;</div>
+						</li>
+						<li>
+							<p class="fc_point">- label 안에 input을 넣지 않습니다</p>
+							<div class="exmp pre">(O) &lt;label for="<strong>name</strong>"&gt;이름&lt;/label&gt;
+								&lt;input type="text" class="txt" value="" id="<strong>name</strong>"&gt;<br>(X)
+								&lt;label for="<strong>name</strong>"&gt;이름&lt;input type="text" class="txt" value=""
+								id="<strong>name</strong>"&gt;&lt;/label&gt;</div>
+						</li>
+						<li>
+							<p>- label 연결이 없을 경우 type1</p>
+							<div class="exmp pre">&lt;input type="text" title="<strong>레이블 대체텍스트</strong>"&gt;</div>
+						</li>
+						<li>
+							<p>- label 연결이 없을 경우 type2</p>
+							<div class="exmp pre">&lt;label for=”<strong>name</strong>”
+								class=”<strong>hide</strong>”&gt;아이디&lt;/span&gt;<br>&lt;input type="text" class="txt"
+								value="" id="<strong>name</strong>"&gt;</div>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">02. radio type, checkbox type</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- label 연결이 있는 경우</p>
+							<div class="exmp pre">&lt;input type="radio" class="rdo"
+								id="<strong>radio1</strong>"&gt;&lt;label
+								for="<strong>radio1</strong>"&gt;radio&lt;/label&gt;<br>&lt;input type="checkbox"
+								class="chk" id="<strong>checkbox1</strong>"&gt;&lt;label
+								for="<strong>checkbox1</strong>"&gt;checkbox&lt;/label&gt;</div>
+						</li>
+						<li>
+							<p>- label 연결이 없을 경우</p>
+							<div class="exmp pre">&lt;input type="radio" class="rdo" title="<strong>레이블
+									대체텍스트</strong>"&gt;<br>&lt;input type="checkbox" class="chk" title="<strong>레이블
+									대체텍스트</strong>"&gt;</div>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">03. select type</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- label 연결이 있는 경우</p>
+							<div class="exmp pre">
+								&lt;label for="<strong>select</strong>"&gt;select&lt;/label&gt;
+								&lt;div class="select_wrap"&gt;
+								&lt;select id="<strong>select</strong>"&gt;
+								&lt;option&gt;선택&lt;/option&gt;
+								&lt;/select&gt;
+								&lt;/div&gt;
+							</div>
+						</li>
+						<li>
+							<p>- label 연결이 없을 경우</p>
+							<div class="exmp pre">
+								&lt;div class="select_wrap"&gt;
+								&lt;select title=”<strong>XXX 선택란</strong>”&gt;
+								&lt;option&gt;선택&lt;/option&gt;
+								&lt;/select&gt;
+								&lt;/div&gt;
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">04. input type(file)</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- label 연결이 있는 경우</p>
+							<div class="exmp pre">&lt;label for="<strong>file</strong>"&gt;기본형&lt;/label&gt;&lt;input
+								type="file" class="file" id="<strong>file</strong>"&gt;</div>
+						</li>
+						<li>
+							<p>- label 연결이 없을 경우</p>
+							<div class="exmp pre">&lt;input type="file" class="file" title="<strong>XXX
+									파일찾기</strong>"&gt;</div>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">05. textarea type</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- label 연결이 있는 경우</p>
+							<div class="exmp pre">&lt;label
+								for="<strong>textarea</strong>"&gt;textarea&lt;/label&gt;<br>&lt;textarea rows="10"
+								cols="80" class="txtarea" id="<strong>textarea</strong>"&gt;&lt;/textarea&gt;</div>
+						</li>
+						<li>
+							<p>- label 연결이 없을 경우</p>
+							<div class="exmp pre">&lt;textarea rows="10" cols="80" class="txtarea" title=”<strong>XXX
+									입력란</strong>”&gt;&lt;/textarea&gt;</div>
+						</li>
+					</ul>
+				</div>
+				<h3 class="tit_2dep" id="html06">table (회원가입폼)</h3>
+				<h4 class="tit_3dep">01. 회원가입폼</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- label 연결이 있는 경우</p>
+							<div class="exmp pre">
+								&lt;tr&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope=”row”&gt;&lt;label
+								for=”<strong>name</strong>”&gt;아이디&lt;/label&gt;&lt;/th&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;input type="text" class="txt" value=""
+								id="<strong>name</strong>"&gt;&lt;/td&gt;<br>
+								&lt;/tr&gt;
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">02. id, headers</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 복잡한 테이블(thead, tbody에 복수의 th가 있는 경우)의 경우 scope와 id/headers를 이용합니다.</p>
+							<div class="exmp pre">
+								&lt;th scope="row" id="<strong>tb_id1</strong>"&gt;제목&lt;/th&gt;<br>
+								&lt;td headers="<strong>tb_id1</strong>"&gt;내용&lt;/td&gt;<br>
+								&lt;th scope="row" id="<strong>tb_id2</strong>"&gt;제목&lt;/th&gt;<br>
+								&lt;td headers="<strong>tb_id2</strong>"&gt;내용&lt;/td&gt;
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">03. iframe 사용</h4>
+				<div class="conts_box">
+					<div class="exmp pre">&lt;iframe src="경로" width="XXX" height="XXX" scrolling="no" frameborder="0"
+						title=”<strong>불러오는 iframe에 대한 설명</strong>”&gt;&lt;/iframe&gt;</div>
+				</div>
+				<h4 class="tit_3dep">04. link, button 사용</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- link와 button태그를 사용할 시 디자인적 요소를 추가하기 위하여 <span
+									class="fc_point">&lt;span&gt;,&lt;strong&gt;,&lt;em&gt;</span>등 태그를 사용하게 되는데 a태그와
+								button태그를 감싸는 형태가 아닌 아래와 같이 안쪽에 넣어 사용할수 있도록 합니다.</p>
+							<div class="exmp pre">
+								&lt;a href=”#”&gt;&lt;span&gt;링크&lt;/&lt;span&gt;&lt;/a&gt;<br>
+								&lt;button type=”button”&gt;&lt;span&gt;버튼&lt;/span&gt;&lt;/button&gt;
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

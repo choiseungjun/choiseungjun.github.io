@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>Calendar</title>
+	<link rel="shortcut icon" href="../../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/content.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/library.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/component.css">
+	<style type="text/css">
+		.container {
+			position: relative;
+			margin: 20px;
+		}
+
+		.container .input_s {
+			position: relative;
+			width: 185px;
+			padding: 10px 10px 10px 0px;
+			float: left;
+		}
+
+		.input_cal {
+			position: absolute;
+			right: 1px;
+			top: 50%;
+			width: 30px;
+			height: 30px;
+			margin-top: -12px;
+			background: url('./assets/images/bg_calender.png') no-repeat -4px -200px;
+			font-size: 0;
+			line-height: 0;
+			text-indent: -9999em;
+		}
+
+		.s_cal:after {
+			clear: both;
+			display: block;
+			content: "";
+		}
+
+		input {
+			padding: 0 10px;
+			height: 35px;
+		}
+
+		button {
+			padding: 0;
+			background: none;
+			border: none;
+			cursor: pointer;
+			letter-spacing: -1px;
+		}
+
+		button::-moz-focus-inner {
+			border: 0;
+			padding: 0;
+		}
+	</style>
+
+	<script type="text/javascript" src="../../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../../js/common.js"></script>
+	<script>
+		var vcuiConfigs = {
+			importBasePath: './assets/scripts',
+		};
+	</script>
+	<script src="./assets/scripts/vcui.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li><a href="../../library/layout_lnb.html">HTML DOM Library</a></li>
+						<li class="on"><a href="../library/component/accordion.html">javascript Component</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li ><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li class="on"><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li><a href="../component/accordion.html">Accordion</a></li>
+					<li><a href="../component/autocomplete.html">AutoComplete</a></li>
+					<li class="on"><a href="../component/calendar.html">Caledar</a></li>
+					<li><a href="../component/selectbox.html">Selectbox</a></li>
+					<li><a href="../component/rangeSlider.html">RangeSlider</a></li>
+					<li><a href="../component/tab.html">Tab</a></li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<!-- Contents -->
+			<div id="contents">
+				<h3 class="tit_2dep">Calendar</h3>
+				<h5 class="tit_4dep">[VIEW]</h5>
+				<div class="library_box">
+					<div class="container">
+						<div class="s_cal">
+							<div class="input_s">
+								<button type="button" class="ui_calendar input_cal" data-input-target="#startDate"
+									data-min-date="2017-09-06" data-max-date="2020-09-06">시작일</button>
+								<input type="text" id="startDate" value="2017-09-16">
+							</div>
+							<div class="input_s">
+								<button type="button" class="ui_calendar ui_calendar_end input_cal"
+									data-input-target="#endDate" data-min-date="2017-09-06"
+									data-max-date="2020-09-06">종료일</button>
+								<input type="text" id="endDate" value="2017-09-16">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h5 class="tit_4dep">[CODE]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp>
+							<div class="s_cal">
+								<div class="input_s">
+									<button type="button" class="ui_calendar input_cal" data-input-target="#startDate"
+										data-min-date="2017-09-06" data-max-date="2020-09-06">시작일</button>
+									<input type="text" id="startDate" value="2017-09-16">
+								</div>
+								<div class="input_s">
+									<button type="button" class="ui_calendar ui_calendar_end input_cal"
+										data-input-target="#endDate" data-min-date="2017-09-06"
+										data-max-date="2020-09-06">종료일</button>
+									<input type="text" id="endDate" value="2017-09-16">
+								</div>
+							</div>
+						</xmp>
+					</div>
+				</div>
+
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p class="fc_point">자바스크립트 적용부분</p>
+						</li>
+					</ul>
+				</div>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp>
+							<script type='text/javascript'>
+								$(function () {
+									vcui.require(['ui/calendar']).done(function () {
+										$('.ui_calendar').vcCalendar({ 'holidays': ['2017-09-06', '2017-09-07', '2017-09-08'] }); // hoildays:휴일등록
+
+										$('#startDate').on('calendarinsertdate', function (e, data) {
+											$('.ui_calendar_end').vcCalendar('setMinDate', data.date); //시작일을 선택시 종료일의 시작날짜를 변경한다.
+										});
+
+										$('#endDate').on('calendarinsertdate', function (e, data) {
+											//data.date 종료일의 값을 반환한다.
+										});
+									});
+								});
+							</script>
+						</xmp>
+					</div>
+				</div>
+				<!-- //Contents -->
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+
+	<script type='text/javascript'>
+		$(function () {
+			vcui.require(['ui/calendar']).done(function () {
+				$('.ui_calendar').vcCalendar({ 'holidays': ['2017-09-06', '2017-09-07', '2017-09-08'] }); // hoildays:휴일등록
+
+				$('#startDate').on('calendarinsertdate', function (e, data) {
+					$('.ui_calendar_end').vcCalendar('setMinDate', data.date); //시작일을 선택시 종료일의 시작날짜를 변경한다.
+				});
+
+				$('#endDate').on('calendarinsertdate', function (e, data) {
+					//data.date 종료일의 값을 반환한다.
+				});
+			});
+		});
+	</script>
+</body>
+
+</html>

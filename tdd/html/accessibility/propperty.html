@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>Choiseungjun Portpolio</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li><a href="../convention/intro.html">Convention</a></li>
+						<li class="on"><a href="../accessibility/intro.html">Accessibility</a></li>
+						<li><a href="../seo/seo.html">SEO</a></li>
+						<li><a href="../sass/intro.html">Sass</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li ><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li class="on"><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li><a href="../accessibility/intro.html">Intro</a></li>
+					<li class="on"><a href="../accessibility/propperty.html">Property</a></li>
+					<li><a href="../accessibility/wai-aria.html">WAI-ARIA</a></li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<div id="contents">
+				<h3 class="tit_2dep">탭</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 탭 메뉴를 그룹핑 하는 요소에 tablist role 부여</p>
+						</li>
+						<li>
+							<p>- 각각의 탭 메뉴 요소에 tab role 부여</p>
+						</li>
+						<li>
+							<p>- 각 탭이 컨트롤 하는 탭 섹션의 id 값을 aria-controls 속성 값으로 설정</p>
+						</li>
+						<li>
+							<p>- 각 탭 섹션에 tabpanel role 부여</p>
+						</li>
+						<li>
+							<p>- 선택된 탭 메뉴에 aria-selected 속성의 값을 true로 설정</p>
+						</li>
+						<li>
+							<p>- 나머지 탭 메뉴들은 aria-selected 속성의 값을 false로 설정하거나 aria-selected 속성을 제거</p>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>ul</td>
+									<td>tablist</td>
+									<td></td>
+									<td>탭 집합</td>
+								</tr>
+								<tr>
+									<td>li</td>
+									<td>presentation</td>
+									<td></td>
+									<td>
+										<xmp>
+											<li>
+										</xmp> 요소의 리스트 의미를 삭제
+									</td>
+								</tr>
+								<tr>
+									<td rowspan="3">a</td>
+									<td rowspan="3">tab</td>
+									<td>aria-selected ="true/false"</td>
+									<td>
+										<xmp><a></xmp> 요소의 역할을 탭으로 정의하고, 선택되었을 때 true, 선택되지 않았을 때 false
+									</td>
+								</tr>
+								<tr>
+									<td>aria-contols=“{ }”</td>
+									<td>tabpanel의 id명</td>
+								</tr>
+								<tr>
+									<td>id=“{}”</td>
+									<td>aria-labelledby 속성의 함수명</td>
+								</tr>
+								<tr>
+									<td rowspan="3">div</td>
+									<td rowspan="3">tabpanel</td>
+									<td>aria-expanded =“true/false”</td>
+									<td>
+										<xmp>
+											<div>
+										</xmp> 요소의 역할을 tabpanel로 정의하고, tabpanel이 열렸을 때 true, 닫혔을 때 false
+									</td>
+								</tr>
+								<tr>
+									<td>aria-labelledby=“{ }”</td>
+									<td>tabpanel의 id명</td>
+								</tr>
+								<tr>
+									<td>id=“{}”</td>
+									<td>aria-controls 속성의 함수명</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">버튼</h3>
+				<h4 class="tit_3dep">01. 기본</h4>
+				<p class="prev_txt">다음과 같은 기본 규칙을 준수한다</p>
+				<div class="conts_box">
+					<p>- 버튼 역할을 하는 요소에 role=“button” 을 지정하면 스크린리더는 해당 요소를 버튼으로 인식하여 읽는다. 또한 토글 버튼의 경우 현재 상태를 알려주어야 하는데
+						aria-pressed 속성을 사용하면 현재 상태가 눌려져 있는지(true), 눌려져 있지 않은 상태인지 (false)를 스크린리더가 인지하여 읽을 수 있다.</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">button</td>
+									<td rowspan="2">button</td>
+									<td></td>
+									<td>버튼 역할을 정의하며, 엔터키나 스페이스바로 선택</td>
+								</tr>
+								<tr>
+									<td>aria-disabled="ture/false"</td>
+									<td>사용할 수 없는 버튼 상태는 true, 사용할 수 있는 상태는 false를 사용</td>
+								</tr>
+								<tr>
+									<td rowspan="4">button 토글</td>
+									<td>button</td>
+									<td></td>
+									<td>버튼 역할을 정의하며, 엔터키나 스페이스바로 선택</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-pressed="true/false"</td>
+									<td>버튼의 상태가 눌러져 있으면 true, 눌러져 있지 않으면 false를 사용</td>
+								</tr>
+								<tr>
+									<td>grup</td>
+									<td></td>
+									<td>2개 이상의 토글 버튼을 그룹화</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-labelledby=""</td>
+									<td>그룹의 제목을 제공하기 위한 것으로 제목 요소에 삽입된 id와 연결</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">자동완성</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>- input 요소에 combobox 역할(Role)을 추가하고 자동완성 기능이 목록 형태로 지원 됨을 알 수있도록 aria-autocomplete 속성(Property)을
+						list로 설정한다.추천 검색어 목록이 하위 메뉴 형태로 존재함을 인식할 수 있도록 aria-haspopup 속성(Property)을 true로 둔다.
+					</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="5">input</td>
+									<td rowspan="5">combobox</td>
+									<td></td>
+									<td>콤보박스 역할을 정의</td>
+								</tr>
+								<tr>
+									<td>aria-haspopup</td>
+									<td>텍스트 필드와 연관된 하위 수준의 메뉴가 있으면 true, 그렇지 않으면 false</td>
+								</tr>
+								<tr>
+									<td>aria-autocomplete</td>
+									<td>사용자 입력에 대한 자동완성 지원 여부를 설정</td>
+								</tr>
+								<tr>
+									<td>aria-activescendant</td>
+									<td>활성화 된 제안 목록으로 연결 <br> 사용자 인터랙션에 따라 실시간으로 업데이트</td>
+								</tr>
+								<tr>
+									<td>aria-expanded</td>
+									<td>펼침 상태 설정</td>
+								</tr>
+								<tr>
+									<td rowspan="3">div</td>
+									<td>status</td>
+									<td></td>
+									<td>상태를 표시하는 역할 설정</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-live</td>
+									<td>실시간 알림 속성 설정</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-relevant</td>
+									<td>상태의 업데이트 알림 내용 설정</td>
+								</tr>
+								<tr>
+									<td>ul</td>
+									<td>listbox</td>
+									<td></td>
+									<td>목룍에서 하나 이상의 항목을 선택할 수 있는 역할로 설정</td>
+								</tr>
+								<tr>
+									<td>lil</td>
+									<td>option</td>
+									<td></td>
+									<td>선택 목록의 항목 역할로 설정</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">ID/PASSWORD</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>- input요소를 사용하면 당연히 label 요소를 사용해야 하는 것이 원칙이지만, 여기에서는 제목 역할을 label요소 대신 aria-label 속성으로 사용한다. 입력
+						포맷에 맞지 않아 에러가 발생했을 때는 input요소에 aria-describedby 속성에 추가로 에러메시지의 id와 연결해 주고 에러메시지 발생을 알리기 위해
+						aria-invalid=“true”를 추가하고 포커스를 input요소로 보내면 에러 발생 상황과 명확한 오류 발생 원인을 스크린리더 사용자에게 알려줄 수 있다.
+					</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>input</td>
+									<td>제목</td>
+									<td>aria-label="{제목}"</td>
+									<td>아이디 또는 패스워드와 같은 폼 요소의 제목을 제공</td>
+								</tr>
+								<tr>
+									<td>input</td>
+									<td>입력지침</td>
+									<td>aria-describedby="{입력지침}"</td>
+									<td>폼 요소의 입력 지침을 설정하여 제공한다.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">다중 폼</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>
+						- 그룹이라는 정보를 제공하기 위해 해당 컨트롤들을 감싸는 요소에 role=“group”을 사용하고, 이 요소에 그룹의 레이블을 설정하기 위해 aria-labelledby
+						속성으로 레이블 정보를 가지는 요소의 id 값을 연결해주면 스크린리더는 해당 요소로부터 특정한 이름을 가진 그룹으로 정보를 제공할 수 있다.
+					</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">div</td>
+									<td>group</td>
+									<td></td>
+									<td>폼에 공통적인 레이블을 참조할 수 있는 필드의 논리적 집합을 그룹핑</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-labelledby</td>
+									<td>그룹의 레이블에 해당하는 요소의 ID를 설정</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">라디오버튼</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>
+						- 라디오버튼 그룹을 마크업할 때는 스크린리더에서 전체의 목록 개수를 읽어줄 수 있도록 ul, li 요소로 제작하는 것을 권장한다. 전체를 감싸고 있는 컨테이너인 ul
+						요소에 role=“radiogroup”을 지정하고, 각 li 요소에는 각각 role=“radio”를 삽입 하여 라디오 버튼의 역할을 정의한다. 단,
+						role=“radiogroup”은 하위 요소가 role=“radio” 일 경우에 사용하며, 라디오 그룹으로 묶을 경우는 role=“group”을 사용한다.
+					</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">ul</td>
+									<td>radiogroup</td>
+									<td></td>
+									<td>라디오버튼 그룹의 역할 정의</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-labelledby=""</td>
+									<td>라디오버튼 그룹의 제목으로 주로 해딩의 id와 연결 (연결할 수 있는 제목이 없을 경우 aria-label 속성을 사용하여 제목 제공)</td>
+								</tr>
+								<tr>
+									<td rowspan="2">li</td>
+									<td>radio</td>
+									<td></td>
+									<td>라디오버튼 역할 정의</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-checked="true/false"</td>
+									<td>라디오버튼이 선택되어 있는지, 선택되지 않았는지 상태 정보 제공</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">체크박스</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>- 체크박스의 전체 그룹을 ul 요소로 마크업하고 바로 상위에 헤딩 요소를 사용한다. ul 요소에 role=“group”을 사용하여 그룹화하고, 상위 헤딩 요소에 삽입된 id
+						값과 aria-labelledby 속 성을 연결하여 그룹의 제목을 지정해 준다.
+					</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">ul</td>
+									<td>group</td>
+									<td></td>
+									<td>체크박스 그룹의 역할 정의</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-labelledby=""</td>
+									<td>체크박스 그룹의 제목으로 주로 해딩의 id와 연결 (연결할 수 있는 제목이 없을 경우 aria-label 속성을 사용하여 제목 제공)</td>
+								</tr>
+								<tr>
+									<td rowspan="2">li</td>
+									<td>checkbox</td>
+									<td></td>
+									<td>체크박스 역할 정의</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-checked="true/false"</td>
+									<td>체크박스 선택되어 있는지, 선택되지 않았는지 상태 정보 제공</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">에러메시지</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>
+						- 에러가 발생하기 전에는 기본 마크업으로만 되어 있고, 에러가 발생했을 때는 동적으로 aria-invalid 속성이 true가 되고 aria-describedby 속성이
+						id와 연결되어 생성된다. 그리고 에러가 발생되지 않으면 aria-invalid 속성이 false가 되거나 삭제되어야 하고 에러메시지와 연결된 aria-describedby
+						속성도 삭제되어야 한다. 그렇지 않으면 계속 에러가 발생한 것으로 오해할 수 있다.
+					</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">input <br> select <br> textarea</td>
+									<td></td>
+									<td>aria-invalid="true/false"</td>
+									<td>에러가 발생하고 있음을 알림</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-describedby="{id}"</td>
+									<td>에러문구가 갖고 있는 id와 연결하여 어떤 에러가 발생되었는지를 알림</td>
+								</tr>
+								<tr>
+									<td>div<br>에러문구</td>
+									<td>alert</td>
+									<td>aria-live="assertive"</td>
+									<td>속성 값은 porite, assertive 사용할 수 있으며 assertive 많이 사용(호환)</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">레이어팝업</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<div>
+						<p>
+							- 요소에 다이얼로그(dialog) 역할을 role 속성을 사용하여 추가하고, 레이어 팝업을 볼 수 없게 aria-hidden 속성의 값을 true로 설정한다.
+							또한 레이어 팝업의 제목을 지정할 수 있도록 aria-labelledby=“{id값}”을 지정한다.이때 {id 값}은 h1 요소의 id=“{id 값}”과 일치시키면
+							스크린리더에서는 h1 요소의 제목 내용인 “레이어 팝업”을 음성으 로 출력 한다.
+						</p>
+					</div>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="3">div</td>
+									<td>alertdialog</td>
+									<td></td>
+									<td>다이얼로그 역할을 정의</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-labelledby</td>
+									<td>레이어 팝업에 대한 제목을 기술해 둔 요소와 연결</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-hidden</td>
+									<td>aria-hidden="true" 해당 요소를 보조기기에서 들리지 않게 함.<br>aria-hidden="false" 해당 요소를 보조기기에서
+										들리게 함.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">툴팁</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>
+						- 툴팁 UI 컴포넌트는 크게 툴팁을 띄우는 요소와 툴팁 요소로 나뉜다.
+						툴팁을 띄우는 요소에 연결된 툴팁 이 어떤 요소인지를 명시해주고, 툴팁 요소에는 툴팁 역할과 툴팁으로서 식별 가능한 id 속성을 설정해 주면 툴팁 UI 컴포넌트의 접근성을
+						향상시킬 수 있다.
+					</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>a <br> button <br> input</td>
+									<td></td>
+									<td>aria-describedby=" "</td>
+									<td>툴팁 요소 식별자(id) 설정</td>
+								</tr>
+								<tr>
+									<td rowspan="2">div<br>span</td>
+									<td>role="tooltip"</td>
+									<td></td>
+									<td>툴팁 역할을 설정</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>id=" "</td>
+									<td>툴팁 식별자(id) 설정</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">필수 입력 항목</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>- 필수 항목으로 설정할 요소(Element)에 aria-required=“true”를 설정하기만 하면 된다. </p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>input</td>
+									<td></td>
+									<td>aria-required</td>
+									<td>필수 항목일 경우 true, 항목이 아닐 경우 false</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">플레이스홀더</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>- aria-labelledby 속성을 사용하면 label 요소에 명시되어 있는 ‘성명’을 무시하므로 주의해야 한다.</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>input</td>
+									<td></td>
+									<td>aria-describedby</td>
+									<td>placeholder의 기능을 구현하기 위한 텍스트를 연결</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">타임 세션</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>- 레이어 팝업의 가장 바깥쪽 요소에 dialog 역할(Role)을 부여한다. 여기에 레이어 팝업의 제목이 되는 텍스트를 담는 요소의 id 값을 aria-labelledby
+						속성(Property) 값으로 연결하여 제목 관계를 설정 해 주고, 내용에 해당하는 요소의 id 값을 aria-describedby 속성(Property) 값으로 연결하여
+						이 요소 에 포커싱 될 때 제목과 내용이 한 번에 읽어질 수 있도록 제공한다.</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="3">div</td>
+									<td>dialog</td>
+									<td></td>
+									<td>응용프로그램 대화상자 또는 창을 표기</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-labelledby</td>
+									<td>대화상자의 레이블을 설정</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-describedby</td>
+									<td>대화상자에 대한 설명 설정</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">드랍다운 메뉴</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>- 전체를 감싸고 있는 ul 요소에는 role=“menubar”를 설정하고 menubar의 메뉴 아이템인 li 요소에 는 role=“menuitem”을 설정한다. 그리고
+						role=“menuitem” (아카데미)의 메뉴 아이템을 설정하기 위해서 자식 요소의 ul 요소에 role=“menu”와 li 요소에는 role=“menuitem”을
+						설정하여 구성한다.하위 메뉴중 아카데미 메뉴 외에 tabindex=“-1”을 적용한 이유는 아카데미 메뉴 이외에 다른 하위 메 뉴에 포커스 진입을 막기 위함이다.</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">nav</td>
+									<td>navigation</td>
+									<td>aria-describedby</td>
+									<td>role="navigation"이라고 역할을 부여하면 스크린리더에서 "내비게이션 랜드마크"라고 읽는다.</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-label</td>
+									<td>aria-label 속성 값은 화면에 나타나지 않지만 추가적인 설명을 부여할 때 사용할 수 있다. 만약 <xmp>
+											<div role="navigation" aria-label="메인메뉴">
+										</xmp>라고 마크업 할 경우 스크린리더는 "내비게이션 랜드마크 메인메뉴"라고 읽는다</td>
+								</tr>
+								<tr>
+									<td rowspan="2">ul</td>
+									<td>menubar</td>
+									<td></td>
+									<td>role="menubar"는 자식 요소를 가질수 있는 상위 메뉴라는 것을 보조기기에게 알려준다.</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-hidden</td>
+									<td>true, false 값을 가질 수 있으며, true일 경우 보조기기에서 들리지 않게 하며, false인 경우 보조기기에서 들리게 한다.
+										(시각적으로 표시되는 것과 무관함)</td>
+								</tr>
+								<tr>
+									<td rowspan="2">li</td>
+									<td>menuitem</td>
+									<td></td>
+									<td>role="menuitem"은 메뉴에 포함된 자식 요소를 구성할 때 사용한다.</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-haspopup</td>
+									<td>true, false 값을 가질 수 있으며, 서브 메뉴의 표시를 알려준다. 값이 true일 때 스크린리더인 NVDA에서는 "X
+										submenu"로, JAWS에서는 "X haspopup"이라고 읽는다.</td>
+								</tr>
+								<tr>
+									<td>ul</td>
+									<td>menu</td>
+									<td></td>
+									<td>role="menu"는 자식 요소를 가질수 있는 상위 메뉴라는 것을 보조기기에게 알려준다</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">로딩</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>- 가장 먼저 로딩 영역인 div 요소에 role=“alert”을 추가하여 해당 div 요소가 로딩 메시지를 보여주 는 영역이 되도록 한다. 다음으로 이동 링크를 클릭했을 때
+						role=“alert” 영역에 동적으로 텍스트 내용을 추가하기 위해 자바스 크립트로 구현한다.</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>div</td>
+									<td>alert</td>
+									<td></td>
+									<td>alert 역할을 정의</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">특수기호</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>- 특수기호는 비 시각장애와 시각장애의 관점에서 두 가지 케이스를 고려해 봐야한다. 의미를 전달하지 않고 단순히 시각적인 효과만을 주는 경우, 특수기호에
+						aria-hidden="true"를 설정해야 한다. 스크린리더 사용자에게도 마찬가지로 의미를 전달하지 않도록 되어야 한다. 특정한 의미를 전달해야 하는 특수기호의 경우
+						전달하고자 하는 의미가 명확히 전달 될 수 있도록 aria-label 속성의 값에 상태 정보와 기능 정보를 모두 담아야 한다.</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>span, i</td>
+									<td></td>
+									<td>aria-hidden</td>
+									<td>들리지 않아야 하는 경우 true, 들려야 하는 경우 false</td>
+								</tr>
+								<tr>
+									<td>button</td>
+									<td></td>
+									<td>aria-label</td>
+									<td>해당 요소의 레이블 설정</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">폼 레이블</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>- 요소에 aria-describedby 속성을 추가한 다음, 설명 내용을 담고 있는 span 요소의 id 속성 값과 동일하게 작성하면 된다.</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>label</td>
+									<td></td>
+									<td></td>
+									<td>레이블에 연결할 요소의 식별자(id) 설정</td>
+								</tr>
+								<tr>
+									<td rowspan="6">input <br> textarea <br> select <br> button</td>
+									<td rowspan="6"></td>
+									<td></td>
+									<td>컴포넌트 식별자(id) 설정</td>
+								</tr>
+								<tr>
+									<td>aria-label=" "</td>
+									<td>레이블이 시각적으로 제공하기 어려울 경우 레이블로 읽힐 수 있도록 설정</td>
+								</tr>
+								<tr>
+									<td>aia-labelledby=" "</td>
+									<td>래아블이 있을 경우 레이블 요소의 id 값 입력</td>
+								</tr>
+								<tr>
+									<td>aria-describedby=" "</td>
+									<td>설명 글이 있을 때 설명 글의 id 값 입력</td>
+								</tr>
+								<tr>
+									<td>aria-required="true"</td>
+									<td>필수 입력항목일 경우 true 값을 입력</td>
+								</tr>
+								<tr>
+									<td>aria-invalid="true"</td>
+									<td>입력 항목이 유효하지 않으면 true 값으로 변경</td>
+								</tr>
+								<tr>
+									<td rowspan="2">div<br>sapn</td>
+									<td></td>
+									<td></td>
+									<td>설명 글 식별자 설정</td>
+								</tr>
+								<tr>
+									<td>alert</td>
+									<td></td>
+									<td>입력 항목이 유효하지 않을 경우 화면에 표시되어 사용자에게 입력 값이 잘못 되었음을 알리는 역할 설정</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">페이지 내비게이터</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>- 내비게이션 역할을 수행 함에도 단순 하게 링크를 div 요소로 그룹화하여 제공하는 것보다 내비게이션(navigation) 역할을 부여하는 것이 보다 의미적이며 유효 적절할
+						것이다.
+						뿐만 아니라 현재 탐색 중인 영역이 페이지 내비게이터 UI 컴포넌트 임을 스크린리더 사용자에게 알려 줄 수 있는 레이블(Label)을 제공할 필요가 있다. </p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">div</td>
+									<td>navigation</td>
+									<td></td>
+									<td>내비게이션 역할 설정</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-label</td>
+									<td>내비게이션 레이블 설정</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">실시간 폼 피드백</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>- 사용자에게 전달할 검증 결과 피드백을 포함하는 요소에 role="alert"를 추가해 주기만 하면 된다.
+						참고로, alert 역할(Role)의 경우 이것은 이미 Live Region에 속하는 역할이기 때문에 aria-live 속성
+						(Property)을 추가로 적용할 필요가 없다. 일부 최대 호환성을 위해 aria-live 속성(Property)을 적용하는 사용자들도 있기는 하지만, iOS의 Voice
+						Over에서 중복하여 읽어주는 이슈가 있다.</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>div</td>
+									<td>alert</td>
+									<td></td>
+									<td>사용자의 즉각적인 주의가 필요한 정보 전달</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">캐러셀</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>- 캐러셀 UI 컴포넌트로 설정할 div 요소에 고유 식별자 id를 설정한 다음, 캐러셀 UI 컴포넌트 레이블을 HTML5 data-* 접두사를 사용하여 식별 가능하도록
+						설정한다. 여기에 하드 코딩 된 레이블은 자바스크립트에서 aria-label 속성을 설정할 때 참고하게 된다. 이때 data-* 접두사 속성을 사용하지 않고 바로
+						aria-label 속성을 하드 코딩하는 것도 가능하다. 이어서 각 슬라이드 요소를 설명하는 레이블을 data-* 접두사 속성을 사용하여 작성한다.</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>div</td>
+									<td>region</td>
+									<td>aria-label</td>
+									<td>영역 역할을 설정하고 레이블 추가.</td>
+								</tr>
+								<tr>
+									<td>ol</td>
+									<td>tablist</td>
+									<td></td>
+									<td>tab의 집합 역할 설정.</td>
+								</tr>
+								<tr>
+									<td>li</td>
+									<td>presentation</td>
+									<td></td>
+									<td>
+										<xmp>
+											<li>
+										</xmp>요소가 가지는 리스트의 의미를 무시
+									</td>
+								</tr>
+								<tr>
+									<td>a</td>
+									<td>tab</td>
+									<td>aria-selected="true/false"</td>
+									<td>tab 역할 설정 및 선택된 상태 처리.</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>aria-controls="{}"</td>
+									<td>조작하려는 tabpanel의 ID 속성 값 설정.</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>id="{}"</td>
+									<td>조작하려는 tabpanel이 참조하는 tab ID 속성 값.</td>
+								</tr>
+								<tr>
+									<td>article</td>
+									<td>role="tabpanel"</td>
+									<td>aria-hidden="true/false"</td>
+									<td>tabpanel 역할 설정 및 보조기기에서 들림/안들림 상태 처리</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>aria-labelledby="{}"</td>
+									<td>연결된 tab ID 속성 값 설정.</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>id="{}"</td>
+									<td>tab이 참조하는 tabpanel ID 속성 값.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep">콤보박스</h3>
+				<h4 class="tit_3dep">01. 개요</h4>
+				<div class="conts_box">
+					<p>- 사용자 정의 컴포넌트에 콤보박스(Combobox) 역할을, 콤보박스 목록에 해당되는 요소에는 리스트박스(Listbox)의 역할을, 그리고 리스트박스의 각 항목에는
+						옵션(Option) 역할을 부여한다. 기능적으로는 사용자의 선택에 따른 변경 값을 스크린리더에서 바로 읽어줄 수 있도록 할 수 있으며, 리스트박스의 펼침/접힘 상태 또한
+						안내해줄 수 있다.</p>
+				</div>
+				<h4 class="tit_3dep">02. 속성</h4>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<colgroup>
+								<col style="width:17%;">
+								<col style="width:17%;">
+								<col style="width:20%;">
+								<col style="width:;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>요소</th>
+									<th>역할</th>
+									<th>속성과 상태</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="7">input</td>
+									<td>combobox</td>
+									<td></td>
+									<td>콤보박스 역할</td>
+								</tr>
+								<tr>
+									<td rowspan="6"></td>
+									<td>aria-autocomplete</td>
+									<td>입력 완성 추천 제공 (list / item)</td>
+								</tr>
+								<tr>
+									<td>aria-owns=" "</td>
+									<td>리스트박스와 관계 형성(부모/자식)</td>
+								</tr>
+								<tr>
+									<td>aria-haspopup=" "</td>
+									<td>콤보박스와 연관된 리스트박스 팝업존재 유무 설정</td>
+								</tr>
+								<tr>
+									<td>aria-readonly=" "</td>
+									<td>읽기 전용 설정(편집이 가능하지 않음)</td>
+								</tr>
+								<tr>
+									<td>aria-expanded=" "</td>
+									<td>펼침/접힘 상태를 제공</td>
+								</tr>
+								<tr>
+									<td>aria-activedescendant=" "</td>
+									<td>활성화된 자손 요소 정보를 실시간으로 제공</td>
+								</tr>
+								<tr>
+									<td rowspan="2">ul</td>
+									<td>listbox</td>
+									<td></td>
+									<td>리스트박스 역할</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>aria-hidden=" "</td>
+									<td>화면 표시/비표시 설정</td>
+								</tr>
+								<tr>
+									<td>li</td>
+									<td>option</td>
+									<td></td>
+									<td>옵션역할</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

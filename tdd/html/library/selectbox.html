@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>셀렉트박스(디자인)</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+	<link rel="stylesheet" type="text/css" href="../../css/library.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li class="on"><a href="../library/layout_lnb.html">HTML DOM Library</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li ><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li class="on"><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li class="depth"><a href="">레이아웃</a>
+						<ul>
+							<li><a href="../library/layout_lnb.html">좌측</a></li>
+							<li><a href="../library/layout.html">비좌측</a></li>
+							<li><a href="../library/layout_winpop.html">윈도우팝업</a></li>
+							<li><a href="../library/layout_laypop.html">레이어팝업</a></li>
+						</ul>
+					</li>
+					<li><a href="../library/acordion.html">아코디언</a></li>
+					<li><a href="../library/thumbnail.html">썸네일</a></li>
+					<li><a href="../library/video.html">비디오&amp;플레이어</a></li>
+					<li><a href="../library/button.html">버튼</a></li>
+					<li><a href="../library/calender.html">캘린더</a></li>
+					<li class="depth"><a href="#">게시판</a>
+						<ul>
+							<li><a href="../library/board01.html">기본형</a></li>
+							<li><a href="../library/board02.html">입력형</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">테이블</a>
+						<ul>
+							<li><a href="../library/table05.html">세로형</a></li>
+							<li><a href="../library/table06.html">가로형</a></li>
+						</ul>
+					</li>
+					<li class="depth on"><a href="#">폼</a>
+						<ul>
+							<li class="on"><a href="../library/selectbox.html">셀렉트박스(디자인)</a></li>
+							<li><a href="../library/checkbox.html">Check/Radio(디자인)</a></li>
+							<li><a href="../library/login.html">로그인</a></li>
+							<li><a href="../library/join.html">회원가입</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">탭</a>
+						<ul>
+							<li><a href="../library/percent_tab.html">100%탭</a></li>
+							<li><a href="../library/fixed_tab.html">고정탭</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">페이징</a>
+						<ul>
+							<li><a href="../library/paging.html">기본형</a></li>
+							<li><a href="../library/paging_input.html">입력형</a></li>
+						</ul>
+					</li>
+					<li><a href="../library/bullet.html">블릿리스트</a></li>
+					<li><a href="../library/banner_01.html">슬라이드배너</a></li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<!-- Contents -->
+			<div id="contents">
+				<h3 class="tit_2dep">셀렉트박스(디자인)</h3>
+				<h5 class="tit_4dep">[VIEW]</h5>
+				<div class="library_box">
+					<div class="ui_select_dom item_wrap f_wd_3">
+						<div class="item_view" id="cusomtSelectbox_2_button">
+							<a href="#0" class="ui_select_button" title="생년월일 열기">
+								<span class="ui_select_text">1981</span>
+								<span class="hide">선택됨</span>
+								<span class="ico"></span>
+							</a>
+						</div>
+						<div class="item_list" id="cusomtSelectbox_2_menu">
+							<div class="ui_selectbox_wrapper ui_item_scrollarea ui_item_content">
+								<ul>
+									<li><a href="#1" data-value="생년" data-text="생년" title="생년월일">생년</a></li>
+									<li><a href="#2" data-value="1984" data-text="1984" title="생년월일">1984</a></li>
+									<li><a href="#3" data-value="1983" data-text="1983" title="생년월일">1983</a></li>
+									<li><a href="#4" data-value="1982" data-text="1982" title="생년월일">1982</a></li>
+									<li class="on"><a href="#5" data-value="1981" data-text="1981" title="생년월일">1981</a>
+									</li>
+									<li><a href="#6" data-value="1980" data-text="1980" title="생년월일">1980</a></li>
+									<li><a href="#7" data-value="1979" data-text="1979" title="생년월일">1979</a></li>
+									<li><a href="#8" data-value="1978" data-text="1978" title="생년월일">1978</a></li>
+									<li><a href="#9" data-value="1977" data-text="1977" title="생년월일">1977</a></li>
+								</ul>
+							</div>
+							<div class="scroll ui_item_scrollbar" unselectable="on">
+								<span class="bg_top"></span>
+								<span class="bg_mid"></span>
+								<span class="bg_btm"></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="ui_select_dom item_wrap f_wd_3 on">
+						<div class="item_view" id="cusomtSelectbox_2_button">
+							<a href="#0" class="ui_select_button" title="생년월일 열기">
+								<span class="ui_select_text">1981</span>
+								<span class="hide">선택됨</span>
+								<span class="ico"></span>
+							</a>
+						</div>
+						<div class="item_list" id="cusomtSelectbox_2_menu">
+							<div class="ui_selectbox_wrapper ui_item_scrollarea ui_item_content">
+								<ul>
+									<li><a href="#1" data-value="생년" data-text="생년" title="생년월일">생년</a></li>
+									<li><a href="#2" data-value="1984" data-text="1984" title="생년월일">1984</a></li>
+									<li><a href="#3" data-value="1983" data-text="1983" title="생년월일">1983</a></li>
+									<li><a href="#4" data-value="1982" data-text="1982" title="생년월일">1982</a></li>
+									<li class="on"><a href="#5" data-value="1981" data-text="1981" title="생년월일">1981</a>
+									</li>
+									<li><a href="#6" data-value="1980" data-text="1980" title="생년월일">1980</a></li>
+									<li><a href="#7" data-value="1979" data-text="1979" title="생년월일">1979</a></li>
+									<li><a href="#8" data-value="1978" data-text="1978" title="생년월일">1978</a></li>
+									<li><a href="#9" data-value="1977" data-text="1977" title="생년월일">1977</a></li>
+								</ul>
+							</div>
+							<div class="scroll ui_item_scrollbar" unselectable="on">
+								<span class="bg_top"></span>
+								<span class="bg_mid"></span>
+								<span class="bg_btm"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h5 class="tit_4dep">[CODE]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp>
+							<!-- 기본 -->
+							<div class="ui_select_dom item_wrap f_wd_3">
+								<div class="item_view" id="cusomtSelectbox_2_button">
+									<a href="#0" class="ui_select_button" title="생년월일 열기">
+										<span class="ui_select_text">1981</span>
+										<span class="hide">선택됨</span>
+										<span class="ico"></span>
+									</a>
+								</div>
+								<div class="item_list" id="cusomtSelectbox_2_menu">
+									<div class="ui_selectbox_wrapper ui_item_scrollarea ui_item_content">
+										<ul>
+											<li><a href="#1" data-value="생년" data-text="생년" title="생년월일">생년</a></li>
+											<li><a href="#2" data-value="1984" data-text="1984" title="생년월일">1984</a>
+											</li>
+											<li><a href="#3" data-value="1983" data-text="1983" title="생년월일">1983</a>
+											</li>
+											<li><a href="#4" data-value="1982" data-text="1982" title="생년월일">1982</a>
+											</li>
+											<li class="on"><a href="#5" data-value="1981" data-text="1981"
+													title="생년월일">1981</a></li>
+											<li><a href="#6" data-value="1980" data-text="1980" title="생년월일">1980</a>
+											</li>
+											<li><a href="#7" data-value="1979" data-text="1979" title="생년월일">1979</a>
+											</li>
+											<li><a href="#8" data-value="1978" data-text="1978" title="생년월일">1978</a>
+											</li>
+											<li><a href="#9" data-value="1977" data-text="1977" title="생년월일">1977</a>
+											</li>
+										</ul>
+									</div>
+									<div class="scroll ui_item_scrollbar" unselectable="on">
+										<span class="bg_top"></span>
+										<span class="bg_mid"></span>
+										<span class="bg_btm"></span>
+									</div>
+								</div>
+							</div>
+
+							<!-- 리스트 열림 .on -->
+							<div class="ui_select_dom item_wrap f_wd_3 on">
+								<div class="item_view" id="cusomtSelectbox_2_button">
+									<a href="#0" class="ui_select_button" title="생년월일 열기">
+										<span class="ui_select_text">1981</span>
+										<span class="hide">선택됨</span>
+										<span class="ico"></span>
+									</a>
+								</div>
+								<div class="item_list" id="cusomtSelectbox_2_menu">
+									<div class="ui_selectbox_wrapper ui_item_scrollarea ui_item_content">
+										<ul>
+											<li><a href="#1" data-value="생년" data-text="생년" title="생년월일">생년</a></li>
+											<li><a href="#2" data-value="1984" data-text="1984" title="생년월일">1984</a>
+											</li>
+											<li><a href="#3" data-value="1983" data-text="1983" title="생년월일">1983</a>
+											</li>
+											<li><a href="#4" data-value="1982" data-text="1982" title="생년월일">1982</a>
+											</li>
+											<li class="on"><a href="#5" data-value="1981" data-text="1981"
+													title="생년월일">1981</a></li>
+											<li><a href="#6" data-value="1980" data-text="1980" title="생년월일">1980</a>
+											</li>
+											<li><a href="#7" data-value="1979" data-text="1979" title="생년월일">1979</a>
+											</li>
+											<li><a href="#8" data-value="1978" data-text="1978" title="생년월일">1978</a>
+											</li>
+											<li><a href="#9" data-value="1977" data-text="1977" title="생년월일">1977</a>
+											</li>
+										</ul>
+									</div>
+									<div class="scroll ui_item_scrollbar" unselectable="on">
+										<span class="bg_top"></span>
+										<span class="bg_mid"></span>
+										<span class="bg_btm"></span>
+									</div>
+								</div>
+							</div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+			<!-- //Contents -->
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

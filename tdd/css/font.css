@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* 본고딕 Noto Sans */
+@font-face {
+	font-family:'Noto Sans'; /* Bold */
+	src: url('../font/NotoSans-Bold.eot');
+	src: local(※),
+			url('../font/NotoSans-Bold.eot#iefix') format('embedded-opentype'),
+			url('../font/NotoSans-Bold.woff2') format('woff2'),
+			url('../font/NotoSans-Bold.woff') format('woff'),
+			url('../font/NotoSans-Bold.otf') format('opentype');
+	font-weight:700;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:'Noto Sans'; /* Medium */
+	src: url('../font/NotoSans-Medium.eot');
+	src:local(※),
+			url('../font/NotoSans-Medium.eot#iefix') format('embedded-opentype'),
+			url('../font/NotoSans-Medium.woff2') format('woff2'),
+			url('../font/NotoSans-Medium.woff') format('woff'),
+			url('../font/NotoSans-Medium.otf') format('opentype');
+	font-weight:500;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:'Noto Sans'; /* Regular */
+	src: url('../font/NotoSans-Regular.eot');
+	src:local(※),
+			url('../font/NotoSans-Regular.eot#iefix') format('embedded-opentype'),
+			url('../font/NotoSans-Regular.woff2') format('woff2'),
+			url('../font/NotoSans-Regular.woff') format('woff'),
+			url('../font/NotoSans-Regular.otf') format('opentype');
+	font-weight:400;
+	font-style:normal;
+}

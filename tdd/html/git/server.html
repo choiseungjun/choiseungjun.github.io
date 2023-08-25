@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>Choiseungjun Portpolio</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li class="on"><a href="../git/intro.html">GIT</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li ><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li class="on"><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li><a href="../git/intro.html">Intro</a></li>
+					<li><a href="../git/basic_info.html">기본개념</a></li>
+					<li><a href="../git/gui.html">GUI 사용법</a></li>
+					<li><a href="../git/gitlab.html">GitLab 이용가이드</a></li>
+					<li class="on"><a href="../git/server.html">설치형 Git서버 설치테스트</a></li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<div id="contents">
+				<h3 class="tit_2dep">설치형 Git 서버 설치테스트</h3>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- GitHub, GitLab 와 같이 원격저장소 제공 서비스를 하는 사이트를 통해 손쉽게 원격저장소를 세팅할 수 있다. 다만 인터넷이 연결되어야 사용 가능하며
+								서비스에 따라 Repository의 제한이 있을 수 있으며 추가 서비스 (예를 들어 코드를 비공개설정) 이용시 비용이 발생할 수 있기 때문에 사용 목적에 따라
+								선택해야 한다.</p>
+						</li>
+						<li>
+							<p>- 여기선 설치형 Git Server 관련해서 이야기 하고자 한다.<br>설치형 Git Server 세팅하는 방법은 다양하다. 일반적으로 리눅스/유닉스 OS
+								에서 설치형 Git Server 세팅하며 그 외에도 다양한 방법으로 세팅할 수 있다. 그래서 추천/권장하는 방법은 있어도 어느 한가지 정답은 없다.</p>
+						</li>
+						<li>
+							<p>- Git Server 가장 손쉽게 세팅할 수 있는 방법을 찾기 위해 우리에게 생소한 리눅스/유닉스 OS 대신 Windows OS 와 IIS 서버로 세팅하는
+								방법이 없을까 하는 고민으로 테스트 하기로 하였다.</p>
+						</li>
+						<li>
+							<p>- GIT 저장소와의 통신은 local, SSH, Git, HTTP 의 네 가지 네트워크 프로토콜을 사용할 수 있다.각각의 프로토콜은 각자 장단점이 있으며 상세
+								내용은 아래 URL은 참고한다.<br>그 중 HTTP 프로토콜 세팅 중 우리에게 익숙한 IIS 서버로 사용하기 위해 Bonobo Git Server 프로그램을
+								사용하였다.<br> 참고로 Git Server 시 HTTP 프로토콜 사용하기 위한 서버는 아파치 서버를 일반적으로 사용한다.<br>지금 하고 있는 세팅
+								테스트는 GUI 로 손쉽게 세팅하는 기준으로 선택한 것일 뿐 Git Server 세팅 할 때 주로 선택하는 방법은 아니다. 이 점을 참고해야 한다.<br>
+							</p>
+						</li>
+						<li>
+							<p class="fc_point">[출처] <a href="https://git-scm.com/book/ko/v2/Git-서버-프로토콜"
+									target="_blank">https://git-scm.com/book/ko/v2/Git-서버-프로토콜</a></p>
+						</li>
+					</ul>
+					<h4 class="tit_3dep">IIS 서버 활용 : Bonobo Git Server</h4>
+					<h5 class="tit_4dep">준비해야할 사항</h5>
+					<div class="conts_box">
+						<ul>
+							<li>
+								<p>- 닷넷프레임워크 4.5<br><a
+										href="https://www.microsoft.com/ko-kr/download/details.aspx?id=30653"
+										target="_blank">https://www.microsoft.com/ko-kr/download/details.aspx?id=30653</a><br>윈도우
+									10의 PC는 설치가 되어 있다.</p>
+							</li>
+							<li>
+								<p>- GIT<br><a href="http://git-scm.com" target="_blank">http://git-scm.com</a><br>깃을
+									사용하려면 필수로 설치가 되어야 한다.</p>
+							</li>
+							<li>
+								<p>- Bonobo Git Server<br><a href="http://bonobogitserver.com"
+										target="_blank">http://bonobogitserver.com</a><br>깃서버를 손쉽게 설치하기 위한 GUI 프로그램.</p>
+							</li>
+							<li>
+								<p class="fc_point">[출처]</p>
+								<p>- <a href="https://bonobogitserver.com/install/"
+										target="_blank">https://bonobogitserver.com/install/</a></p>
+								<p>- <a href="https://yourpresence.tistory.com/98"
+										target="_blank">https://yourpresence.tistory.com/98</a></p>
+								<p>- <a href="https://blog.gaerae.com/2015/05/git-server-for-windows.html"
+										target="_blank">https://blog.gaerae.com/2015/05/git-server-for-windows.html</a>
+								</p>
+								<p>- <a href="https://codeday.me/ko/qa/20190322/121763.html"
+										target="_blank">https://codeday.me/ko/qa/20190322/121763.html</a></p>
+								<p>- <a href="https://studyforus.tistory.com/219"
+										target="_blank">https://studyforus.tistory.com/219</a></p>
+								<p>- <a href="https://hong9.tistory.com/5?category=744036"
+										target="_blank">https://hong9.tistory.com/5?category=744036</a></p>
+							</li>
+						</ul>
+					</div>
+					<div class="conts_box">
+						<ul>
+							<li class="fc_point">1. IIS설정하기</li>
+							<li>
+								<img src="../../images/git/img_server01.jpg" alt="">
+								<p>1) 제어판 &gt; 프로그램 &gt; Windows 기능 켜기/끄기</p>
+							</li>
+						</ul>
+					</div>
+					<div class="conts_box">
+						<ul>
+							<li class="fc_point">2. Bonobo Git Server 파일 적용</li>
+							<li>
+								<img src="../../images/git/img_server02.jpg" alt="">
+								<p>1) <a href="https://bonobogitserver.com/"
+										target="_blank">https://bonobogitserver.com/</a> 에서 파일 다운로드.</p>
+								<p>2) 다운로드 한 Bonobo.Git.Server 폴더를 웹서버로 지정한 폴더 하위로 이동. Bonobo.Git.Server 폴더명은 변경 가능.</p>
+								<p>3) Bonobo.Git.Server 폴더 &gt; App_Data 폴더 &gt; Repositories 폴더의 오른쪽 버튼 메뉴의 속성 클릭 속성창에서
+									보안탭의 IIS_IUSRS 의 편집을 클릭을 해서 수정 쓰기 권한을 얻어온다.</p>
+							</li>
+							<li>
+								<img src="../../images/git/img_server03.jpg" alt="">
+								<p><span class="tip">Tip</span>IIS_IUSRS 가 없을 경우 ‘편집’ 버튼 &gt; 보안창의 ‘추가' 버튼 &gt; 사용자 또는
+									그룹 선택의 ‘고급' 버튼 &gt; 사용자 또는 그룹 선택의 ‘지금 찾기’버튼 클릭 &gt; IIS_IUSRS 선택 후 추가</p>
+							</li>
+							<li>
+								<p>4) ‘IIS(인터넷 정보 서비스) 관리자’ 실행</p>
+							</li>
+							<li>
+								<img src="../../images/git/img_server04.jpg" alt="">
+								<p>5) Bonobo.Git.Server 폴더가 있는 웹서버로 정한 폴더에서 오른쪽 버튼 메뉴의 ‘응용 프로그램으로 변환’ 메뉴 클릭</p>
+							</li>
+							<li>
+								<img src="../../images/git/img_server05.jpg" alt="">
+								<p>6) 응용 프로그램 풀의 ‘선택' 버튼클릭 &gt; .NET v4.5 선택</p>
+							</li>
+							<li>
+								<img src="../../images/git/img_server06.jpg" alt="">
+								<p>7) IIS(인터넷 정보 서비스) 관리자의 ‘사용 권한 편집’ 클릭해서 Repositories폴더의 IIS_IUSRS 권한 편집과 동일하게 권한편집
+									진행.</p>
+							</li>
+							<li>
+								<p>8) 상단 그림의 <b>*:80 (http) 찾아보기</b> 를 클릭하면 깃 서버 설정이 되었는지 알 수 있으며 오류 메시지가 나오면 권한 수정이 바르게
+									되었는지 확인해 보자</p>
+							</li>
+							<li>
+								<img src="../../images/git/img_server07.jpg" alt="">
+								<p>9) 깃 서버 설정이 정상적으로 되면 아래 화면이 보여지며 Create new repository 클릭하여 Git 원격 저장소 설정한다.<br>기본
+									관리자 계정: admin / admin</p>
+							</li>
+							<li>
+								<img src="../../images/git/img_server08.jpg" alt="">
+								<p>10) 상단 ‘Settings’의 Repository Directory 의 기본 경로는 ~/App_Data/Repositories 이나 다른 경로로 바꿀
+									수 있다.</p>
+							</li>
+							<li>
+								<img src="../../images/git/img_server09.jpg" alt="">
+								<p>11) Create New Repository 클릭하여 원하는 프로젝트 네임과 프로젝트 설명을 적고 아래의 세부 설정 부분이 필요한 경우는 체크하여 원격
+									저장소를 생성한다.</p>
+							</li>
+							<li>
+								<img src="../../images/git/img_server10.jpg" alt="">
+								<img src="../../images/git/img_server11.jpg" alt="">
+								<p>12) 생성된 원격 저장소 목록에서 프로젝트 네임을 클릭하면 Git 원격 경로를 확인 할 수 있다.</p>
+							</li>
+						</ul>
+					</div>
+					<h4 class="tit_3dep">웹서버 세팅 자동 배포</h4>
+					<div class="conts_box">
+						<ul>
+							<li>
+								<p>1. Git Server가 세팅된 서버 다른 디렉토리에 클론 저장소 생성하고 IIS 웹서버 세팅</p>
+							</li>
+							<li>
+								<p>2. Bare 원격저장소에서 신규 생성한 Repository 의 hooks 폴더로 이동</p>
+							</li>
+							<li>
+								<p>3. post-receive 파일 생성하여 아래 내용 기입 → post-receive : push 이후 동작하는 훅 파일</p>
+								<div class="pre">
+									<xmp>cd <non-bare storage path>
+											unset GIT_DIR
+											git pull origin master</xmp>
+								</div>
+							</li>
+							<li>
+								<p>- 다만 여기서 <span class="fc_point">git: 'pull' is not a git command. See 'git
+										--help'.</span> 메시지를 호출하며 Git Pull 이 동작하지 않았다.<br>리서치 해보니 HTTP를 통해서 Push하는 것도
+									가능하나 단지 이 방법은 잘 사용하지 않는 WebDAV 환경을 완벽하게 구축해야 한다. WebDAV 환경은 Apache web-server 대상으로
+									설명하고 있어서 더 이상 테스트는 어려웠다.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="conts_box">
+						<ul>
+							<li>
+								<p class="fc_point">[출처]</p>
+							</li>
+							<li>
+								<p>- <a href="https://withhsunny.tistory.com/50"
+										target="_blank">https://withhsunny.tistory.com/50</a>
+							</li>
+							<li>
+								<p>- <a href="https://git-scm.com/book/ko/v1/Git-서버-프로토콜"
+										target="_blank">https://git-scm.com/book/ko/v1/Git-서버-프로토콜</a>
+							</li>
+							<li>
+								<p>- <a href="https://mirrors.edge.kernel.org/pub/software/scm/git/docs/howto/setup-git-server-over-http.txt"
+										target="_blank">https://mirrors.edge.kernel.org/pub/software/scm/git/docs/howto/setup-git-server-over-http.txt</a>
+							</li>
+						</ul>
+					</div>
+					<h4 class="tit_3dep">마치며...</h4>
+					<div class="conts_box">
+						<ul>
+							<li>
+								<p>- 웹서버의 지역저장소의 자동배포를 실패하여 Bonobo Git Server 프로그램 사용이 어렵다는것을 확인하였다.</p>
+							</li>
+							<li>
+								<p>- 리눅스/유닉스 OS의 Apache web-server 세팅은 경험 부족으로 더이상 테스트 진행은 하지 않기로 하였다.</p>
+							</li>
+							<li>
+								<p>- 참고로 본사에서 사용하고 있는 개발서버도 리눅스/유닉스 OS에서 Apache web-server로 되어 있다.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

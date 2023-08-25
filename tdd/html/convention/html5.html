@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>Choiseungjun Portpolio</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html">
+						<sspan class="hide">VINYL C</sspan>
+					</a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li class="on"><a href="../convention/intro.html">Convention</a></li>
+						<li><a href="../accessibility/intro.html">Accessibility</a></li>
+						<li><a href="../seo/seo.html">SEO</a></li>
+						<li><a href="../sass/intro.html">Sass</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li class="on"><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li><a href="intro.html">Intro</a></li>
+					<li class="depth"><a href="common.html">Common</a>
+						<ul>
+							<li><a href="common.html#common01">명명규칙</a></li>
+							<li><a href="common.html#common02">작업폴더구조</a></li>
+							<li><a href="common.html#common03">로컬서버세팅</a></li>
+							<li><a href="common.html#common04">특수문자표현</a></li>
+							<li><a href="common.html#common05">HTML문서세팅</a></li>
+							<li><a href="common.html#common06">들여쓰기</a></li>
+							<li><a href="common.html#common07">이미지저장</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="html.html">HTML</a>
+						<ul>
+							<li><a href="html.html#html01">문서구조</a></li>
+							<li><a href="html.html#html02">HTML주석</a></li>
+							<li><a href="html.html#html03">태그속성순서</a></li>
+							<li><a href="html.html#html04">이미지태그</a></li>
+							<li><a href="html.html#html05">label</a></li>
+							<li><a href="html.html#html06">table</a></li>
+						</ul>
+					</li>
+					<li class="on"><a href="html5.html">HTML5</a></li>
+					<li class="depth"><a href="css.html">CSS</a>
+						<ul>
+							<li><a href="css.html#css01">CSS 그룹핑</a></li>
+							<li><a href="css.html#css02">CSS 속성 나열 순서</a></li>
+							<li><a href="css.html#css03">주석</a></li>
+							<li><a href="css.html#css04">CSS (추천)약식</a></li>
+							<li><a href="css.html#css05">사용단위</a></li>
+							<li><a href="css.html#css06">미디어타입 CSS</a></li>
+							<li><a href="css.html#css07">폰트</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<div id="contents">
+				<h3 class="tit_2dep not">HTML5 &amp; CSS3 하위브라우저 사용</h3>
+				<h4 class="tit_3dep">01. html5shiv</h4>
+				<h5 class="tit_4dep">01_1 소개</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 존 레식(John Resig)이 처음 개발하고 레미샤프(Remi Sharp)가 완성한 자바스크립트로서, 새로운 HTML5 섹셔닝 요소를 이전 버전의
+								IE6~9, Safari 4.x(iPhone 3.x)와 Firefox 3.x 에서도 작동하도록 해주는 라이브러리이다.</p>
+						</li>
+						<li>
+							<p>- 기본적인 createElement() 기술과 IE6~8에서 기술 적용을 위해 document.createElement와
+								document.createDocumentFragment를 monkeypatches와 함께 포함하고 있다. 또한 IE6-9, Safari 4.x and FF
+								3.x에 대한 기본적인 스타일링을 제공한다.</p>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">01_2 다운로드 경로</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- <a href="https://github.com/afarkas/html5shiv" target="_blank"
+									title="새 창">https://github.com/afarkas/html5shiv</a></p>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">01_3 사용방법</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 다운로드한 파일의 dist 폴더에서 사용할 파일을 선택한 후 &lt;head&gt;부분에 아래와 같이 적용한다.</p>
+							<div class="exmp pre">
+								&lt;head&gt;<br>
+								&lt;!--[if lt IE 9]&gt; &lt;script src="/경로명/html5shiv.js"&gt;&lt;/script&gt;
+								&lt;![endif]--&gt;<br>
+								&lt;/head&gt;
+							</div>
+						</li>
+						<li>
+							<p>- 다운로드 하지 않고 풀경로를 적어 사용도 가능합니다.</p>
+							<div class="exmp pre">&lt;script
+								src="//html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;</div>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">02_1 Respond.js</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- CSS3의 미디어 쿼리(Media Query)를 이용하면 웹브라우저 가로폭에 따라 다르게 모양을 꾸밀 수 있습니다. 하위 브라우저에서는 구현을 할 수 없는
+								문제점이 있습니다. respond.js를 통하여 구현이 가능합니다.</p>
+						</li>
+						<li>
+							<p>- <a href="https://github.com/scottjehl/Respond/" target="_blank"
+									title="새 창">https://github.com/scottjehl/Respond/</a> 에서 다운가능하며 해당 프로젝트 폴더에 업로드 한 뒤
+								사용하면 됩니다.</p>
+							<div class="exmp pre">&lt;!--[if lt IE 9]&gt; &lt;script
+								src="/경로명/respond.mion.js"&gt;&lt;/script&gt; &lt;![endif]--&gt;</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

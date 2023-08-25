@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>Choiseungjun Portpolio</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li class="on"><a href="../framework/intro.html">Intro</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li ><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li class="on"><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li><a href="../framework/intro.html">Intro</a></li>
+					<li class="depth"><a href="../framework/intro.html">개요</a>
+						<ul>
+							<li><a href="general.html#general01">Vue.js</a></li>
+							<li><a href="general.html#general02">Nuxt.js</a></li>
+						</ul>
+					</li>
+					<li class="on depth"><a href="../framework/setting.html">환경설정 가이드</a>
+						<ul>
+							<li><a href="setting.html#setting01">Node.js 설치하기</a></li>
+							<li><a href="setting.html#setting02">Vue.js 설치하기</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="../framework/project.html">프로젝트 생성</a>
+						<ul>
+							<li><a href="project.html#project01">Nuxt.js 이용 방법</a></li>
+							<li><a href="project.html#project02">Vue Cli 이용 방법</a></li>
+							<li><a href="project.html#project03">Reference</a></li>
+						</ul>
+					</li>
+					<li class=""><a href="../framework/etc.html">기타</a></li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<div id="contents">
+				<h3 class="tit_2dep">기본사항</h3>
+				<div class="conts_box">
+					<p class="intro">
+						Vue.js 프로젝트 시 기본 준비 사항에 대한 내용이며,<br> 서술된 Node.js 설치 이후 Vue.js 설치 및 프로젝트 설정은 터미널을 통해 이루어지기 때문에 기본적인 터미널 사용 방법은 숙지가 되어야 합니다.<br>
+						터미널은 OS에서 기본적으로 제공하며, Windows 10의 경우 파워쉘(Power Shell)을 이용하며, 필요에 따라 에디터에서 제공하는 터미널을 이용해도 무관합니다.
+					</p>
+				</div>
+				<h4 class="tit_3dep" id="setting01">Node.js 설치(NPM설치)</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>
+								- 8.11 이상 버전의 Node.js를 설치합니다. 주 이때 현재 버전(최신 기능)이 아닌 LTS버전을 설치하시기 바랍니다.<br>
+								(작성일 기준 LTS버전은 14.17.5) 설치 과정에 있어 자동으로 NPM(Node Package Manager)은 설치가 되므로 따로 설치가 필요 없으며,<br>
+								설치 시 옵션(설치 경로 등)은 기본으로 설정되어 있으니 변경 등을 하지 않습니다.
+							</p>
+						</li>
+						<li>
+							<img src="../../images/framework/img_vue01.png" alt="" style="margin:0 auto;">
+						</li>
+					</ul>
+					<h5 class="tit_4dep">설치 후 버전 확인</h5>
+					<p>
+						- 설치 후 버전 확인은 터미널 실행 후 아래의 명령어를 입력합니다. 터미널은 OS에서 제공하는 기본 터미널(Windows 10의 경우 파워쉘 실행 후 입력하면 됩니다.<br><br>
+					</p>
+					<ul>
+						<li>
+							<p>1. Node.js 버전 확인 명령어 :</p>
+							<div class="exmp pre">node -v</div>
+						</li>
+						<li>
+							<p>2. NPM 버전 확인 명령어 :</p>
+							<div class="exmp pre">npm -v</div>
+						</li>
+					</ul>
+				</div>
+
+				<h4 class="tit_3dep">터미널 기본 사용 방법</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>
+								- 에디터(VS Code)의 터미널을 이용하거나 각 OS에서 기본으로 제공하는 터미널을 이용할 수 있지만 프로젝트 생성 및 필요 라이브러리 등의 추가를 위해서는 아래의 터미널 기본 용어는 숙지하시기 바랍니다.
+							</p>
+						</li>
+					</ul>
+					<h5 class="tit_4dep">Mac OS용 터미널 명령어</h5>
+					<ul>
+						<li>
+							<p>1. 터미널 청소 :</p>
+							<div class="exmp pre">clear</div>
+						</li>
+						<li>
+							<p>2. 폴더(파일) 리스트 :</p>
+							<div class="exmp pre">ls</div>
+						</li>
+						<li>
+							<p>3. 폴더 이동 :</p>
+							<div class="exmp pre">cd 폴더명</div>
+						</li>
+						<li>
+							<p>4. 상위 폴더 이동 :</p>
+							<div class="exmp pre">cd ../</div>
+						</li>
+					</ul>
+					<h5 class="tit_4dep">Windows 10용 파워쉘 명령어</h5>
+					<ul>
+						<li>
+							<p>1. 파워쉘 청소 :</p>
+							<div class="exmp pre">clear</div>
+						</li>
+						<li>
+							<p>2. 폴더(파일) 리스트 :</p>
+							<div class="exmp pre">dir</div>
+						</li>
+						<li>
+							<p>3. 폴더 이동 :</p>
+							<div class="exmp pre">cd 폴더명</div>
+						</li>
+						<li>
+							<p>4. 상위 폴더 이동 :</p>
+							<div class="exmp pre">cd ..</div>
+						</li>
+					</ul>
+					<h5 class="tit_4dep">NPM 기본 명령어</h5>
+					<ul>
+						<li>
+							<p>
+								- 프로젝트 생성 및 사용할 라이브러리(패키지) 설치를 위해 npm 명령어 또한 기본적으로 숙지가 되어야 함에 따라 기본적인 명령어는 아래의 url에서 확인하시기 바랍니다.
+							</p>
+						</li>
+						<li>
+							<p>- <a href="https://docs.npmjs.com/cli/v6/commands" target="_blank">https://docs.npmjs.com/cli/v6/commands</a></p>
+						</li>
+					</ul>
+				</div>
+
+				<h4 class="tit_3dep" id="setting02">Vue.js 설치하기</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 기본 사항인 node.js 설치 후 진행하시기 바랍니다. <a href="setting.html#node01">(node.js설치 바로가기)</a></p>
+						</li>
+						<li>
+							<p>- Vue.js는 문서 작성일 기준으로 3.2.6까지 릴리즈가 됐으며, 설치방법은 3가지 방법으로 설치 할 수 있습니다.</p>
+						</li>
+					</ul>
+					<h5 class="tit_4dep">Vue.js 설치 방법</h5>
+					<ul>
+						<li>
+							<p>
+								- 설치 방법은 위와 같으며, 해당 문서에서는 CLI를 설치하는 방법만 설명합니다.
+							</p>
+						</li>
+						<li>
+							<p>
+								1. CDN을 통한 import
+							</p>
+						</li>
+						<li>
+							<p>
+								2. npm을 사용하여 import
+							</p>
+						</li>
+						<li>
+							<p>
+								3. CLI(Command-Line Interface) 설치
+							</p>
+						</li>
+					</ul>
+					<h5 class="tit_4dep">Vue cli 설치방법</h5>
+					<ul>
+						<li>
+							<p>
+								- 터미널에 아래의 명령어를 입력하며, 최신 버전인 4.x의 경우 Node.js의 버전은 최소 8.9 이상이어야 하며, v10 이상을 추천합니다. 필요에 따라 nvm(Node Version Manager)을 통해 설치된 Node.js 버전을 관리합니다.
+							</p>
+						</li>
+						<li>
+							<p>
+								- 설치 시 권한(checkPermissions) 관련 에러 후 설치가 되지 않을 경우 아래의 명령어 앞에 sudo를 추가 후 설치하시면 됩니다.
+							</p>
+						</li>
+						<li>
+							<p>
+								1. 설치 명령어 : npm install --global @vue/cli 또는 npm i -g @vue/cli
+							</p>
+						</li>
+						<li>
+							<p>
+								<img src="../../images/framework/img_vue02.png" alt="" style="margin:0 auto;">
+							</p>
+						</li>
+					</ul>
+					<h5 class="tit_4dep">Vue cli 버전 확인</h5>
+					<ul>
+						<li>
+							<p>
+								- 설치 완료 후 설치된 버전으로 아래의 명령어를 터미널에 입력 후 확인 합니다.
+							</p>
+						</li>
+						<li>
+							<p>1. 버전 확인 명령어 : </p>
+							<div class="exmp pre">
+								- vue --version <br>
+								- vue -V
+							</div>
+						</li>
+						<li>
+							<p>
+								<img src="../../images/framework/img_vue03.png" alt="" style="margin:0 auto;">
+							</p>
+						</li>
+					</ul>
+
+					<h5 class="tit_4dep">Vue Cli 삭제</h5>
+					<ul>
+						<li>
+							<p>- 삭제는 npm의 삭제 명령어를 통해 삭제를 할 수 있습니다.<br>아래 명령어 중 1번째 명령어 입력 후 에러(checkPermissions) 후 삭제가 되지 않는 경우가 있는데 이는 대부분 권한 문제이니 아래의 명령어 중 2번째 명령어를 입력 후 계정(컴퓨터) 비밀번호를 입력하면 삭제가 됩니다.</p>
+						</li>
+						<li>
+							<p>1. 삭제 명령어 :</p>
+							<div class="exmp pre">
+								- npm uninstall @vue/cli -g
+							</div>
+						</li>
+						<li>
+							<p>2. 권한 에러 시 삭제 명령어 :</p>
+							<div class="exmp pre">
+								- sudo npm uninstall @vue/cli -g
+							</div>
+						</li>
+					</ul>
+
+					<h5 class="tit_4dep">업(다운)그레이드 및 특정 버전 설치 방법인</h5>
+					<ul>
+						<li>
+							<p>
+								- 기존 설치된 버전에서 최신 버전으로 업(다운)그레이드 가능하며, 필요에 따라 원하는 버전으로 업(다운)그레이드를 할 수 있습니다.
+							</p>
+						</li>
+						<li>
+							<p>1. 업그레이드 명령어 :</p>
+							<div class="exmp pre">
+								- npm update --global @vue/cli<br>
+								- npm update -g @vue/cli
+							</div>
+						</li>
+						<li>
+							<p>2. 다운그레이드(특정 버전 설치) :</p>
+							<div class="exmp pre">
+								- npm install -g @vue/cli@3.x.x
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<h4 class="tit_3dep">Vue Cli 장단점</h4>
+				<div class="conts_box">
+					<h5 class="tit_4dep">장점</h5>
+					<ul>
+						<li><p>1. SPA의 모든 장점</p></li>
+					</ul>
+					<h5 class="tit_4dep">단점</h5>
+					<ul>
+						<li><p>1. SEO</p></li>
+						<li><p>2. Layout</p></li>
+						<li><p>3. Router 수동 등록</p></li>
+						<li><p>4. 프로젝트 폴더 구조 고민 필요</p></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

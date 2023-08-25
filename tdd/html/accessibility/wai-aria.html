@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>Choiseungjun Portpolio</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li><a href="../convention/intro.html">Convention</a></li>
+						<li class="on"><a href="../accessibility/intro.html">Accessibility</a></li>
+						<li><a href="../seo/seo.html">SEO</a></li>
+						<li><a href="../sass/intro.html">Sass</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li ><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li class="on"><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li><a href="../accessibility/intro.html">Intro</a></li>
+					<li><a href="../accessibility/propperty.html">Property</a></li>
+					<li class="on"><a href="../accessibility/wai-aria.html">WAI-ARIA</a></li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<div id="contents">
+				<h3 class="tit_2dep">ARIA Roles &amp; States and Properties</h3>
+				<h4 class="tit_3dep">01. 기본</h4>
+				<p class="prev_txt">다음과 같은 기본 규칙을 준수한다</p>
+				<div class="conts_box">
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+				<h3 class="tit_2dep">작성 규칙</h3>
+				<h4 class="tit_3dep">01. 기본</h4>
+				<p class="prev_txt">다음과 같은 기본 규칙을 준수한다</p>
+				<div class="conts_box">
+					<ul>
+						<li>
+						</li>
+					</ul>
+				</div>
+				<h3 class="tit_2dep">Screen Reader</h3>
+				<h4 class="tit_3dep">01. 기본</h4>
+				<p class="prev_txt">아래의 2가지 스크린리더 모두 시각장애인에 의해서 개발되고 있다.</p>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 센스리더 프로페셔널 에디션 (Sense Reader Professional Edition)</p>
+							<div class="exmp">(주)엑스비전테크놀로지(www.xvtech.com)에서 개발해서 판매하는 스크린리더 현재, 접근성 검수 환경은 “센스리더” 로 하고
+								있다.</div>
+						</li>
+						<li>
+							<p>- 드림보이스 (Dream Voice) – v6.21</p>
+							<div class="exmp">실로암시각장애인복지관(www.silwel.or.kr)에서 개발해서 보급하는 스크린리더 국비지원으로 시각장애인의 신청을 받아 무료로
+								보급</div>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">02. 지원여부</h4>
+				<p class="prev_txt"> 현재 센스리더에서 지원하는 aria 속성은 아래와 같다. ( 버전 : 센스리더 더 넥스트/프로페셔널/베이직 v6.3.3 [2018-04-11] )
+					<br></p>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<div class="pre">
+								<p>role="combobox"</p>
+								<p>role="listbox"</p>
+								<p>role="main"</p>
+								<p>role="alert"</p>
+								<p>role="application"</p>
+								<p>role="document"</p>
+								<p>role="dialog"</p>
+								<p>role="tabpanel"</p>
+								<p>role="tab"</p>
+								<p>role="presentation"</p>
+								<p>aria-describedby</p>
+								<p>aria-relevant</p>
+								<p>aria-live</p>
+								<p>aria-selected</p>
+								<p>aria-controls</p>
+								<p>aria-expanded</p>
+								<p>aria-disabled</p>
+								<p>aria-label</p>
+								<p>aria-labelledby</p>
+								<p>aria-hidden</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

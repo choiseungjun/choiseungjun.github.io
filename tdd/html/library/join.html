@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>회원가입 예시</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+	<link rel="stylesheet" type="text/css" href="../../css/library.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li class="on"><a href="../library/layout_lnb.html">HTML DOM Library</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li ><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li class="on"><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li class="depth"><a href="">레이아웃</a>
+						<ul>
+							<li><a href="../library/layout_lnb.html">좌측</a></li>
+							<li><a href="../library/layout.html">비좌측</a></li>
+							<li><a href="../library/layout_winpop.html">윈도우팝업</a></li>
+							<li><a href="../library/layout_laypop.html">레이어팝업</a></li>
+						</ul>
+					</li>
+					<li><a href="../library/acordion.html">아코디언</a></li>
+					<li><a href="../library/thumbnail.html">썸네일</a></li>
+					<li><a href="../library/video.html">비디오&amp;플레이어</a></li>
+					<li><a href="../library/button.html">버튼</a></li>
+					<li><a href="../library/calender.html">캘린더</a></li>
+					<li class="depth"><a href="#">게시판</a>
+						<ul>
+							<li><a href="../library/board01.html">기본형</a></li>
+							<li><a href="../library/board02.html">입력형</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">테이블</a>
+						<ul>
+							<li><a href="../library/table05.html">세로형</a></li>
+							<li><a href="../library/table06.html">가로형</a></li>
+						</ul>
+					</li>
+					<li class="depth on"><a href="#">폼</a>
+						<ul>
+							<li><a href="../library/selectbox.html">셀렉트박스(디자인)</a></li>
+							<li><a href="../library/checkbox.html">Check/Radio(디자인)</a></li>
+							<li><a href="../library/login.html">로그인</a></li>
+							<li class="on"><a href="../library/join.html">회원가입</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">탭</a>
+						<ul>
+							<li><a href="../library/percent_tab.html">100%탭</a></li>
+							<li><a href="../library/fixed_tab.html">고정탭</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">페이징</a>
+						<ul>
+							<li><a href="../library/paging.html">기본형</a></li>
+							<li><a href="../library/paging_input.html">입력형</a></li>
+						</ul>
+					</li>
+					<li><a href="../library/bullet.html">블릿리스트</a></li>
+					<li><a href="../library/banner_01.html">슬라이드배너</a></li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<!-- Contents -->
+			<div id="contents">
+				<h3 class="tit_2dep">회원가입</h3>
+
+				<h5 class="tit_4dep">[VIEW]</h5>
+				<div class="library_box">
+					<div class="tb_join">
+						<table border="1">
+							<caption>회원가입 테이블</caption>
+							<colgroup>
+								<col style="width:154px">
+								<col style="">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">
+										<label for="name" class="necess"><span class="ico_required">필수</span>이름</label>
+									</th>
+									<td>
+										<div>
+											<div class="wrap_form_l">
+												<p class="txt_info" style="padding-left:240px;">※ 이름은 한글, 영문 대/소문자,
+													특수문자( - _ . )만 이용 가능합니다.</p>
+												<input type="text" class="txt ab" id="name" style="width:220px;">
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<label for="email" class="necess"><span
+												class="ico_required">필수</span>이메일</label>
+									</th>
+									<td>
+										<div>
+											<div class="wrap_form_t">
+												<div style="padding-top:34px;">
+													<p class="txt_info">※ yahoo.com과 hotmail.com은 E-Mail 수신이 원활하지 않을 수
+														있습니다.</p>
+												</div>
+												<div class="ab">
+													<input type="text" class="txt" id="email" title="이메일 주소 입력란"
+														style="width:120px;">
+													@
+													<input type="text" class="txt" title="이메일 도메인 입력란"
+														style="width:120px;">
+													<select class="select" title="이메일 도메인 선택란">
+														<option>도메인 선택</option>
+													</select>
+												</div>
+												<p class="txt_alert mt4">이미 가입된 이메일 주소입니다.</p>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<label for="id" class="necess"><span class="ico_required">필수</span>아이디</label>
+									</th>
+									<td>
+										<div>
+											<div class="wrap_form_t">
+												<p class="txt_info" style="padding-top:34px;">※ 4~16자까지 영문자(소문자), 숫자만
+													가능합니다. [한글 및 특수문자 (스페이스 포함) 등은 사용할 수 없습니다.]</p>
+												<input type="text" class="txt ab" id="id" style="width:220px;">
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<label for="pw" class="necess"><span class="ico_required">필수</span>비밀번호</label>
+									</th>
+									<td>
+										<div>
+											<div class="wrap_form_t">
+												<p class="txt_info" style="padding-top:34px;">※ 영문+숫자+특수문자 조합하여 8~16자로
+													입력해 주세요. 사용 가능한 특수기호: ~!@$%^&*/?#+_-</p>
+												<div class="wrap_form_l">
+													<input type="password" class="txt ab" id="pw" style="width:220px;">
+													<p class="txt_alert" style="padding-left:240px;">[사용불가] 안전한 비밀번호 기준에
+														맞지 않습니다.</p>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<label for="confirm" class="necess"><span class="ico_required">필수</span>비밀번호
+											확인</label>
+									</th>
+									<td>
+										<div>
+											<div class="wrap_form_l">
+												<input type="password" class="txt ab" id="confirm" style="width:220px;">
+												<p class="txt_alert" style="padding-left:240px;">비밀번호가 일치하지 않습니다.</p>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<label for="hint" class="necess"><span class="ico_required">필수</span>비밀번호
+											힌트</label>
+									</th>
+									<td>
+										<div>
+											<select class="select" id="hint" title="비밀번호 힌트 선택란">
+												<option>비밀번호힌트질문</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<label for="address" class="necess"><span
+												class="ico_required">필수</span>주소</label>
+									</th>
+									<td>
+										<div>
+											<div class="wrap_form_t">
+												<ul style="padding-top:68px;">
+													<li>- 사은품 및 우편물이 배송될 주소입니다.</li>
+													<li>- 주문하신 상품의 배송지 변경을 원하시면, 기본배송지를 수정 해주세요.</li>
+													<li>- 사은품 및 우편물이 배송될 주소입니다.</li>
+													<li>- 주문하신 상품의 배송지 변경을 원하시면, 기본배송지를 수정 해주세요.</li>
+												</ul>
+												<div class="wrap_address ab">
+													<div>
+														<input type="text" class="txt" id="address" title="우편번호 앞자리 입력란"
+															style="width:120px;">
+														-
+														<input type="text" class="txt" title="우편번호 뒷자리 입력란"
+															style="width:120px;">
+														<a href="#" class="btn-zip">우편번호 찾기</a>
+													</div>
+													<div>
+														<input type="text" class="txt" title="기본주소 입력란"
+															style="width:171px;">
+														<input type="text" class="txt" title="상세주소 입력란"
+															style="width:171px;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<label for="phone" class="necess"><span
+												class="ico_required">필수</span>전화번호</label>
+									</th>
+									<td>
+										<div>
+											<select class="select" id="phone" title="식별번호 선택란">
+												<option>선택</option>
+												<option>010</option>
+												<option>0505</option>
+											</select>
+											-
+											<input type="text" class="txt" title="전화번호 가운데 자리 입력란" style="width:120px;">
+											-
+											<input type="text" class="txt" title="전화번호 끝 자리 입력란" style="width:120px;">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<div><span class="ico_required">필수</span>SMS 수신여부</div>
+									</th>
+									<td>
+										<div>
+											<div class="wrap_form_t">
+												<div class="ab">
+													<input type="radio" name="sms" class="rdo" id="sms01">
+													<label for="sms01">수신동의</label>
+													<input type="radio" name="sms" class="rdo" id="sms02">
+													<label for="sms02">수신안함</label>
+												</div>
+												<p class="txt_info" style="padding-top:22px;">※ SMS 수신여부를 동의 하시면, 다양한
+													정보와 각종 서비스 혜택을 받으실 수 있습니다.</p>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<h5 class="tit_4dep">[CODE]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp>
+							<div class="tb_join">
+								<table border="1">
+									<caption>회원가입 테이블</caption>
+									<colgroup>
+										<col style="width:154px">
+										<col style="">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">
+												<label for="name" class="necess"><span
+														class="ico_required">필수</span>이름</label>
+											</th>
+											<td>
+												<div>
+													<div class="wrap_form_l">
+														<p class="txt_info" style="padding-left:240px;">※ 이름은 한글, 영문
+															대/소문자, 특수문자( - _ . )만 이용 가능합니다.</p>
+														<input type="text" class="txt ab" id="name"
+															style="width:220px;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<label for="email" class="necess"><span
+														class="ico_required">필수</span>이메일</label>
+											</th>
+											<td>
+												<div>
+													<div class="wrap_form_t">
+														<div style="padding-top:34px;">
+															<p class="txt_info">※ yahoo.com과 hotmail.com은 E-Mail 수신이
+																원활하지 않을 수 있습니다.</p>
+														</div>
+														<div class="ab">
+															<input type="text" class="txt" id="email" title="이메일 주소 입력란"
+																style="width:120px;">
+															@
+															<input type="text" class="txt" title="이메일 도메인 입력란"
+																style="width:120px;">
+															<select class="select" title="이메일 도메인 선택란">
+																<option>도메인 선택</option>
+															</select>
+														</div>
+														<p class="txt_alert mt4">이미 가입된 이메일 주소입니다.</p>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<label for="id" class="necess"><span
+														class="ico_required">필수</span>아이디</label>
+											</th>
+											<td>
+												<div>
+													<div class="wrap_form_t">
+														<p class="txt_info" style="padding-top:34px;">※ 4~16자까지
+															영문자(소문자), 숫자만 가능합니다. [한글 및 특수문자 (스페이스 포함) 등은 사용할 수 없습니다.]
+														</p>
+														<input type="text" class="txt ab" id="id" style="width:220px;">
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<label for="pw" class="necess"><span
+														class="ico_required">필수</span>비밀번호</label>
+											</th>
+											<td>
+												<div>
+													<div class="wrap_form_t">
+														<p class="txt_info" style="padding-top:34px;">※ 영문+숫자+특수문자 조합하여
+															8~16자로 입력해 주세요. 사용 가능한 특수기호: ~!@$%^&*/?#+_-</p>
+														<div class="wrap_form_l">
+															<input type="password" class="txt ab" id="pw"
+																style="width:220px;">
+															<p class="txt_alert" style="padding-left:240px;">[사용불가] 안전한
+																비밀번호 기준에 맞지 않습니다.</p>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<label for="confirm" class="necess"><span
+														class="ico_required">필수</span>비밀번호 확인</label>
+											</th>
+											<td>
+												<div>
+													<div class="wrap_form_l">
+														<input type="password" class="txt ab" id="confirm"
+															style="width:220px;">
+														<p class="txt_alert" style="padding-left:240px;">비밀번호가 일치하지
+															않습니다.</p>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<label for="hint" class="necess"><span
+														class="ico_required">필수</span>비밀번호 힌트</label>
+											</th>
+											<td>
+												<div>
+													<select class="select" id="hint" title="비밀번호 힌트 선택란">
+														<option>비밀번호힌트질문</option>
+													</select>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<label for="address" class="necess"><span
+														class="ico_required">필수</span>주소</label>
+											</th>
+											<td>
+												<div>
+													<div class="wrap_form_t">
+														<ul style="padding-top:68px;">
+															<li>- 사은품 및 우편물이 배송될 주소입니다.</li>
+															<li>- 주문하신 상품의 배송지 변경을 원하시면, 기본배송지를 수정 해주세요.</li>
+															<li>- 사은품 및 우편물이 배송될 주소입니다.</li>
+															<li>- 주문하신 상품의 배송지 변경을 원하시면, 기본배송지를 수정 해주세요.</li>
+														</ul>
+														<div class="wrap_address ab">
+															<div>
+																<input type="text" class="txt" id="address"
+																	title="우편번호 앞자리 입력란" style="width:120px;">
+																-
+																<input type="text" class="txt" title="우편번호 뒷자리 입력란"
+																	style="width:120px;">
+																<a href="#" class="btn-zip">우편번호 찾기</a>
+															</div>
+															<div>
+																<input type="text" class="txt" title="기본주소 입력란"
+																	style="width:171px;">
+																<input type="text" class="txt" title="상세주소 입력란"
+																	style="width:171px;">
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<label for="phone" class="necess"><span
+														class="ico_required">필수</span>전화번호</label>
+											</th>
+											<td>
+												<div>
+													<select class="select" id="phone" title="식별번호 선택란">
+														<option>선택</option>
+														<option>010</option>
+														<option>0505</option>
+													</select>
+													-
+													<input type="text" class="txt" title="전화번호 가운데 자리 입력란"
+														style="width:120px;">
+													-
+													<input type="text" class="txt" title="전화번호 끝 자리 입력란"
+														style="width:120px;">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<div><span class="ico_required">필수</span>SMS 수신여부</div>
+											</th>
+											<td>
+												<div>
+													<div class="wrap_form_t">
+														<div class="ab">
+															<input type="radio" name="sms" class="rdo" id="sms01">
+															<label for="sms01">수신동의</label>
+															<input type="radio" name="sms" class="rdo" id="sms02">
+															<label for="sms02">수신안함</label>
+														</div>
+														<p class="txt_info" style="padding-top:22px;">※ SMS 수신여부를 동의
+															하시면, 다양한 정보와 각종 서비스 혜택을 받으실 수 있습니다.</p>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</xmp>
+					</div>
+				</div>
+			</div>
+			<!-- //Contents -->
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

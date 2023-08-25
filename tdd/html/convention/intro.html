@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>Choiseungjun Portpolio</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li class="on"><a href="../convention/intro.html">Convention</a></li>
+						<li><a href="../accessibility/intro.html">Accessibility</a></li>
+						<li><a href="../seo/seo.html">SEO</a></li>
+						<li><a href="../sass/intro.html">Sass</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li class="on"><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li class="on"><a href="intro.html">Intro</a></li>
+					<li class="depth"><a href="common.html">Common</a>
+						<ul>
+							<li><a href="common.html#common01">명명규칙</a></li>
+							<li><a href="common.html#common02">작업폴더구조</a></li>
+							<li><a href="common.html#common03">로컬서버세팅</a></li>
+							<li><a href="common.html#common04">특수문자표현</a></li>
+							<li><a href="common.html#common05">HTML문서세팅</a></li>
+							<li><a href="common.html#common06">들여쓰기</a></li>
+							<li><a href="common.html#common07">이미지저장</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="html.html">HTML</a>
+						<ul>
+							<li><a href="html.html#html01">문서구조</a></li>
+							<li><a href="html.html#html02">HTML주석</a></li>
+							<li><a href="html.html#html03">태그속성순서</a></li>
+							<li><a href="html.html#html04">이미지태그</a></li>
+							<li><a href="html.html#html05">label</a></li>
+							<li><a href="html.html#html06">table</a></li>
+						</ul>
+					</li>
+					<li><a href="html5.html">HTML5</a></li>
+					<li class="depth"><a href="css.html">CSS</a>
+						<ul>
+							<li><a href="css.html#css01">CSS 그룹핑</a></li>
+							<li><a href="css.html#css02">CSS 속성 나열 순서</a></li>
+							<li><a href="css.html#css03">주석</a></li>
+							<li><a href="css.html#css04">CSS (추천)약식</a></li>
+							<li><a href="css.html#css05">사용단위</a></li>
+							<li><a href="css.html#css06">미디어타입 CSS</a></li>
+							<li><a href="css.html#css07">폰트</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<div id="contents">
+				<h3 class="tit_2dep">Intro</h3>
+				<div class="conts_box">
+					<p class="intro">
+						프로젝트를 진행 하다 보면 여러 사람이 동시에 협업 개발을 하는 경우가 대부분이다.<br>
+						이에 여러 이유(버그, 개선)로 수정이 발생 할 경우 자신의 코드뿐만 아니라 다른 개발자의 작성 코드까지 읽어야(분석) 하는 경우가 발생한다.<br>
+						각 개발자마다 코드 작성 스타일이나 네이밍 방식이 다르게 되면 해당 코드를 해석하는 데에 있어 많은 시간이 소요된다.<br>
+						따라서 이런 소모적인 공수를 줄이고자 통일되게 UI개발 코드를 작성할 수 있도록 coding convention을 정의하고자 한다.
+					</p>
+				</div>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p class="fc_point">[HTML validator]</p>
+						</li>
+						<li>
+							<p>- <a href="https://validator.kldp.org/" target="_blank">https://validator.kldp.org/</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p class="fc_point">[CSS validator]</p>
+						</li>
+						<li>
+							<p>- <a href="https://jigsaw.w3.org/css-validator/"
+									target="_blank">https://jigsaw.w3.org/css-validator/</a></p>
+						</li>
+					</ul>
+				</div>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p class="fc_point">[CSS Browser Suppoter]</p>
+						</li>
+						<li>
+							<p>- <a href="https://caniuse.com/" target="_blank">https://caniuse.com/</a></p>
+						</li>
+					</ul>
+				</div>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p class="fc_point">[HTML5 기술지원센터]</p>
+						</li>
+						<li>
+							<p>- <a href="https://www.koreahtml5.kr/main.do"
+									target="_blank">https://www.koreahtml5.kr/main.do</a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

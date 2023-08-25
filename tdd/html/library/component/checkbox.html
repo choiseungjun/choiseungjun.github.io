@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Checkbox / Radio</title>
+<link rel="stylesheet" type="text/css" href="./css/common.css">
+<style type="text/css">
+.container {position: relative; margin: 0px;}
+.ui_accord_content {margin-bottom: 20px;}
+
+
+</style>
+<script type="text/javascript" src="./js/libs/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="./js/vcui.js"></script>
+</head>
+<body>
+<h1>Checkbox / Radio</h1>
+<div class="container">
+
+    <h2 class="first">Checkbox <span style="font-size:14px;">기본</span></h2>
+
+    <span class="chk_wrap ui_checkbox">
+        <input type="checkbox" name="fn_ck_id" id="fi_ck_id1"><label for="fi_ck_id1">테스트 1</label>
+    </span>
+
+    <span class="chk_wrap ui_checkbox">
+        <input type="checkbox" name="fn_ck_id" id="fi_ck_id4" checked="checked"><label for="fi_ck_id4" class="check">테스트 4</label>
+    </span>
+
+    <span class="chk_wrap ui_checkbox">
+        <input type="checkbox" name="fn_ck_id" id="fi_ck_id5" disabled="disabled"><label for="fi_ck_id5" class="disabled">테스트 5</label>
+    </span>
+    <span class="chk_wrap ui_checkbox">
+        <input type="checkbox" name="fn_ck_id" id="fi_ck_id6" disabled="disabled"><label for="fi_ck_id6" class="check_disabled">테스트 6</label>
+    </span>
+
+    <br>
+    <span class="chk_wrap ar ui_checkbox">
+        <input type="checkbox" name="fn_ck_id_r" id="fi_ck_id_r1"><label for="fi_ck_id_r1">테스트 1</label>
+    </span>
+
+    <div class="code_sec">
+    <xmp>
+<span class="chk_wrap ui_checkbox">
+    <input type="checkbox" name="fn_ck_xx" id="fi_ck_xx1"><label for="fi_ck_xx1">테스트 1</label>
+</span>
+
+<span class="chk_wrap ui_checkbox">
+    <input type="checkbox" name="fn_ck_xx" id="fi_ck_xx4" checked="checked"><label for="fi_ck_xx4" class="check">테스트 4</label>
+</span>
+
+<span class="chk_wrap ui_checkbox">
+    <input type="checkbox" name="fn_ck_xx" id="fi_ck_xx5" disabled="disabled"><label for="fi_ck_xx5" class="disabled">테스트 5</label>
+</span>
+<span class="chk_wrap ui_checkbox">
+    <input type="checkbox" name="fn_ck_xx" id="fi_ck_xx6" disabled="disabled"><label for="fi_ck_xx6" class="check_disabled">테스트 6</label>
+</span>
+    </xmp>
+    </div>
+
+    <h2 class="first">Checkbox <span style="font-size:14px;">전체 동의</span></h2>
+	
+    <span class="chk_wrap ui_checkbox">
+        <input type="checkbox" name="fn_ck_idb" id="fi_ck_idb_a" data-check-all=".ui_all_check"><label for="fi_ck_idb_a">전체동의</label>
+    </span>
+
+	<div class="ui_all_check">
+		<span class="chk_wrap ui_checkbox"><input type="checkbox" name="fn_ck_idb" id="fi_ck_idb1"><label for="fi_ck_idb1">약관.01</label></span>
+		<span class="chk_wrap ui_checkbox"><input type="checkbox" name="fn_ck_idb" id="fi_ck_idb2"><label for="fi_ck_idb2">약관.02</label></span>
+		<span class="chk_wrap ui_checkbox"><input type="checkbox" name="fn_ck_idb" id="fi_ck_idb3"><label for="fi_ck_idb3">약관.03</label></span>
+	</div>
+
+    <div class="code_sec">
+    <xmp>
+<span class="chk_wrap ui_checkbox">
+    <input type="checkbox" name="fn_ck_xxx" id="fi_ck_xxx_a" data-check-all=".ui_all_check"><label for="fi_ck_xxx_a">전체동의</label>
+</span>
+
+<div class="ui_all_check">
+    <span class="chk_wrap ui_checkbox"><input type="checkbox" name="fn_ck_xxx" id="fi_ck_xxx1"><label for="fi_ck_xxx1">약관.01</label></span>
+    <span class="chk_wrap ui_checkbox"><input type="checkbox" name="fn_ck_xxx" id="fi_ck_xxx2"><label for="fi_ck_xxx2">약관.02</label></span>
+    <span class="chk_wrap ui_checkbox"><input type="checkbox" name="fn_ck_xxx" id="fi_ck_xxx3"><label for="fi_ck_xxx3">약관.03</label></span>
+</div>
+    </xmp>
+    </div>
+
+	<h2 class="first">Checkbox <span style="font-size:14px;">label이 없는 경우</span></h2>
+	<span class="chk_wrap ui_checkbox">
+        <input type="checkbox" name="fn_ck_test" id="fn_ck_test1"><label for="fn_ck_test1"><span class="hide">label 없는 예제 1</span></label>
+    </span>
+
+    <div class="code_sec">
+    <xmp>
+<span class="chk_wrap ui_checkbox">
+    <input type="checkbox" name="fn_ck_xxxx" id="fn_ck_xxxx1"><label for="fn_ck_xxxx1"><span class="hide">label 없는 예제 1</span></label>
+</span>
+    </xmp>
+    </div>
+
+	<h2 class="first">Radio <span style="font-size:14px;">기본</span></h2>
+	<span class="rad_wrap ui_radiobox">
+        <input type="radio" name="fn_rd_name1" id="fi_rd_id1"><label for="fi_rd_id1">테스트 1</label>
+    </span>
+	<span class="rad_wrap ui_radiobox">
+        <input type="radio" name="fn_rd_name1" id="fi_rd_id2" checked="checked"><label for="fi_rd_id2" class="check">테스트 2</label>
+    </span>
+	<span class="rad_wrap ui_radiobox">
+        <input type="radio" name="fn_rd_name1" id="fi_rd_id3" disabled="disabled"><label for="fi_rd_id3" class="disabled">테스트3</label>
+    </span>
+	<span class="rad_wrap ui_radiobox">
+        <input type="radio" name="fn_rd_name1" id="fi_rd_id4" disabled="disabled"><label for="fi_rd_id4" class="check_disabled">테스트4</label>
+    </span>
+
+    <br>
+
+    <span class="rad_wrap ar ui_radiobox">
+        <input type="radio" name="fn_rd_name_r1" id="fi_rd_id_r1"><label for="fi_rd_id_r1">테스트 1</label>
+    </span>
+
+    <div class="code_sec">
+    <xmp>
+<span class="rad_wrap ui_radiobox">
+    <input type="radio" name="fn_rd_namexx1" id="fi_rd_idxx1"><label for="fi_rd_id1">테스트 1</label>
+</span>
+<span class="rad_wrap ui_radiobox">
+    <input type="radio" name="fn_rd_namexx1" id="fi_rd_idxx2" checked="checked"><label for="fi_rd_idxx2" class="check">테스트 2</label>
+</span>
+<span class="rad_wrap ui_radiobox">
+    <input type="radio" name="fn_rd_namexx1" id="fi_rd_idxx3" disabled="disabled"><label for="fi_rd_idxx3" class="disabled">테스트3</label>
+</span>
+<span class="rad_wrap ui_radiobox">
+    <input type="radio" name="fn_rd_namexx1" id="fi_rd_idxx4" disabled="disabled"><label for="fi_rd_idxx4" class="check_disabled">테스트4</label>
+</span>
+    </xmp>
+    </div>
+
+	<h2 class="first">Radio <span style="font-size:14px;">label이 없는 경우</span></h2>
+	<span class="rad_wrap ui_radiobox">
+        <input type="radio" name="fn_rd_name2" id="fi_rd_id11"><label for="fi_rd_id11"><span class="hide">label 없는 예제 1</span></label>
+    </span>
+    <div class="code_sec">
+    <xmp>
+<span class="rad_wrap ui_radiobox">
+    <input type="radio" name="fn_rd_namexx2" id="fi_rd_idxx11"><label for="fi_rd_idxx11"><span class="hide">label 없는 예제 1</span></label>
+</span>
+    </xmp>
+    </div>
+</div>
+
+<div class="code_sec">
+    <p class="t_green">** 자바스크립트 적용부분 **</p>
+<xmp>
+        <script type='text/javascript'>
+        $(function() {
+            // checkbox/radio 은 코어파일(vcui.js) 내 공통UI에 적용(GlobalUIs)
+        	vcui.importJs([
+        		"js/modules/common"
+        	   ], function () {
+        	   		$(':checkbox[data-check-all]').vcCheckboxAllChecker(); // 전체선택 기능
+
+        	   });
+        });
+        </script>
+</xmp>
+</div>
+
+<script type='text/javascript'>
+
+$(function() {
+	vcui.importJs([
+		"js/modules/common"
+	   ], function () {
+	   		$(':checkbox[data-check-all]').vcCheckboxAllChecker();
+
+	   });
+
+});
+
+</script>
+
+</body>
+</html>

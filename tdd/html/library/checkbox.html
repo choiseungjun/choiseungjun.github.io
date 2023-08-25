@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>Checkbox / Radio</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+	<link rel="stylesheet" type="text/css" href="../../css/library.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li class="on"><a href="../library/layout_lnb.html">HTML DOM Library</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li ><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li class="on"><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li class="depth"><a href="">레이아웃</a>
+						<ul>
+							<li><a href="../library/layout_lnb.html">좌측</a></li>
+							<li><a href="../library/layout.html">비좌측</a></li>
+							<li><a href="../library/layout_winpop.html">윈도우팝업</a></li>
+							<li><a href="../library/layout_laypop.html">레이어팝업</a></li>
+						</ul>
+					</li>
+					<li><a href="../library/acordion.html">아코디언</a></li>
+					<li><a href="../library/thumbnail.html">썸네일</a></li>
+					<li><a href="../library/video.html">비디오&amp;플레이어</a></li>
+					<li><a href="../library/button.html">버튼</a></li>
+					<li><a href="../library/calender.html">캘린더</a></li>
+					<li class="depth"><a href="#">게시판</a>
+						<ul>
+							<li><a href="../library/board01.html">기본형</a></li>
+							<li><a href="../library/board02.html">입력형</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">테이블</a>
+						<ul>
+							<li><a href="../library/table05.html">세로형</a></li>
+							<li><a href="../library/table06.html">가로형</a></li>
+						</ul>
+					</li>
+					<li class="depth on"><a href="#">폼</a>
+						<ul>
+							<li><a href="../library/selectbox.html">셀렉트박스(디자인)</a></li>
+							<li class="on"><a href="../library/checkbox.html">Check/Radio(디자인)</a></li>
+							<li><a href="../library/login.html">로그인</a></li>
+							<li><a href="../library/join.html">회원가입</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">탭</a>
+						<ul>
+							<li><a href="../library/percent_tab.html">100%탭</a></li>
+							<li><a href="../library/fixed_tab.html">고정탭</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="#">페이징</a>
+						<ul>
+							<li><a href="../library/paging.html">기본형</a></li>
+							<li><a href="../library/paging_input.html">입력형</a></li>
+						</ul>
+					</li>
+					<li><a href="../library/bullet.html">블릿리스트</a></li>
+					<li><a href="../library/banner_01.html">슬라이드배너</a></li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<!-- Contents -->
+			<div id="contents">
+				<h3 class="tit_2dep">Checkbox/Radio(디자인)</h3>
+				<h4 class="tit_3dep">Checkbox(기본)</h4>
+				<h5 class="tit_4dep">[VIEW]</h5>
+				<div class="library_box">
+					<span class="chk_wrap">
+						<input type="checkbox" name="fn_ck_id" id="fi_ck_id1"><label for="fi_ck_id1">테스트 1</label>
+					</span>
+
+					<span class="chk_wrap">
+						<input type="checkbox" name="fn_ck_id" id="fi_ck_id4" checked="checked"><label
+							for="fi_ck_id4">테스트 4</label>
+					</span>
+
+					<span class="chk_wrap">
+						<input type="checkbox" name="fn_ck_id" id="fi_ck_id5" disabled="disabled"><label
+							for="fi_ck_id5">테스트 5</label>
+					</span>
+					<span class="chk_wrap">
+						<input type="checkbox" name="fn_ck_id" id="fi_ck_id6" checked="checked"
+							disabled="disabled"><label for="fi_ck_id6">테스트 6</label>
+					</span>
+					<br>
+					<span class="chk_wrap ar">
+						<input type="checkbox" name="fn_ck_id_r" id="fi_ck_id_r1"><label for="fi_ck_id_r1">테스트 1</label>
+					</span>
+				</div>
+
+				<h5 class="tit_4dep">[CODE]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp>
+							<!-- 기본 -->
+							<span class="chk_wrap">
+								<input type="checkbox" name="fn_ck_xx" id="fi_ck_xx1"><label for="fi_ck_xx1">테스트
+									1</label>
+							</span>
+
+							<span class="chk_wrap">
+								<input type="checkbox" name="fn_ck_xx" id="fi_ck_xx4" checked="checked"><label
+									for="fi_ck_xx4">테스트 4</label>
+							</span>
+
+							<span class="chk_wrap">
+								<input type="checkbox" name="fn_ck_xx" id="fi_ck_xx5" disabled="disabled"><label
+									for="fi_ck_xx5">테스트 5</label>
+							</span>
+							<span class="chk_wrap">
+								<input type="checkbox" name="fn_ck_xx" id="fi_ck_xx6" disabled="disabled"><label
+									for="fi_ck_xx6">테스트 6</label>
+							</span>
+
+							<!-- Checkbox 가 right 방향에 있는 case -->
+							<span class="chk_wrap ar">
+								<input type="checkbox" name="fn_ck_xx_r" id="fi_ck_xx_r1"><label for="fi_ck_xx_r1">테스트
+									1</label>
+							</span>
+						</xmp>
+					</div>
+				</div>
+
+				<h4 class="tit_3dep">Checkbox(label이 없는 경우)</h4>
+				<h5 class="tit_4dep">[VIEW]</h5>
+				<div class="library_box">
+					<span class="chk_wrap">
+						<input type="checkbox" name="fn_ck_test" id="fn_ck_test1"><label for="fn_ck_test1"><span
+								class="hide">label 없는 예제 1</span></label>
+					</span>
+				</div>
+
+				<h5 class="tit_4dep">[CODE]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp><span class="chk_wrap">
+								<input type="checkbox" name="fn_ck_xxxx" id="fn_ck_xxxx1"><label for="fn_ck_xxxx1"><span
+										class="hide">label 없는 예제 1</span></label>
+							</span>
+						</xmp>
+					</div>
+				</div>
+
+				<h4 class="tit_3dep">Radio(기본)</h4>
+				<h5 class="tit_4dep">[VIEW]</h5>
+				<div class="library_box">
+					<span class="rad_wrap">
+						<input type="radio" name="fn_rd_name1" id="fi_rd_id1"><label for="fi_rd_id1">테스트 1</label>
+					</span>
+					<span class="rad_wrap">
+						<input type="radio" name="fn_rd_name1" id="fi_rd_id2" checked="checked"><label
+							for="fi_rd_id2">테스트 2</label>
+					</span>
+
+					<span class="rad_wrap">
+						<input type="radio" name="fn_rd_name1" id="fi_rd_id3" disabled="disabled"><label
+							for="fi_rd_id3">테스트3</label>
+					</span>
+					<br>
+					<span class="rad_wrap ar">
+						<input type="radio" name="fn_rd_name_r1" id="fi_rd_id4" checked="checked"
+							disabled="disabled"><label for="fi_rd_id4">테스트4</label>
+					</span>
+					<span class="rad_wrap ar">
+						<input type="radio" name="fn_rd_name_r1" id="fi_rd_id_r1"><label for="fi_rd_id_r1">테스트 1</label>
+					</span>
+				</div>
+
+				<h5 class="tit_4dep">[CODE]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp>
+							<!-- 기본 -->
+							<span class="rad_wrap">
+								<input type="radio" name="fn_rd_xx" id="fi_rd_xx1"><label for="fi_rd_xx1">테스트 1</label>
+							</span>
+							<span class="rad_wrap">
+								<input type="radio" name="fn_rd_xx" id="fi_rd_xx2" checked="checked"><label
+									for="fi_rd_xx2">테스트 2</label>
+							</span>
+							<span class="rad_wrap">
+								<input type="radio" name="fn_rd_xx" id="fi_rd_xx3" disabled="disabled"><label
+									for="fi_rd_xx3">테스트3</label>
+							</span>
+							<span class="rad_wrap">
+								<input type="radio" name="fn_rd_xx" id="fi_rd_xx4" checked="checked"
+									disabled="disabled"><label for="fi_rd_xx4">테스트4</label>
+							</span>
+
+							<!-- Radio 가 right 방향에 있는 case -->
+							<span class="rad_wrap ar">
+								<input type="radio" name="fn_rd_xx_r1" id="fi_rd_xx_r1"><label for="fi_rd_xx_r1">테스트
+									1</label>
+							</span>
+						</xmp>
+					</div>
+				</div>
+
+				<h4 class="tit_3dep">Radio(label이 없는 경우)</h4>
+				<h5 class="tit_4dep">[VIEW]</h5>
+				<div class="library_box">
+					<span class="rad_wrap ui_radiobox">
+						<input type="radio" name="fn_rd_name2" id="fi_rd_id11"><label for="fi_rd_id11"><span
+								class="hide">label 없는 예제 1</span></label>
+					</span>
+				</div>
+
+				<h5 class="tit_4dep">[CODE]</h5>
+				<div class="conts_box">
+					<div class="exmp pre">
+						<xmp><span class="rad_wrap ui_radiobox">
+								<input type="radio" name="fn_rd_namexx2" id="fi_rd_idxx11"><label
+									for="fi_rd_idxx11"><span class="hide">label 없는 예제 1</span></label>
+							</span>
+						</xmp>
+					</div>
+				</div>
+			</div>
+			<!-- //Contents -->
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

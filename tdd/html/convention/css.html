@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>Choiseungjun Portpolio</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li class="on"><a href="../convention/intro.html">Convention</a></li>
+						<li><a href="../accessibility/intro.html">Accessibility</a></li>
+						<li><a href="../seo/seo.html">SEO</a></li>
+						<li><a href="../sass/intro.html">Sass</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li class="on"><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<ul>
+					<li><a href="intro.html">Intro</a></li>
+					<li class="depth"><a href="common.html">Common</a>
+						<ul>
+							<li><a href="common.html#common01">명명규칙</a></li>
+							<li><a href="common.html#common02">작업폴더구조</a></li>
+							<li><a href="common.html#common03">로컬서버세팅</a></li>
+							<li><a href="common.html#common04">특수문자표현</a></li>
+							<li><a href="common.html#common05">HTML문서세팅</a></li>
+							<li><a href="common.html#common06">들여쓰기</a></li>
+							<li><a href="common.html#common07">이미지저장</a></li>
+						</ul>
+					</li>
+					<li class="depth"><a href="html.html">HTML</a>
+						<ul>
+							<li><a href="html.html#html01">문서구조</a></li>
+							<li><a href="html.html#html02">HTML주석</a></li>
+							<li><a href="html.html#html03">태그속성순서</a></li>
+							<li><a href="html.html#html04">이미지태그</a></li>
+							<li><a href="html.html#html05">label</a></li>
+							<li><a href="html.html#html06">table</a></li>
+						</ul>
+					</li>
+					<li><a href="html5.html">HTML5</a></li>
+					<li class="depth on"><a href="css.html">CSS</a>
+						<ul>
+							<li><a href="css.html#css01">CSS 그룹핑</a></li>
+							<li><a href="css.html#css02">CSS 속성 나열 순서</a></li>
+							<li><a href="css.html#css03">주석</a></li>
+							<li><a href="css.html#css04">CSS (추천)약식</a></li>
+							<li><a href="css.html#css05">사용단위</a></li>
+							<li><a href="css.html#css06">미디어타입 CSS</a></li>
+							<li><a href="css.html#css07">폰트</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				
+			</div>
+			<!-- //Sidebar -->
+
+			<div id="contents">
+				<h3 class="tit_2dep" id="css01">CSS 그룹핑</h3>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 모듈별, 컨텐츠별로 그룹핑합니다.</p>
+						</li>
+						<li>
+							<p>- 그룹핑된 CSS 영역위에는 어떤 내용인지 알 수 있게 주석을 기입합니다.</p>
+						</li>
+						<li>
+							<p>- 상속되는 Class/ID가 있더라도 첫줄에 맞추어 정렬합니다.</p>
+						</li>
+						<li>
+							<p>- Hack 사용 시 줄바꿈하여 기입해야 하는 경우에만 ‘Tab’ 키로 한번 들여쓰기 합니다.</p>
+						</li>
+						<li>
+							<p>- 줄바꿈하여 기입되는 Hack 사용 시 Hack 실제 내용은 줄바꿈하고 ‘Tab’ 키로 한번 들여쓰기 합니다.</p>
+							<div class="exmp pre">
+								예)<br>
+								<pre>.t_input input{width:120px;}
+@-moz-document url-prefix() {
+	.t_input input{width:117px;}
+} //Hack
+</pre>
+							</div>
+						</li>
+						<li>
+							<p>- 속성값뒤에는 세미콜론(;)을 추가합니다.</p>
+						</li>
+						<li>
+							<p>- 속성과 값사이, 선택자와 중괄호 사이, 중괄호와 속성값사이 모두 띄어쓰기(‘Space’ 키, ‘Tab’ 키) 없이 붙여씁니다.</p>
+						</li>
+						<li>
+							<p>- 단, <strong>속성과 속성</strong> 사이는 한칸 띄어쓰기 합니다.</p>
+							<div class="exmp pre">
+								예)<br>
+								exp{display:block; width:100%;}
+							</div>
+						</li>
+						<li>
+							<p>- 선택자와 선택자 사이는 ‘Space’ 키로 한칸 띄어쓰기 합니다.</p>
+							<div class="exmp pre">
+								예)<br>
+								<pre>/* font */
+.f_ari{font-family:Arial;}
+.fc_org{color:#dc320a; font-family:Arial;}
+.f_ari, .fc_org{letter-spacing:0;}
+
+/* form */
+.t_input input{width:121px; height:25px; height:23px \0/IE8; padding:3px 0 0 9px; padding-bottom:2px \0/IE8; border:1px solid #a5a5a5;}
+@-moz-document url-prefix() {
+	.t_input input{width:117px;}
+} //Hack
+.textarea{vertical-align:middle;}
+.textarea textarea{display:block; padding:7px 11px; border:1px solid #b8b8b8;}
+			</pre>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h3 class="tit_2dep" id="css02">CSS 속성 나열 순서</h3>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 각의 속성값에서 벤더픽스 추가 시 벤더 픽스 속성값을 먼저 기입합니다. (-webkit- → -moz- → -ms- → -o- 순으로)</p>
+							<div class="exmp">예) <strong><span class="fc_point">-webkit-</span>box-shadow</strong>:0 2px
+								2px rgba(0,0,0,0.1); <strong><span class="fc_point">-moz-</span>box-shadow</strong>:0
+								2px 2px rgba(0,0,0,0.1); <strong>box-shadow</strong>:0 2px 2px rgba(0,0,0,0.1);}</div>
+						</li>
+						<li>
+							<p>- 속성 나열은 전역속성에서 지역속성 순으로 나열합니다.</p>
+							<p class="solo"><span class="fc_point">content</span> // <span
+									class="fc_point">display</span> // <span class="fc_point">position</span> // <span
+									class="fc_point">top</span> // <span class="fc_point">right</span> // <span
+									class="fc_point">bottom</span> // <span class="fc_point">left</span> // <span
+									class="fc_point">z-index</span> // visibility // flex-direction // flex-order //
+								flex-pack // <span class="fc_point">float</span> // <span class="fc_point">clear</span>
+								// flex-align // <span class="fc_point">overflow</span> // clip // box-sizing //
+								table-layout // <span class="fc_point">width</span> // <span
+									class="fc_point">height</span> // min-width // min-height // max-width // max-height
+								// <span class="fc_point">margin</span> // <span class="fc_point">padding</span> //
+								outline // <span class="fc_point">border</span> // <span
+									class="fc_point">border-radius</span> // <span class="fc_point">background</span> //
+								<span class="fc_point">box-shadow</span> // <span class="fc_point">color</span> // <span
+									class="fc_point">font</span> // line-height // list-style // vertical-align //
+								text-align // text-indent // text-justify // <span class="fc_point">opacity</span> //
+								-ms-filter:'progid:DXImageTransform.Microsoft.Alpha //
+								filter:progid:DXImageTransform.Microsoft.Alpha(Opacity // etc…<br>* 붉은색 표기는 최소한으로 준수해야하는
+								속성들.</p>
+						</li>
+					</ul>
+				</div>
+				<h3 class="tit_2dep" id="css03">주석</h3>
+				<h4 class="tit_3dep">01. CSS 주석</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 그룹핑된 CSS 영역 첫줄 위에 기입합니다.</p>
+						</li>
+						<li>
+							<p>- 닫기 주석은 프로젝트 상황에 따라 작업자 판단 하에 추가 가능하다. 그룹핑된 CSS 영역 마지막 줄 아래에 기입합니다.<span
+									class="exmp"><strong>예)</strong> /* //Tab */</span></p>
+						</li>
+						<li>
+							<p>- 주석내용은 한글이든 영문이든 무방하나 영문을 권장합니다.</p>
+						</li>
+						<li>
+							<p>- 주석내용은 가능한 직관적이고 의미론적인 단어를 선택합니다.</p>
+						</li>
+						<li>
+							<p>- 주석 안쪽 코멘트에는 설명하는 문장 외에 다른 기호는 넣지 않는 것을 기본으로 합니다.</p>
+						</li>
+						<li>
+							<p>- 주석의 기호와 코멘트 사이에는 빈 공간(1 ‘space’ 키)을 둡니다.</p>
+							<div class="exmp"><strong>예)</strong> /* Tab */ (o) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* //Tab
+								*/ (o)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*-- Tab --*/(x) &nbsp; /** Tab **/ (x)</div>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">02. CSS 수정 주석</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- CSS 수정 작업 시 ‘수정 주석’을 추가 하지 않는 것을 기본으로 합니다.</p>
+						</li>
+						<li>
+							<p>- 프로젝트 성격에 따라 작업자 판단에 의해 ‘수정 주석’ 추가 가능합니다.</p>
+							<div class="exmp"><strong>('수정 주석' 적용 했었던 프로젝트 case)</strong><br>- 운영 프로젝트<br>- 그룹핑된 동일 CSS
+								영역을 여러 작업자가 지속적으로 반복 수정을 하여 히스토리 관리가 필요할 경우</div>
+						</li>
+						<li>
+							<p>- 수정된 날짜를 기입하고 수정된 내용을 직관적으로 간결하게 기입합니다.</p>
+						</li>
+						<li>
+							<p>- 수정한 작업자가 누구인지 구별한 수 있게 이니셜 또는 ID 를 마지막에 추가합니다.</p>
+						</li>
+						<li>
+							<p>- 한 라인만 수정 시에는 맨 뒤에 수정 주석을 기입합니다.</p>
+						</li>
+						<li>
+							<p>- 여러 라인이 수정 시에는 수정을 시작한 첫 라인 위와 마지막 라인 아래에 ‘수정 주석’과 ‘닫기 수정 주석’을 기입합니다.</p>
+							<div class="exmp">
+								<strong>예</strong>)
+								.fc_org{color:#ff0000; font-family:Arial;} <strong class="fc_point">/* 170411_컬러수정_ckh
+									*/</strong><br><br>
+
+								<strong class="fc_point">/* 170411_가이드 수정_ckh */</strong><br>
+								.textarea{vertical-align:middle;}<br>
+								.textarea textarea{display:block; padding:7px 11px; border:1px solid #b8b8b8;}<br>
+								<strong class="fc_point">/* //170411_가이드 수정_ckh */</strong>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h3 class="tit_2dep" id="css04">CSS (추천)약식</h3>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<caption>CSS (추천)약식</caption>
+							<colgroup>
+								<col style="width:20%;">
+								<col style="width:35%;">
+								<col style="width:45%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="first"></th>
+									<th scope="col">정식표기</th>
+									<th scope="col">약식표기</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="first">색상코드</td>
+									<td>#FFFFFF, #000000, #CCCCCC</td>
+									<td>#fff, #000, #ccc 처럼 줄여서 표기</td>
+								</tr>
+								<tr>
+									<td rowspan="2" class="first">background</td>
+									<td>background-color:#CCCCCC;</td>
+									<td>background:#ccc;</td>
+								</tr>
+								<tr>
+									<td>background-color:#CCCCCC;<br>background-image:url('주소');<br>background-repeat:no-repeat;<br>background-attachment:fixed
+									</td>
+									<td>background-position:left top;background:#ccc url('주소') no-repeat fixed left
+										top;<br><br><span class="fc_point">!! url ('주소') 기입 시 작은 따옴표(‘)를 꼭 추가</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="first">font</td>
+									<td>font-weight:bold;<br>font-style:italic;<br>font-size:11px;<br>line-height:18px;<br>font-family:Verdana;
+									</td>
+									<td>font:bold italic 11px/18px Verdana;<br><br><span class="fc_point">!! font 약식에서
+											size와 line-height 은 한쌍으로 모두 기입한다.<br><strong>!! font 속성이 3가지 이상 나열 될 경우에만 약식
+												표기를 허용한다. (정식 표기를 권장)</strong></span></td>
+								</tr>
+								<tr>
+									<td class="first">border</td>
+									<td>border-width:2px;<br>border-style:solid;<br>border-color:#555555;</td>
+									<td>border:2px solid #555;<br><br><strong class="fc_point">!! WEB(PC)의
+											경우<br>&nbsp;&nbsp;&nbsp;border 속성값은 반드시 약식 표기로 사용한다.</strong></td>
+								</tr>
+								<tr>
+									<td rowspan="3" class="first">margin<br>(padding 동일)</td>
+									<td>margin-top:0;<br>margin-right:0;<br>margin-bottom:0;<br>margin-left:0;</td>
+									<td>margin:0;</td>
+								</tr>
+								<tr>
+									<td>margin-top:5px;<br>margin-right:10px;<br>margin-bottom:5px;<br>margin-left:10px;
+									</td>
+									<td>margin:5px 10px;</td>
+								</tr>
+								<tr>
+									<td>margin-top:5px;<br>margin-right:10px;<br>margin-bottom:15px;<br>margin-left:20px;
+									</td>
+									<td>margin:5px 10px 15px 20px;<br><br><span class="fc_point">!! margin, padding 약식
+											표기 사용을 권장한다.<br>!! 속성이 3개 이상 나열된다면 약식 표기로 기입한다.</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="tit_2dep" id="css05">사용단위</h3>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 사용단위는 ‘px’을 기본으로 합니다.</p>
+						</li>
+						<li>
+							<p>- <strong>‘px’, ‘em’, ‘%’를 혼용해서 절대 사용하지 않습니다.</strong></p>
+						</li>
+						<li>
+							<p>- font의 경우는 ‘px’로 작업합니다.</p>
+						</li>
+						<li>
+							<p>- 0px은 0으로 표기합니다.</p>
+						</li>
+						<li>
+							<p>- 행간(line-height)는 초기값으로 100% 세팅 가능하다. 그 외에는 ‘px’ 로 작업합니다.</p>
+						</li>
+						<li>
+							<p>- ‘em’, ’%’ 는 모바일 프로젝트에서 사용이 가능합니다.</p>
+						</li>
+					</ul>
+				</div>
+				<h3 class="tit_2dep" id="css06">미디어타입 CSS</h3>
+				<h4 class="tit_3dep">01. Media Type의 종류</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- all (모든 출력 장치 : 모든 표현 미디어에서 사용됩니다.)</p>
+						</li>
+						<li>
+							<p>- aural (음성 출력 : 음성 합성기나 스크린 리더, 문서를 음성으로 표현해주는 기타 장치에서 사용합니다.) </p>
+						</li>
+						<li>
+							<p>- braille (점자 출력 : 점자 장치로 문서를 표헌(렌더링)할 때 사용합니다.)</p>
+						</li>
+						<li>
+							<p>- embossed (점자 출력 : 점자 출력 장치로 인쇄할 때 사용합니다.)</p>
+						</li>
+						<li>
+							<p>- handheld (포켓, 모바일 : PDA나 웹 접속이 가능한 핸드폰 같은 휴대용 장치에 사용합니다.)</p>
+						</li>
+						<li>
+							<p>- <span class="fc_point">print (인쇄 : 시각이 있는 사용자를 위한 문서를 인쇄할 때 사용합니다.)</span></p>
+						</li>
+						<li>
+							<p>- projection (투사 장치 : 연설을 하면서 슬라이드쇼를 보여줄 때 사용하는 디지탈 프로젝트 같은 프로젝션 매체에서 사용합니다.)</p>
+						</li>
+						<li>
+							<p>- <span class="fc_point">screen (스크린, 모니터 : 기기의 해상도에 따라 다르게 표현할 때 사용합니다.)</span></p>
+						</li>
+						<li>
+							<p>- tty (전신 타자기, Tele Type Writer : 문서를 피치가 고정된 환경으로 전송할 때 사용합니다.)</p>
+						</li>
+						<li>
+							<p>- tv (텔레비전, Television : 텔레비전을 통해 문서를 표현할 때 사용합니다.)</p>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">02. [Print] 미디어타입 CSS</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 사용방법은 CSS 코드 내에 @media print 로 사용하거나 print.css 파일을 생성하는 방법이 있습니다.</p>
+							<div class="exmp pre">
+								<strong>예 1)</strong>
+								<pre>
+/* print */
+@media print{
+	#gnb .snb{display:none;}
+}
+</pre><br>
+								<strong>예 2)</strong><br>
+								&lt;link href="print.css" rel="stylesheet" type="text/css" media="print"&gt;
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">03. [screen] 미디어타입 CSS</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 기기의 해상도에 따라 다르게 표현할 때 사용한다. 모바일프로젝트에서 사용합니다.</p>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">03_1 사용방법</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- CSS 내에 @media 태그를 통해서 사용하며 이 방법을 기준으로 합니다.</p>
+							<div class="exmp"><strong>예) </strong>@media all and (조건문) {실행문}</div>
+						</li>
+						<li>
+							<p>- 해상도별로 따로 CSS 파일을 생성하는 방법</p>
+							<div class="exmp"><strong>예) </strong>&lt;link rel="stylesheet" media="sereen and
+								(max-width:480px)" href="example.css"&gt;</div>
+						</li>
+						<li>
+							<p>- Html 문서내에 &lt;style&gt; 태그에 media 속성으로 사용하는 방법</p>
+							<div class="exmp"><strong>예) </strong>&lt;style type="text/css" media="sereen and
+								(max-width:480px)"&gt;</div>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">03_2 조건문의 종류</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 가로와 세로 너비 : width, min-width, max-width, height, min-height, max-height</p>
+						</li>
+						<li>
+							<p>- 뷰포트의 너비와 높이. 뷰포트의 크기는 HTML body 콘텐츠를 표시하는 영역으로 실제 스크린의 크기와는 다릅니다.</p>
+						</li>
+						<li>
+							<p>- 반응형 웹 구현시 가장 일반적으로 사용합니다.</p>
+							<div class="exmp">
+								<strong>예)</strong><br>
+								<strong>@media all and (min-width:768px) and (max-width:1024px) {실행문}</strong><br>
+								→ 뷰포트 너비가 768px 이상 "그리고" 2014px 이하이면 실행<br>
+								<strong>@media all and (width:768px), (width:1024px) {실행문}</strong><br>
+								→ 뷰포트 너비가 768px 이상 "그리고" 1024px 이하이면 실행<br>
+								<strong>@media net all and (min-width:768px) and (max-width:1024px) {실행문}</strong><br>
+								→ 뷰포트 너비가 768px 이상 "그리고" 1024px 이하가 "아니면" 실행
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 단말기의 가로와 세로 너비 : device-width, min-device-width, max-device-width, device-height,
+								min-device-height, max-device-height</p>
+							<ul>
+								<li>
+									<p>- 스크린의 너비와 높이.</p>
+								</li>
+								<li>
+									<p>- 스크린은 출력 장치가 픽셀을 표시할 수 있는 모든 영역으로 일반적으로 HTML body 콘텐츠를 표시하는 뷰포트 보다 큽니다.</p>
+									<div class="exmp">
+										<strong>예)</strong><br>
+										<strong>@media all and (device-width:320px) and (device-height:480px)
+											{실행문}</strong><br>
+										→ 스크린 너비가 320px "그리고" 높이가 480px 이면 실행<br>
+										<strong>@media all and (min-device-width:320px) and (min-device-height:480px)
+											{실행문}</strong><br>
+										→ 스크린 너비가 최소 320px 이상 "그리고" 높이가 최소
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 화면 회전 : orientation</p>
+							<ul>
+								<li>
+									<p>- 뷰포트의 너비와 높이 비율을 이용하여 세로 모드인지 가로 모드인지를 판단합니다.</p>
+								</li>
+							</ul>
+							<div class="exmp">
+								<strong>예)</strong><br>
+								<strong>@media all and (orientation:portrait) {실행문}</strong><br>
+								→ 세로모드. 뷰포트의 높이가 너비에 비해 상대적으로 크면 실행<br>
+								<strong>@media all and (orientation:landscape) {실행문}</strong><br>
+								→ 가로모드. 뷰포트의 너비가 높이에 비해 상대적으로 크면 실행
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 화면 비율 : aspect-ratio, min-aspect-ratio, max-aspect-ratio</p>
+							<ul>
+								<li>
+									<p>- 뷰포트의 너비와 높이에 대한 비율. 너비/높이 순으로 조건을 작성합니다.</p>
+								</li>
+								<li>
+									<p>- min/max 접두사를 사용하면 너비 값의 최소/최대 비율을 정할 수 있습니다.</p>
+								</li>
+							</ul>
+							<div class="exmp">
+								<strong>예)</strong><br>
+								<strong>@media all and (aspect-ratio:5/4) {실행문}</strong><br>
+								→ 뷰포트 너비가 5, 높이가 4 비율이면 실행<br>
+								<strong>@media all and (min-aspect-ratio:5/4) {실행문}</strong><br>
+								→ 뷰포트 너비가 5/4 비율 이상이면 실행<br>
+								<strong>@media all and (max-aspect-ratio:5/4) {실행문}</strong><br>
+								→ 뷰포트 너비가 5/4 비율 이하이면 실행
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 단말기 화면 비율 : device-aspect-ratio</p>
+							<ul>
+								<li>
+									<p>- 스크린의 너비와 높이에 대한 비율. 너비/높이 순으로 조건을 작성합니다.</p>
+								</li>
+								<li>
+									<p>- min/max 접두사를 사용하면 너비 값의 최소/최대 비율을 정할 수 있습니다.</p>
+								</li>
+							</ul>
+							<div class="exmp">
+								<strong>예)</strong><br>
+								<strong>@media all and (device-aspect-ratio:5/4) {실행문}</strong><br>
+								→ 스크린 너비가 5, 높이가 4 비율이면 실행<br>
+								<strong>@media all and (min-device-aspect-ratio:5/4) {실행문}</strong><br>
+								→ 스크린 너비가 5/4 비율 이상이면 실행<br>
+								<strong>@media all and (max-device-aspect-ratio:5/4) {실행문}</strong><br>
+								→ 스크린 너비가 5/4 비율 이하이면 실행
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h3 class="tit_2dep" id="css07">폰트</h3>
+				<h4 class="tit_3dep">01. font-family 나열 순서</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 한글 글꼴 지정 시 글꼴 한글이름과 영문이름 모두 지정합니다. 순서는 한글 →영문이름 순으로</p>
+							<div class="exmp"><strong>예)</strong> font-family:<strong class="fc_point">돋음,
+									Dotum</strong>, ‘맑은 고딕’, ‘Malgun Gothic’, sans-serif;</div>
+						</li>
+						<li>
+							<p>- 글꼴 지정시 맨 마지막에 Generic family 꼭 추가합니다.<br>
+								Generic family에는 <strong>serif</strong>(삐침이 있는 명조계), <strong>sans-serif</strong>(삐침이 없는
+								고딕계 폰트), <strong>monospace</strong>(고정폭을 가진 폰트), <strong>fantasy</strong>(꾸밈계 폰트),
+								<strong>cursive</strong>(필기체 폰트)로 다섯 종류가 있습니다.</p>
+							<div class="exmp"><strong>예)</strong> font-family:돋음, Dotum, ‘맑은 고딕’, ‘Malgun Gothic’,
+								<strong class="fc_point">sans-serif;</strong></div>
+						</li>
+						<li>
+							<p>- 글꼴 지정 시 글꼴 이름 사이에 공백이 있는 경우는 작은 따음표로 감싸줍니다.</p>
+							<div class="exmp">
+								<strong>예)</strong> font-family:돋음, Dotum, <strong class="fc_point">‘맑은 고딕’, ‘Malgun
+									Gothic’</strong>, sans-serif; <strong>(O)</strong><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-family:돋음, Dotum, 맑은 고딕, Malgun Gothic, sans-serif;
+								<strong>(X)</strong>
+							</div>
+						</li>
+						<li>
+							<p>- 영어와 한글이 서로 다른 글꼴을 사용할 경우 영어 글꼴을 앞에 배치합니다.</p>
+							<div class="exmp"><strong>예)</strong> font-family:<strong class="fc_point">verdana, 돋음,
+									Dotum</strong>, sans-serif;</div>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">02. 웹폰트</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 웹폰트는 font-face rule을 이용하여, OS에서 기본으로 제공하던 폰트 외에 다른 폰트를 웹상에서 활용하는 방법</p>
+						</li>
+						<li>
+							<p>- @font-face를 이용하는 것은 .TTF(True Type Font), .EOT(Embedded Open Type) 확장자의 글꼴을 이용해야 하기 때문에
+								글꼴의 라이선스, 정보 여부를 정확히 알아야 합니다.</p>
+						</li>
+						<li>
+							<p>- 사용방법</p>
+							<div class="exmp pre">
+								<strong>예)</strong>
+								<pre>
+@font-face {
+	font-family:'YoonGothic';
+	src: url('/font/personal/YoonGothic770.eot');
+	src:local(※), url('/font/personal/YoonGothic770.woff') format('woff');
+}
+</pre>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">03. 웹폰트 경량화</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 한글전용서체의 경우 무거운 용량으로 성능의 이슈가 있으므로 경량화를 합니다.</p>
+						</li>
+						<li>
+							<p>- 무료 오픈 라이센스인 폰트포지를 사용합니다.(리눅스,윈도우, MacOS등 여러 운영체제에서 사용 가능)</p>
+						</li>
+						<li>
+							<p>- <strong>다운로드:</strong> <a
+									href="https://fontforge.github.io/en-US/">https://fontforge.github.io/en-US/</a></p>
+						</li>
+						<li>
+							<p>- 사용방법</p>
+							<div class="exmp">
+								<ol>
+									<li>1. 폰트포지를 실행하여 경량화 할 폰트를 선택합니다.</li>
+									<li>2. 폰트를 선택하면 글리프 모음 화면이 뜨며, 삭제할 글리프를 선택 후마우스 우클릭을 하여 비우기(L)를 선택합니다.</li>
+									<li>3. 주 메뉴 &gt; 파일(F) &gt; 폰트를 출력(G) 후 아래의 화면에서 출력할 폰트타입 및 기타 사 항을 선택 후 “Genelate”
+										클릭</li>
+								</ol>
+								* 이 때 특정 에러가 나타나지만 무시합니다. 이후 다시 특정 메시지가 나타나면 “Genelate”를 클릭하면 됩니다.
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h3 class="tit_2dep">z-index</h3>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 각 모듈별 안의 z-index의 설정값 사이 간격을 5로 합니다.</p>
+						</li>
+					</ul>
+				</div>
+				<h3 class="tit_2dep">플로팅(floating) 해제(clear)</h3>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 가상클래스 after를 사용하여 해제를 기본으로 합니다.</p>
+							<div class="exmp"><strong>예)</strong> .btn_wrap:<strong>after</strong>{content:'';
+								display:block; visibility:hidden; clear:both; overflow:hidden; width:0; height:0;}</div>
+						</li>
+						<li>
+							<p>- 가상클래스 after 사용이 불가한 경우에는 아래 해제 전용 클래스를 사용합니다.</p>
+							<div class="exmp pre">
+								<strong>예)</strong>
+								<pre>.clfix:after{content:''; display:block; visibility:hidden; clear:both; overflow:hidden; width:0; height:0;}
+* html .clfix{height:1%;} /* Hides from IE-mac */
+.clfix{zoom:1;} /*for IE 5.5-7*/
+</pre>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

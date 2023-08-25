@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>Choiseungjun Portpolio</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li><a href="../convention/intro.html">Convention</a></li>
+						<li><a href="../accessibility/intro.html">Accessibility</a></li>
+						<li><a href="../seo/seo.html">SEO</a></li>
+						<li class="on"><a href="../sass/intro.html">Sass</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li ><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li class="on"><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li><a href="../sass/intro.html">Intro</a></li>
+					<li><a href="../sass/basic_info.html">기본개념</a></li>
+					<li class="on"><a href="../sass/grammar.html">주요문법</a></li>
+					<li><a href="../sass/rule.html">규칙</a></li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<div id="contents">
+				<h3 class="tit_2dep">주요 문법</h3>
+				<h4 class="tit_3dep">01. 주석 (Comment)</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- CSS 주석은 /* ... */ 입니다.</p>
+						</li>
+						<li>
+							<p>- SCSS는 JavaScript처럼 두 가지 스타일의 주석을 사용합니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>예)</strong><br>
+						// 컴파일되지 않는 주석<br>
+						/* 컴파일되는 주석 */
+					</div>
+				</div>
+				<h4 class="tit_3dep">02. 데이터 종류 (Data types)</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- Numbers : 숫자에 단위가 있거나 없습니다.</p>
+						</li>
+						<li>
+							<p>- Strings : 문자에 따옴표가 있거나 없습니다.</p>
+						</li>
+						<li>
+							<p>- Nulls : 속성값으로 null 이 사용되면 컴파일하지 않습니다.</p>
+						</li>
+						<li>
+							<p>- Lists : () 를 붙이거나 붙이지 않습니다.</p>
+						</li>
+						<li>
+							<p>- Maps : () 를 꼭 붙여야 합니다.</p>
+						</li>
+					</ul>
+					<div class="tb_table">
+						<table>
+							<caption>데이터 종류 (Data types)</caption>
+							<colgroup>
+								<col style="width:20%;">
+								<col style="width:35%;">
+								<col style="width:45%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="first">데이터</th>
+									<th scope="col">설명</th>
+									<th scope="col">예시</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="first">Numbers</td>
+									<td>숫자</td>
+									<td><span class="fc_point">1, .82, 20px, 2em...</span></td>
+								</tr>
+								<tr>
+									<td class="first">Strings</td>
+									<td>문자</td>
+									<td><span class="fc_point">bold, relative, "/images/a.png", "dotum"</span></td>
+								</tr>
+								<tr>
+									<td class="first">Colors</td>
+									<td>색상 표현</td>
+									<td><span class="fc_point">red, blue, #FFF00, rgba(255,0,0,.5)</span></td>
+								</tr>
+								<tr>
+									<td class="first">Booleans</td>
+									<td>논리</td>
+									<td><span class="fc_point">true, false</span></td>
+								</tr>
+								<tr>
+									<td class="first">Nulls</td>
+									<td>아무것도 없음</td>
+									<td><span class="fc_point">null</span></td>
+								</tr>
+								<tr>
+									<td class="first">Lists</td>
+									<td>공백이나 <span class="fc_point">,(쉼표)</span> 로 구분된 값의 목록</td>
+									<td><span class="fc_point">(apple, orange, banana), apple orange</span></td>
+								</tr>
+								<tr>
+									<td class="first">Maps</td>
+									<td>Lists와 유사하나 값이 <span class="fc_point">key:value</span> 형태</td>
+									<td><span class="fc_point">(apple: a, orange : o, banana: b)</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h4 class="tit_3dep">03. 중첩 (Nesting)</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- Scss는 중첩 기능을 사용할 수 있습니다.</p>
+						</li>
+						<li>
+							<p>- 상위 선택자의 반복을 피하고 좀 더 편리하게 복잡한 구조를 작성할 수 있습니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>SCSS:</strong><br>
+						<pre>.section {
+	width: 100%;
+	.list {
+		padding: 20px;
+		li {
+			float: left;
+		}
+	}
+}
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>Compiled to:</strong><br>
+						<pre>.section {
+width: 100%;
+}
+.section .list {
+	padding: 20px;
+}
+.section .list li {
+	float: left;
+}
+</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">04. Ampersand (상위 선택자 참조)</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 중첩 안에서 <span class="fc_point">&amp;</span> 키워드는 상위(부모) 선택자를 참조하여 치환합니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>SCSS:</strong><br>
+						<pre>.btn {
+	position: absolute;
+	&amp;.active {
+		color: red;
+	}
+}
+.list {
+	li {
+		&amp;:last-child {
+			margin-right: 0;
+		}
+	}
+}
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>Compiled to:</strong><br>
+						<pre>.btn {
+	position: absolute;
+}
+.btn.active {
+	color: red;
+}
+.list li:last-child {
+	margin-right: 0;
+}
+</pre>
+					</div>
+					<ul>
+						<li>
+							<p>- <span class="fc_point">&amp;</span> 키워드가 참조한 상위 선택자로 치환되는 것이기 때문에 다음과 같이 응용할 수도 있습니다.
+							</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>SCSS:</strong><br>
+						<pre>.fs {
+	&amp;-small { font-size: 12px; }
+	&amp;-medium { font-size: 14px; }
+	&amp;-large { font-size: 16px; }
+}
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>Compiled to:</strong><br>
+						<pre>.fs-small { font-size: 12px; }
+.fs-medium { font-size: 14px; }
+.fs-large { font-size: 16px; }
+</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">05. @at-root (중첩 벗어나기)</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 중첩에서 벗어나고 싶을 때 <span class="fc_point">@at-root </span>키워드를 사용합니다.</p>
+						</li>
+						<li>
+							<p>- 중첩 안에서 생성하되 중첩 밖에서 사용해야 할 경우에 유용합니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>SCSS:</strong><br>
+						<pre>.list {
+	$w: 100px;
+	$h: 50px;
+		li {
+			width: $w;
+			height: $h;
+		}
+	@at-root .box {
+		width: $w;
+		height: $h;
+	}
+}
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>Compiled to:</strong><br>
+						<pre>.list li {
+	width: 100px;
+	height: 50px;
+}
+.box {
+	width: 100px;
+	height: 50px;
+}
+</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">06. 중첩된 속성</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- <span class="fc_point">font-</span> , <span class="fc_point">margin-</span> 등과 같이 동일한
+								네임 스페이스를 가지는 속성들을 다음과 같이 사용할 수 있습니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>SCSS:</strong><br>
+						<pre>.box {
+	font: {
+		weight: bold;
+		size: 10px;
+		family: sans-serif;
+	};
+	margin: {
+		top: 10px;
+		left: 20px;
+	};
+	padding: {
+		bottom: 40px;
+		right: 30px;
+	};
+}
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>Compiled to:</strong><br>
+						<pre>.box {
+	font-weight: bold;
+	font-size: 10px;
+	font-family: sans-serif;
+
+	margin-top: 10px;
+	margin-left: 20px;
+
+	padding-bottom: 40px;
+	padding-right: 30px;
+}
+</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">07. 변수 (Variables)</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 반복적으로 사용되는 값을 변수로 지정할 수 있습니다.</p>
+						</li>
+						<li>
+							<p>- 변수 이름 앞에는 항상 <span class="fc_point">$</span> 를 붙입니다. (<span class="fc_point">$변수이름:
+									속성값;</span>)</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>SCSS:</strong><br>
+						<pre>$color-primary: #e96900;
+$url-images: "/assets/images/";
+$w: 200px;
+
+.box {
+	width: $w;
+	margin-left: $w;
+	background: $color-primary url($url-images + "bg.jpg");
+}
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>Compiled to:</strong><br>
+						<pre>.box {
+	width: 200px;
+	margin-left: 200px;
+	background: #e96900 url("/assets/images/bg.jpg");
+}
+</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">08. 변수 유효범위 (Variable Scope)</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 변수는 사용 가능한 유효범위가 있습니다.</p>
+						</li>
+						<li>
+							<p>- 선언된 블록( <span class="fc_point">{}</span> ) 내에서만 유효범위를 가집니다.</p>
+						</li>
+						<li>
+							<p>- 변수 <span class="fc_point">$color</span> 는 <span class="fc_point">.box1</span> 의 블록 안에서
+								설정되었기 때문에, 블록 밖의 .box2에서는 사용할 수 없습니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>예)</strong><br>
+						<pre>.box1 {
+	$color: #111;
+	background: $color;
+}
+
+// Error
+.box2 {
+	background: $color;
+}
+</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">09. 변수 재 할당 (Variable Reassignment)</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 다음과 같이 변수에 변수를 할당할 수 있습니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>SCSS:</strong><br>
+						<pre>$red: #FF0000;
+$blue: #0000FF;
+
+$color-primary: $blue;
+$color-danger: $red;
+
+.box {
+	color: $color-primary;
+	background: $color-danger;
+}
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>Compiled to:</strong><br>
+						<pre>.box {
+	color: #0000FF;
+	background: #FF0000;
+}
+</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">10. !global (전역 설정)</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- <span class="fc_point">!global</span> 플래그를 사용하면 변수의 유효범위를 전역(Global)로 설정할 수 있습니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>SCSS:</strong><br>
+						<pre>.box1 {
+	$color: #111 !global;
+	background: $color;
+}
+.box2 {
+	background: $color;
+}
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>Compiled to:</strong><br>
+						<pre>.box1 {
+	background: #111;
+}
+.box2 {
+	background: #111;
+}
+</pre>
+					</div>
+					<ul>
+						<li>
+							<p>- 대신 기존에 사용하던 같은 이름의 변수가 있을 경우 값이 덮어져 사용될 수 있습니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>SCSS:</strong><br>
+						<pre>$color: #000;
+.box1 {
+	$color: #111 !global;
+	background: $color;
+}
+.box2 {
+	background: $color;
+}
+.box3 {
+	$color: #222;
+	background: $color;
+}
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>Compiled to:</strong><br>
+						<pre>.box1 {
+	background: #111;
+}
+.box2 {
+	background: #111;
+}
+.box3 {
+	background: #222;
+}
+</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">11. !default (초깃값 설정)</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- <span class="fc_point">!default</span> 플래그는 할당되지 않은 변수의 초깃값을 설정합니다.<br> 즉, 할당되어있는 변수가
+								있다면 변수가 기존 할당 값을 사용합니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>SCSS:</strong><br>
+						<pre>$color-primary: red;
+
+.box {
+	$color-primary: blue !default;
+	background: $color-primary;
+}
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>Compiled to:</strong><br>
+						<pre>.box {
+	background: red;
+}
+</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">12. #{} (문자 보간)</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- <span class="fc_point">#{}</span> 를 이용해서 코드의 어디든지 변수 값을 넣을 수 있습니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>SCSS:</strong><br>
+						<pre>$family: unquote("Droid+Sans");
+@import url("http://fonts.googleapis.com/css?family=#{$family}");
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>Compiled to:</strong><br>
+						<pre>@import url("http://fonts.googleapis.com/css?family=Droid+Sans");</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">13. 연산 (Operations)</h4>
+				<h5 class="tit_4dep">개요</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- Sass는 기본적인 연산 기능을 지원합니다.</p>
+						</li>
+						<li>
+							<p>- 레이아웃 작업 시 상황에 맞게 크기를 계산을 하거나 정해진 값을 나눠서 작성할 경우 유용합니다.</p>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">산술 연산자</h5>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<caption>산술 연산자</caption>
+							<colgroup>
+								<col style="width:20%;">
+								<col style="width:35%;">
+								<col style="width:45%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="first">종류</th>
+									<th scope="col">설명</th>
+									<th scope="col">주의사항</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="first"><span class="fc_point">+</span></td>
+									<td>더하기</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="first"><span class="fc_point">-</span></td>
+									<td>빼기</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="first"><span class="fc_point">*</span></td>
+									<td>곱하기</td>
+									<td>하나 이상의 값이 반드시 숫자(Number)</td>
+								</tr>
+								<tr>
+									<td class="first"><span class="fc_point">/</span></td>
+									<td>나누기</td>
+									<td>오른쪽 값이 반드시 숫자(Number)</td>
+								</tr>
+								<tr>
+									<td class="first"><span class="fc_point">%</span></td>
+									<td>나머지</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h5 class="tit_4dep">비교 연산자</h5>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<caption>비교 연산자</caption>
+							<colgroup>
+								<col style="width:35%;">
+								<col style="width:65%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="first">종류</th>
+									<th scope="col">설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="first"><span class="fc_point">==</span></td>
+									<td>동등</td>
+								</tr>
+								<tr>
+									<td class="first"><span class="fc_point">!=</span></td>
+									<td>부등</td>
+								</tr>
+								<tr>
+									<td class="first"><span class="fc_point">&lt;</span></td>
+									<td>대소/보다 작은</td>
+								</tr>
+								<tr>
+									<td class="first"><span class="fc_point">&gt;</span></td>
+									<td>대소/보다 큰</td>
+								</tr>
+								<tr>
+									<td class="first"><span class="fc_point">&lt;=</span></td>
+									<td>대소 및 동등/보다 작거나 같은</td>
+								</tr>
+								<tr>
+									<td class="first"><span class="fc_point">&gt;=</span></td>
+									<td>대소 및 동등/보다 크거나 같은</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h5 class="tit_4dep">논리(불린, Boolean) 연산자</h5>
+				<div class="conts_box">
+					<div class="tb_table">
+						<table>
+							<caption>논리(불린, Boolean) 연산자</caption>
+							<colgroup>
+								<col style="width:35%;">
+								<col style="width:65%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="first">종류</th>
+									<th scope="col">설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="first"><span class="fc_point">and</span></td>
+									<td>그리고</td>
+								</tr>
+								<tr>
+									<td class="first"><span class="fc_point">or</span></td>
+									<td>또는</td>
+								</tr>
+								<tr>
+									<td class="first"><span class="fc_point">not</span></td>
+									<td>부정</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h4 class="tit_3dep">14. 숫자 (Numbers)</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 일반적으론 절댓값을 나타내는 <span class="fc_point">px</span> 단위로 연산을 합니다만, 상대적 단위(<span
+									class="fc_point">%, em, vw</span> 등)의 연산의 경우 CSS <span
+									class="fc_point">calc()</span>로 연산을 해야합니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>예)</strong><br>
+						<pre>width: 50% - 20px;		// 단위 모순 에러(Incompatible units error)
+width: calc(50% - 20px); 	// 연산 가능
+</pre>
+					</div>
+					<ul>
+						<li>
+							<p>- <span class="fc_point">/</span> 를 나누기 연산 기능으로 사용하려면 다음과 같은 조건을 충족해야 합니다.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 값 또는 그 일부가 변수에 저장되거나 함수에 의해 반환되는 경우</p>
+						</li>
+						<li>
+							<p>- 값이 <span class="fc_point">()</span> 로 묶여있는 경우</p>
+						</li>
+						<li>
+							<p>- 값이 다른 산술 표현식의 일부로 사용되는 경우 </p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>SCSS:</strong><br>
+						<pre>div {
+	$x: 100px;
+	width: $x / 2;			// 변수에 저장된 값을 나누기
+	height: (100px / 2);		// 괄호로 묶어서 나누기
+	font-size: 10px + 12px / 3;	// 더하기 연산과 같이 사용
+}
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>Compiled to:</strong><br>
+						<pre>div {
+	width: 50px;
+	height: 50px;
+	font-size: 14px;
+}
+</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">15. 문자 (Strings)</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 문자 연산에는 <span class="fc_point">+</span> 가 사용됩니다.</p>
+						</li>
+						<li>
+							<p>- 문자 연산의 결과는 첫 번째 피연사자를 기준으로 합니다.</p>
+						</li>
+						<li>
+							<p>- 첫 번째 피연산자에 따옴표가 붙어있다면 연산 결과를 따옴표로 묶습니다.</p>
+						</li>
+						<li>
+							<p>- 반대로 첫 번째 피연산자에 따옴표가 붙어있지 않다면 연산 결과도 따옴표를 처리하지 않습니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>SCSS:</strong><br>
+						<pre>div::after {
+	content: "Hello " + World;
+	flex-flow: row + "-reverse" + " " + wrap
+}
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>Compiled to:</strong><br>
+						<pre>div::after {
+	content: "Hello World";
+	flex-flow: row-reverse wrap;
+}
+</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">16. 가져오기 (import)</h4>
+				<h5 class="tit_4dep">개요</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- <span class="fc_point">@import</span> 로 외부에서 가져온 Sass 파일은 모두 단일 CSS 출력 파일로 병합됩니다.</p>
+						</li>
+						<li>
+							<p>- 또한, 가져온 파일에 정의된 모든 변수 또는 Mixins 등을 주 파일에서 사용할 수 있습니다.</p>
+						</li>
+						<li>
+							<p>- @import 로 외부에서 가져온 Sass 파일에서 다른 Sass 파일을 @import 할 수 있으며 모두 단일 CSS로 병합됩니다. </p>
+						</li>
+						<li>
+							<p>- Sass <span class="fc_point">@import</span> 는 기본적으로 Sass 파일을 가져오는데, CSS <span
+									class="fc_point">@import</span> 규칙으로 컴파일되는 몇 가지 상황이 있습니다.</p>
+							<div class="exmp pre">
+								<ul>
+									<li>1. 파일 확장자가 <span class="fc_point">.css</span> 일 때</li>
+									<li>2. 파일이름이 <span class="fc_point">http://</span> 로 시작하는 경우</li>
+									<li>3. <span class="fc_point">url()</span> 이 붙었을 경우</li>
+									<li>4. 미디어쿼리가 있는 경우</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<p>- 위의 경우 CSS <span class="fc_point">@import</span> 규칙대로 컴파일 됩니다.</p>
+							<div class="exmp pre">
+								<pre>@import "hello.css";
+@import "http://hello.com/hello";
+@import url(hello);
+@import "hello" screen;
+</pre>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">여러 파일 가져오기</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 하나의 <span class="fc_point">@import</span> 로 여러 파일을 가져 올 수도 있습니다.</p>
+						</li>
+						<li>
+							<p>- 파일 이름은 , 로 구분합니다.</p>
+							<div class="exmp pre">
+								<pre>@import "header", "footer";</pre>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">파일 분할 (Partials)</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 프로젝트 규모가 커지면 파일들을 <span class="fc_point">header</span> 나 <span
+									class="fc_point">side-menu</span> 같이 각 기능과 부분으로 나워 유지보수가 쉽도록 관리하게 됩니다.</p>
+						</li>
+						<li>
+							<p>- 이 경우 파일이 점점 많아지는데, 모든 파일이 컴파일 시 각각의 <span class="fc_point">.css</span> 파일로 나눠서 저장된다면
+								관리나 성능 차원에서 문제가 될수 있습니다.<br> 그래서 Sass는 Partials 기능을 지원합니다.</p>
+						</li>
+						<li>
+							<p>- 파일 이름 앞에 <span class="fc_point">_</span> 를 붙여 (<span
+									class="fc_point">_header.css</span> 와 같이) <span class="fc_point">@import</span> 로
+								가져오면 컴파일 시 <span class="fc_point">~.css</span> 파일로 컴파일하지 않습니다.</p>
+						</li>
+						<li class="fc_point">예)</li>
+						<li>
+							<p>- 다음과 같이 Sass/ 안에 3개의 Sass 파일이 있습니다. 메인 파일인 main.scss 에는 _ 를 사용하지 않겠습니다.</p>
+							<div class="exmp pre">
+								<pre>Sass-App
+# ...
+├─scss
+│  ├─header.scss
+│  ├─side-menu.scss
+│  └─main.scss
+# ...
+</pre>
+							</div>
+						</li>
+						<li>
+							<p>- 다음과 같이 Sass/ 안에 3개의 Sass 파일이 있습니다.<br> 메인 파일인 main.scss 에는 _ 를 사용하지 않겠습니다.</p>
+							<div class="exmp pre">
+								<pre>Sass-App
+# ...
+├─scss
+│  ├─header.scss
+│  ├─side-menu.scss
+│  └─main.scss
+# ...
+</pre>
+							</div>
+						</li>
+						<li>
+							<p>- <span class="fc_point">main.scss</span> 로 나머지 <span class="fc_point">~.scss</span> 파일을
+								가져옵니다.</p>
+							<div class="exmp pre">
+								<pre>// main.scss
+@import "header", "side-menu";
+</pre>
+							</div>
+						</li>
+						<li>
+							<p>- 그리고 이 파일들을 <span class="fc_point">css/</span>디렉토리로 컴파일합니다. (컴파일은 예시로 node-sass로 진행)</p>
+							<div class="exmp pre">
+								<pre>$ node-sass scss --output css
+</pre>
+							</div>
+						</li>
+						<li>
+							<p>- 아래처럼 별도의 파일로 컴파일되지 않고 사용됩니다.</p>
+							<div class="exmp pre">
+								<pre>Sass-App
+# ...
+├─css
+│  ├─header.css
+│  ├─side-menu.css
+│  └─main.css
+├─scss
+│  ├─header.scss
+│  ├─side-menu.scss
+│  └─main.scss
+# ...
+</pre>
+							</div>
+						</li>
+						<li>
+							<p>- <span class="fc_point">Webpack</span> 이나 <span class="fc_point">Parcel</span>, <span
+									class="fc_point">Gulp</span> 같은 일반적인 빌드툴에서는 Partials 기능을 사용할 필요 없이, 설정된 값에 따라 빌드됩니다.
+								하지만 되도록 <span class="fc_point">_</span> 를 사용할 것을 권장합니다.</p>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">17. @media</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- CSS의 @media와 같은 개념입니다. SASS에서는 아래 방법처럼 CSS 다르게 작성할 수도 있습니다. 당연히 CSS @media 문법대로 작성도
+								가능합니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>SCSS:</strong><br>
+						<pre>@media (min-width:768px) {
+	@media (max-width:1280px) {
+		.box1 {width:768px; margin:0 auto;}
+	}
+}
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>Compiled to:</strong><br>
+						<pre>@media (min-width:768px) and (max-width:1280px) {
+	.box1 {width:768px; margin:0 auto;}
+}
+</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">18. @extend</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 확장은 의미하는 @extend는 기존에 설정되어 있는 CSS의 선택자의 속성을 재사용하면서 다른 선택자의 기능을 확장해 주는 문법입니다. (<span
+									class="fc_point">@extend 선택자;</span>)</p>
+							<div class="exmp pre">
+								<strong>SCSS:</strong><br>
+								<pre>.btn {
+	display:block;
+	padding: 10px;
+	background: blue;
+}
+.btn-red {
+	@extend .btn;
+	background: red;
+}
+.btn-green {
+	@extend .btn;
+	background: green;
+}
+</pre>
+							</div>
+							<div class="exmp pre">
+								<strong>Compiled to:</strong><br>
+								<pre>.btn,
+.btn-red,
+.btn-green {
+	display: block;
+	padding: 10px;
+	background: blue;
+}
+.btn-red {
+	background: red;
+}
+.btn-green {
+	background: green;
+}
+</pre>
+							</div>
+						</li>
+						<li>
+							<p>- 다만 @extend 를 잘못 사용하면 연관성 없는 값들이 한 장소에 묶이게 되어 소스 순서가 어그러져서 혼란을 주며, 심각한 경우 특정도(적용 우선순위
+								점수, specificity)가 엉망이 되면서 코드가 뜻대로 제어되지 않는 결과를 낳을 수도 있습니다.</p>
+							<div class="exmp pre">
+								<strong>SCSS:</strong><br>
+								<pre>.btn_wrap {
+	.btn {
+		display:block;
+		padding: 10px;
+		background: blue;
+	}
+}
+.btn_cont {
+	.btn-red {
+		@extend .btn;
+		background: red;
+	}
+}
+.btn_box {
+	.btn-green {
+		@extend .btn;
+		background: green;
+	}
+}
+</pre>
+							</div>
+							<div class="exmp pre">
+								<strong>Compiled to:</strong><br>
+								<pre>.btn_wrap .btn,
+.btn_wrap .btn_cont .btn-red,
+.btn_cont .btn_wrap .btn-red,
+.btn_wrap .btn_box .btn-green,
+.btn_box .btn_wrap .btn-green {
+	display: block;
+	padding: 10px;
+	background: blue;
+}
+.btn_cont .btn-red {
+	background: red;
+}
+.btn_box .btn-green {
+	background: green;
+}
+</pre>
+							</div>
+						</li>
+						<li>
+							<p>- SASS의 문법을 설명할 때 @extend는 일반적으로 ‘<span class="fc_point">사용을 권장하지 않는다</span>’ 라고들 추천합니다.
+							</p>
+						</li>
+						<li>
+							<p>- 정확한 기준으로 연관성이 있게 사용해야 한다면 괜찮은 사용법인 것 같습니다. 다만 매우 주의해서 사용해야 할 것 같습니다.</p>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">19. @mixin / @include</h4>
+				<h5 class="tit_4dep">개요</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- mixin은 재사용할 그룹 선언으로 반복적인 작업을 획기적으로 줄여 줄 수 있어서 Sass에서 <span class="fc_point">가장 쓰임새가
+									많습니다.</span></p>
+						</li>
+						<li>
+							<p>- @mixin을 정의하며, CSS 선택자 내부에 @include를 이용하며 호출됩니다.</p>
+						</li>
+						<li>
+							<p>- 정의된 @mixin에서 @include로 또 다른 @mixin 도 재사용이 가능합니다.</p>
+						</li>
+						<li>
+							<p>- SASS와 SCSS 문법이 다릅니다.</p>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">사용방법</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- @mixin은 함수(Functions)처럼 $매개변수를 가질 수 있습니다.</p>
+						</li>
+						<li>
+							<p>- @mixin에서 $매개변수가 없다면 ($매개변수:기본값) 삭제 가능합니다.</p>
+						</li>
+						<li>
+							<p>- @mixin의 매개변수에 기본값을 추가할 수 있으며 기본값은 초기화 값입니다.</p>
+						</li>
+						<li>
+							<p>- @include 전달 할 인수 값이 없다면 (인수) 삭제 가능합니다.</p>
+						</li>
+						<li>
+							<p>- @include 의 인수 값이 @mixin의 기본값과 같다면 삭제 가능합니다.</p>
+						</li>
+						<li>
+							<p>- @include 의 인수값에 @mixin의 매개변수 순서대로 전달됩니다.</p>
+						</li>
+						<li>
+							<p>- @mixin의 매개변수 순서와 상관 없이 전달하려면 @include의 인수값을 $매개변수: 기본값 으로 기입한다. </p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<strong>SCSS:</strong><br>
+						<pre>@mixin 믹스인이름($매개변수:기본값) {
+	// 매개변수 없다면 ($매개변수:기본값) 삭제 가능
+	// 매개변수와 기본값은 추가할 수 있으며 기본값은 초기화값
+	스타일;
+}
+.box1 {
+@include 믹스인이름($매개변수:인수);
+	// 인수의 값이 기본값과 같다면 (인수) 삭제 가능
+	// 인수 적용은 @mixin의 매개변수 순서대로 전달
+	// 순서와 상관없이 전달하려면  $매개변수:인수 로 기입
+}
+
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>SASS:</strong><br>
+						<pre>// 믹스인 정의
+=믹스인이름($매개변수: 기본값)
+스타일
+
+// 믹스인 사용
++믹스인이름($매개변수:인수)
+</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">20. 함수</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- Scss에서 사용자 정의 함수를 정의할 수 있습니다.</p>
+						</li>
+						<li>
+							<p>- CSS 및 Mixin 에서 호출할 수 있습니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<pre>@function 함수이름($매개변수) {
+	// 매개변수가 없어도 함수이름()으로 기입 () 필수
+	@return 값
+}
+.box1 {
+	함수이름(인수);
+}
+@mixin 믹스인이름 {
+	함수이름(인수);
+}
+</pre>
+					</div>
+				</div>
+				<h4 class="tit_3dep">21. 제어문</h4>
+				<h5 class="tit_4dep">개요</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- SASS에서는 프로그래밍 언너와 같이 제어문을 이용하여 조건문 또는 변수 결합하여 아주 편리하게 값이 다른 여러 스타일들을 만들어 낼 수 있습니다.</p>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">if</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 조건의 값(true, false)에 따라 두 개의 표현식 중 하나만 반환합니다.</p>
+						</li>
+						<li>
+							<p>- Javascript 의 삼항연산자와 비슷합니다.</p>
+						</li>
+						<li>
+							<p>- 조건의 값이 true이면 표현식1을, 조건의 값이 false이면 표현식2를 실행합니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">if(조건, 표현식1, 표현식2);</div><br>
+					<div class="exmp pre">
+						<strong>예)</strong><br>
+						<pre>if(true, 1px, 2px);   =&gt; 1px
+if(false, 1px, 2px);  =&gt; 2px
+</pre>
+					</div>
+				</div>
+				<h5 class="tit_4dep">@if (지시어)</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- @if은 지시어의 따른 분기 처리가 가능하며, @else if(지시어), @else 로 복잡한 조건문을 작성할 수 있습니다.</p>
+						</li>
+						<li>
+							<p>- Javascript 의 if문과 비슷합니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<pre>@if (조건1) {	//지시어를 감싸는 () 는 삭제 가능
+	/* 조건1이 참일 때 구문 */
+} @else if (조건2) {
+	/* 조건2가 참일 때 구문 */
+} @else {
+	/* 모두 거짓일 때 구문 */
+}
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>예)</strong><br>
+						<pre>@function limitSize($size) {
+		@if $size &gt;= 0 and $size &lt;= 200px {
+		@return 200px;
+	} @else {
+		@return 800px;
+	}
+}
+div {
+	width: limitSize(180px);  // =&gt; 200px
+	height: limitSize(340px); // =&gt; 800px
+}
+</pre>
+					</div>
+				</div>
+				<h5 class="tit_4dep">for</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 반복문입니다.</p>
+						</li>
+						<li>
+							<p>- @for는 through를 사용하는 형식과 to를 사용하는 형식으로 나뉩니다.</p>
+						</li>
+						<li>
+							<p>- through는 종료만큼 반복하나 from은 종료 전까지만 반복합니다.</p>
+						</li>
+						<li>
+							<p>- Javascript 의 for문과 비슷합니다.</p>
+						</li>
+					</ul>
+					<div class="exmp pre">
+						<pre>// through : 종료 만큼 반복
+@for $변수 from 시작 through 종료 {
+	// 반복 내용
+}
+
+// to : 종료 직전까지 반복
+@for $변수 from 시작 to 종료 {
+	// 반복 내용
+}
+</pre>
+					</div>
+					<div class="exmp pre">
+						<strong>예)</strong><br>
+						<pre>@for $i from 1 through 3 {		// 1부터 3번 반복
+	.li:nth-child(#{$i}) {
+		width : 20px * $i
+	}
+}
+@for $i from 1 to 3 {		// 1부터 3 직전까지만 반복(2번 반복)
+	.li:nth-child(#{$i}) {
+		width : 20px * $i
+	}
+}
+</pre>
+					</div>
+				</div>
+				<h5 class="tit_4dep">each</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- @each는 List와 Map 데이터를 반복할 때 사용합니다.</p>
+						</li>
+						<li>
+							<p>- Javascript 의 for in 문과 비슷합니다.</p>
+						</li>
+						<li>
+							<p class="fc_point">@Each - List Data</p>
+							<div class="exmp pre">
+								<pre>@each $변수 in 데이터 {
+	// 반복 내용
+}
+</pre>
+							</div>
+						</li>
+						<li>
+							<p class="fc_point">예1)</p>
+							<div class="exmp pre">
+								<strong>SCSS:</strong><br>
+								<pre>// List Data
+$fruits: (apple, orange, banana);
+
+.fruits {
+	@each $fruit in $fruits {
+		li.#{$fruit} {
+			background: url("/images/img_#{$fruit}.png");
+		}
+	}
+}
+</pre>
+							</div>
+							<div class="exmp pre">
+								<strong>Compiled to:</strong><br>
+								<pre>.fruits li.apple {
+	background: url("/images/img_apple.png");
+}
+.fruits li.orange {
+	background: url("/images/img_orange.png");
+}
+.fruits li.banana {
+	background: url("/images/img_banana.png");
+}
+</pre>
+							</div>
+						</li>
+						<li>
+							<p class="fc_point">예2)</p>
+							<div class="exmp pre">
+								<strong>SCSS:</strong><br>
+								<pre>// List Data
+$apple: (apple, korea, 1);
+$orange: (orange, china, 2);
+$banana: (banana, japan, 3);
+
+@each $fruit, $country, $number in $apple, $orange, $banana {
+	.box-#{$fruit} {
+		background: url("/images/#{$number}/img_#{$country}.png");
+	}
+}
+</pre>
+							</div>
+							<div class="exmp pre">
+								<strong>Compiled to:</strong><br>
+								<pre>.box-apple {
+	background: url("/images/1/img_korea.png");
+}
+.box-orange {
+	background: url("/images/2/img_china.png");
+}
+.box-banana {
+	background: url("/images/3/img_japan.png");
+}
+</pre>
+							</div>
+						</li>
+						<li>
+							<p class="fc_point">@Each - Map Data</p>
+							<div class="exmp pre">
+								<pre>@each $key변수, $value변수 in 데이터 {
+	// 반복 내용
+}
+</pre>
+							</div>
+						</li>
+						<li>
+							<p class="fc_point">예)</p>
+							<div class="exmp pre">
+								<strong>SCSS:</strong><br>
+								<pre>// Map Data
+$fruits-data: (
+	apple: korea,	// key : value
+	orange: china,
+	banana: japan
+);
+
+@each $fruit, $country in $fruits-data {
+	.box-#{$fruit} {
+		background: url("/images/img_#{$country}.png");
+	}
+}
+</pre>
+							</div>
+							<div class="exmp pre">
+								<strong>Compiled to:</strong><br>
+								<pre>.box-apple {
+	background: url("/images/img_korea.png");
+}
+.box-orange {
+	background: url("/images/img_china.png");
+}
+.box-banana {
+	background: url("/images/img_japan.png");
+}
+</pre>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">22. 내장함수</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- 내장함수는 다양하며 [<a href="https://sass-lang.com/documentation/modules" target="_blank">Sass
+									Built-in Functions</a>] 에서 확인할 수 있습니다.</p>
+						</li>
+						<li>
+							<p>- 내장함수는 Color, List, Map, Math, Meta, Selector, String의 Type으로 구분됩니다.</p>
+						</li>
+						<li>
+							<p>- (tip) numbering이 Zero-based numbering 이 아닌 1부터 시작합니다.</p>
+						</li>
+					</ul>
+					<div class="tb_table">
+						<table>
+							<caption>비교 연산자</caption>
+							<colgroup>
+								<col style="width:20%;">
+								<col style="width:35%;">
+								<col style="width:40%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="first">Type</th>
+									<th scope="col">Function</th>
+									<th scope="col">설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="first" rowspan="3">Color</td>
+									<td><span class="fc_point">grayscale($color)</span></td>
+									<td>색상을 회색으로 변환</td>
+								</tr>
+								<tr>
+									<td>
+										<p class="fc_point">opacify($color, $amount)</p>
+										<p class="fc_point">fade-in($color, $amount)</p>
+									</td>
+									<td>색상을 더 불투명하게 변환</td>
+								</tr>
+								<tr>
+									<td>
+										<p class="fc_point">transparentize($color, $amount)</p>
+										<p class="fc_point">fade-out($color, $amount)</p>
+									</td>
+									<td>색상을 더 투명하게 변환</td>
+								</tr>
+								<tr>
+									<td class="first" rowspan="4">Strings</td>
+									<td><span class="fc_point">unquote($string)</span></td>
+									<td>문자에서 따옴표를 제거</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">quote($string)</span></td>
+									<td>문자에 따옴표를 추가</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">to-upper-case($string)</span></td>
+									<td>문자를 대문자를 변환</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">to-lower-case($string)</span></td>
+									<td>문자를 소문자로 변환</td>
+								</tr>
+								<tr>
+									<td class="first" rowspan="9">Math</td>
+									<td><span class="fc_point">unit($number)</span></td>
+									<td>unit 반환<br>
+										ex)<br>
+										unit(100px) =&gt; "px"<br>
+										unit(10px * 5em) =&gt; "em*px"
+									</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">unitless($number)</span></td>
+									<td>단위가 있는지 true/false 반환<br>
+										ex)<br>
+										unitless(100) =&gt; true<br>
+										unitless(100px) =&gt; false
+									</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">type-of($number)</span></td>
+									<td>Data type 반환</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">round($number)</span></td>
+									<td>소숫점 이하 반올림</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">ceil($number)</span></td>
+									<td>소숫점 이하 올림</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">floor($number)</span></td>
+									<td>소숫점 이하 제거</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">percentage($number)</span></td>
+									<td>숫자(단위 무시)를 백분율로 변환</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">min($numbers…)</span></td>
+									<td>숫자 중 최소 값 찾음</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">max($numbers…)</span></td>
+									<td>숫자 중 최대 값 찾음</td>
+								</tr>
+								<tr>
+									<td class="first" rowspan="5">List</td>
+									<td><span class="fc_point">length($list)</span></td>
+									<td>List의 개수를 반환</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">nth($list, $n)</span></td>
+									<td>List에서 n번째 값을 반환</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">set-nth($list, $n, $value)</span></td>
+									<td>List에서 n번째 값을 다른 값으로 변경</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">append($list, $val, $separator: auto)</span></td>
+									<td>리스트의 마지막에 단일 요소 추가<br>
+										ex)<br>
+										append(10px 20px, 30px)
+									</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">index($list, $value)</span></td>
+									<td>List에서 특정 값의 index를 반환</td>
+								</tr>
+								<tr>
+									<td class="first" rowspan="3">Map</td>
+									<td><span class="fc_point">map-get($map, $key)</span></td>
+									<td>Map에서 특정 key의 value를 반환</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">map-keys($map)</span></td>
+									<td>Map에서 모든 key를 List로 반환</td>
+								</tr>
+								<tr>
+									<td><span class="fc_point">map-values($map)</span></td>
+									<td>Map에서 모든 value를 List로 반환</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>

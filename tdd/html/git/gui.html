@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="title" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="og:image" property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<title>Choiseungjun Portpolio</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/content.css">
+
+	<script type="text/javascript" src="../../js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.mobile-events.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Skip Navigation -->
+	<div id="skipnavi">
+		<p><a href="#contents">skip navigation</a></p>
+	</div>
+	<!-- //Skip Navigation -->
+
+	<div id="wrap">
+		<!-- Header -->
+		<header id="header">
+			<div class="hd_wrap">
+				<h1 class="logo"><a href="/index.html"></a></h1>
+
+				<nav class="nav">
+					<ul>
+						<li class="on"><a href="../git/intro.html">GIT</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="btn_nav_all">
+					<span class="bar top"></span>
+					<span class="bar bottom"></span>
+				</button>
+
+				<div class="nav_all_wrap">
+					<div class="menu">
+						<ul>
+							<li><a href="../reference/intro.html"><span>Reference</span></a></li>
+							<li ><a href="../convention/intro.html"><span>Convention</span></a></li>
+							<li><a href="../library/layout.html"><span>UI Library</span></a></li>
+							<li><a href="../accessibility/intro.html"><span>Accessibility</span></a></li>
+							<li><a href="../framework/intro.html"><span>Framework</span></a></li>
+							<li class="on"><a href="../git/intro.html"><span>GIT</span></a></li>
+							<li><a href="../seo/seo.html"><span>SEO</span></a></li>
+							<li><a href="#"><span>Soon</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<section id="container">
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<button type="button" class="btn_sidebar"><span>MENU</span></button>
+				<ul>
+					<li><a href="../git/intro.html">Intro</a></li>
+					<li><a href="../git/basic_info.html">기본개념</a></li>
+					<li class="on"><a href="../git/gui.html">GUI 사용법</a></li>
+					<li><a href="../git/gitlab.html">GitLab 이용가이드</a></li>
+					<li><a href="../git/server.html">설치형 Git서버 설치테스트</a></li>
+				</ul>
+
+				
+			</div>
+			<div class="sidebar_dim"></div>
+			<!-- //Sidebar -->
+
+			<div id="contents">
+				<h3 class="tit_2dep">Gui사용법</h3>
+				<h4 class="tit_3dep">1. 준비사항</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- Git 개념 파악</p>
+						</li>
+						<li>
+							<p>- Git 설치</p>
+						</li>
+						<li>
+							<p>- GitHub 가입 <a href="https://github.com/" target="_blank">(https://github.com/)</a></p>
+						</li>
+						<li>
+							<p>- GitLab 가입 <a href="https://gitlab.com" target="_blank">(https://gitlab.com)</a></p>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">2. 소스트리 설치하기</h4>
+				<div class="conts_box">
+					<img src="../../images/git/img_gui01.jpg" alt="">
+					<ul>
+						<li>
+							<p>- <a href="https://www.sourcetreeapp.com"
+									target="_blank">https://www.sourcetreeapp.com</a></p>
+						</li>
+						<li>
+							<img src="../../images/git/img_gui02.jpg" alt="">
+							<p>- 본인의 운영체제에 따라 맞게 설치</p>
+						</li>
+						<li>
+							<img src="../../images/git/img_gui03_1.jpg" alt="">
+							<p>- 설치 도중 ATLASSIAN가입이 필수인데 구글계정으로도 로그인 가능</p>
+							<img src="../../images/git/img_gui03.jpg" alt="">
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">3. 로컬 저장소 만들기</h4>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- Git에게 추적당할 로컬 저장소 생성</p>
+						</li>
+						<li><img src="../../images/git/img_gui04.jpg" alt=""></li>
+						<li><img src="../../images/git/img_gui05.jpg" alt=""></li>
+						<li><img src="../../images/git/img_gui06.jpg" alt=""></li>
+						<li>
+							<p>- 노란색으로 표시한 부분은 Git과 연동하는 부분이고, 빨간색으로 표시되는 부분은 내 로컬 저장소 안에 있는 파일들을 보여줌</p>
+						</li>
+						<li>
+							<p>- Staging Area는 Git에게 추적되는 공간, Working Directory는 Git에게 추적되지 않는 공간</p>
+						</li>
+						<li>
+							<p>- 오른쪽 화면에서는 생성 및 변경된 파일을 확인할 수 있음</p>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">4. Add, Commit, Push, Pull 하기</h4>
+				<h5 class="tit_4dep">Add (스테이지 올리기)</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<img src="../../images/git/img_gui07.jpg" alt="">
+							<p>- ① : 전체 파일 add하기</p>
+							<p>- ②,③ : 개별파일 add하기</p>
+						</li>
+						<li>
+							<img src="../../images/git/img_gui08.jpg" alt="">
+							<p>- ① : 전체파일 add 취소하기</p>
+							<p>- ②,③ : 개별파일 add 취소하기 (두가지 방법이 있음)</p>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">Commit</h5>
+				<div class="conts_box">
+					<img src="../../images/git/img_gui09.jpg" alt="">
+					<ul>
+						<li>
+							<p>- ① : 커밋할 파일 선택 후 커밋버튼 클릭</p>
+						</li>
+						<li>
+							<p>- ② : 커밋 메세지 작성</p>
+						</li>
+						<li>
+							<p>- ③ : 커밋 버튼 클릭</p>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">Push (원격저장소에 저장)</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p>- push를 하기위해선 원격저장소가 있어야 하므로, 일단 github, gitlab을 사용하는 방법으로 소개함 (github, gitlab 계정필요)</p>
+						</li>
+					</ul>
+				</div>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<p class="fc_point">github 연결</p>
+						</li>
+						<li><img src="../../images/git/img_gui10.jpg" alt=""></li>
+						<li><img src="../../images/git/img_gui11.jpg" alt=""></li>
+						<li><img src="../../images/git/img_gui12.jpg" alt=""></li>
+						<li>
+							<p>- 내용 확인 후 계정 연결 클릭</p>
+						</li>
+						<li>
+							<img src="../../images/git/img_gui13_1.jpg" alt="">
+							<p>- 본인의 github 계정 등록하고 저장버튼 클릭</p>
+						</li>
+						<li>
+							<img src="../../images/git/img_gui13.jpg" alt="">
+							<p>- 본인의 github 계정이 등록된 걸 확인 할 수 있음.</p>
+							<p>- ① : 계정이 많을 시에 디폴트 설정으로 기본 계정을 설정할 수 있음.</p>
+						</li>
+						<li>
+							<img src="../../images/git/img_gui14.jpg" alt="">
+							<p>- ① : 클릭</p>
+						</li>
+						<li>
+							<img src="../../images/git/img_gui15.jpg" alt="">
+							<p>- ① : 클릭</p>
+						</li>
+						<li>
+							<img src="../../images/git/img_gui16.jpg" alt="">
+							<p>- ① : 본인의 github 저장소 url 등록 시 나머지 정보 자동 생성</p>
+							<p>- ② : 등록 후 클릭</p>
+						</li>
+						<li>
+							<img src="../../images/git/img_gui17.jpg" alt="">
+							<p>- ① : 클릭</p>
+							<p>- ② : 클릭</p>
+						</li>
+						<li>
+							<img src="../../images/git/img_gui18.jpg" alt="">
+							<p>- 본인의 github 원격저장소에 잘 올라간걸 확인할 수 있음</p>
+						</li>
+						<li>
+							<p class="fc_point">gitlab 연결</p>
+						</li>
+						<li>
+							<img src="../../images/git/img_gui24.jpg" alt="">
+							<p>- ① : 클릭</p>
+							<p>- ② : 클릭</p>
+						</li>
+						<li>
+							<img src="../../images/git/img_gui25.jpg" alt="">
+							<p>- ① : 본인의 github 저장소 url 등록</p>
+							<p>- ② : 로컬 경로</p>
+							<p>- ③ : 클릭</p>
+						</li>
+					</ul>
+				</div>
+				<h5 class="tit_4dep">Pull (소스가져오기)</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<img src="../../images/git/img_gui26.jpg" alt="">
+							<p>- ① : 클릭</p>
+							<p>- ② : 클릭</p>
+						</li>
+					</ul>
+				</div>
+				<h4 class="tit_3dep">브랜치(branch - 가지치기)</h4>
+				<h5 class="tit_4dep">생성</h5>
+				<div class="conts_box">
+					<ul>
+						<li>
+							<img src="../../images/git/img_gui27.jpg" alt="">
+							<p>- ① : 브랜치를 만들 기점에서 클릭</p>
+							<p>- ② : 클릭</p>
+						</li>
+						<li>
+							<img src="../../images/git/img_gui28.jpg" alt="">
+							<p>- ① : 기능/브랜치명 입력 (나중에 기능별로 브랜치 볼수 있음. 브랜치 생성시 유사 기능일 경우 기능명을 동일하게 기입하는게 좋음)</p>
+							<p>- ② : 클릭</p>
+						</li>
+						<li>
+							<img src="../../images/git/img_gui29.jpg" alt="">
+							<p>- ① : 해당영역에서 내가 생성한 브랜치들을 확인할 수 있음</p>
+							<p>- ② : 파일 수A정 후 생성한 브랜치로 commit&amp;push하면 master는 옛날 commit에 머물러 있는데 최신커밋은 브랜치로 표기되는걸 확인
+								할 수 있음</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<aside class="other_conts">
+			<a href="#" class="move_top"><span class="hide">위로 이동</span></a>
+		</aside>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="conts">
+				<p class="copy">Frontend-developer - Choiseungjun</p>
+			</div>
+		</footer>
+		<!-- //Footer -->
+	</div>
+</body>
+
+</html>
