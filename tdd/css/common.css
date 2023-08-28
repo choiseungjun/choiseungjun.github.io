@@ -289,7 +289,6 @@ legend{width:0; height:0; overflow:hidden; font-size:medium; line-height:normal;
 
 	/* Header */
 	#wrap #header .hd_wrap h1.logo {top:25px; left:20px;}
-	#wrap #header .hd_wrap h1.logo a	{width:150px; height:30px; background-size:150px auto;}
 
 	#wrap #header .hd_wrap .btn_nav_all	{right:23px;}
 	#wrap #header .hd_wrap .nav {right:85px;}
