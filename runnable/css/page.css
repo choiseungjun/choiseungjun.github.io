@@ -31,7 +31,7 @@
 .app_main_wrap .cont_area .my_race_list li .list_inner.type_d_day .list_date {color:rgba(255,255,255,0.6);}
 .app_main_wrap .cont_area .my_race_list li .list_inner.type_d_day .list_tit {color:#fff;}
 .app_main_wrap .cont_area .my_race_list li .list_inner.type_d_day .list_course {color:#fff;}
-.app_main_wrap .cont_area .my_race_list li .list_inner.type_d_day .icon_running_track {background-image:url('/images/icon_running_track_white.svg');}
+.app_main_wrap .cont_area .my_race_list li .list_inner.type_d_day .icon_running_track {background-image:url('/runnable/images/icon_running_track_white.svg');}
 
 .app_main_wrap .cont_area .my_race_more {padding:24px 0 32px; text-align:center;}
 .app_main_wrap .cont_area .nolist_txt {margin:8px 0; font-size:14px; line-height:20px; color:#888;}
@@ -56,7 +56,7 @@
 .app_main_wrap .run_record_list > .nodata {padding:32px 10px 36px; border-radius:12px; background:#f5f5f5; text-align:center;}
 .app_main_wrap .run_record_list > .nodata .nodata_msg {margin-top:16px; font-size:14px; line-height:22px; color:#818181;}
 .app_main_wrap .run_record_list > .nodata .btn_text {position:relative; padding-right:16px; margin-top:8px; font-size:12px; line-height:18px; color:#3c3c3c;}
-.app_main_wrap .run_record_list > .nodata .btn_text .icon_arrow_link2 {position:absolute; top:1px; right:0; width:16px; height:16px; background:url('/images/icon_arrow_link.svg') 0 0 no-repeat; background-size:100% auto;}
+.app_main_wrap .run_record_list > .nodata .btn_text .icon_arrow_link2 {position:absolute; top:1px; right:0; width:16px; height:16px; background:url('/runnable/images/icon_arrow_link.svg') 0 0 no-repeat; background-size:100% auto;}
 
 /* MY3.1-프로필 */
 .mypage_wrap .profile_wrap {margin:0 -24px; padding:24px 24px 48px;}
@@ -64,7 +64,7 @@
 .mypage_wrap .profile_box {display:flex; flex-direction:column; align-items:center; justify-content:center;}
 .mypage_wrap .profile_box .profile_thumbnail {position:relative; width:80px; height:80px; background:#d8e5fc; border-radius:50%;}
 .mypage_wrap .profile_box .profile_thumbnail .btn_modify {display:block; position:relative; height:100%;}
-.mypage_wrap .profile_box .profile_thumbnail .thumbnail {overflow:hidden; display:inline-block; width:100%; height:100%; border-radius:50%; background:url('/images/icon_profile_default.svg') 50% 50% no-repeat; background-size:cover;}
+.mypage_wrap .profile_box .profile_thumbnail .thumbnail {overflow:hidden; display:inline-block; width:100%; height:100%; border-radius:50%; background:url('/runnable/images/icon_profile_default.svg') 50% 50% no-repeat; background-size:cover;}
 .mypage_wrap .profile_box .profile_thumbnail .btn_modify [class^='icon_'] {position:absolute; right:0; bottom:0; width:24px; height:24px;}
 .mypage_wrap .profile_box .name_area {display:flex; align-items:center; margin-top:20px;}
 .mypage_wrap .profile_box .name_area .name {font-weight:700; font-size:24px;line-height:32px; color:#000;}
@@ -159,7 +159,7 @@
 .notice_wrap > ul li .explan_area {margin-top:6px;}
 .notice_wrap > ul li .explan_area .explan {color:#3c3c3c; font-size:12px; line-height:20px;}
 .notice_wrap > ul li .explan_area.new .explan {margin-left:20px; text-indent:-20px;}
-.notice_wrap > ul li .explan_area.new .explan:before {content:''; display:inline-block; margin:2.5px 5px 0 0; width:14px; height:14px; background-image:url('/images/icon_notice_new.svg'); background-size:100% auto; vertical-align:top;}
+.notice_wrap > ul li .explan_area.new .explan:before {content:''; display:inline-block; margin:2.5px 5px 0 0; width:14px; height:14px; background-image:url('/runnable/images/icon_notice_new.svg'); background-size:100% auto; vertical-align:top;}
 .notice_wrap .nodata {display:flex; flex-direction:column; justify-content:center; align-items:center; flex-grow:1; min-height:200px; text-align:center;}
 .notice_wrap .nodata .nodata_msg {display:block; margin-top:8px; font-weight:700; font-size:14px; line-height:24px; color:#111;}
 .notice_wrap .nodata .nodata_txt {margin-top:4px; font-size:12px; line-height:20px; color:#818181;}
@@ -384,7 +384,7 @@
 .tracking_soon_wrap .soon_logo {display:inline-block; width:126px; padding-top:24px;}
 .tracking_soon_wrap .soon_txt {padding:12px 0 8px; font-weight:400; font-size:12px; line-height:20px; color:#fff;}
 .tracking_soon_wrap .soon_graphic {position:relative; display:flex; justify-content:center; align-items:center; flex-grow:1; width:100%;}
-.tracking_soon_wrap .soon_graphic .load_box {width:100%; background:url('/images/bg_comingsoon01.png') 50% 50% no-repeat; background-size:100% auto;}
+.tracking_soon_wrap .soon_graphic .load_box {width:100%; background:url('/runnable/images/bg_comingsoon01.png') 50% 50% no-repeat; background-size:100% auto;}
 
 /* TR1.1-트래킹 메인 */
 .tracking_main_wrap {position:relative; height:100%; padding-bottom:66px;}
@@ -461,7 +461,7 @@
 .comp_intro_area .editor_popup {display:none; position:fixed; top:0; left:0; z-index:500; width:100%; height:100%; background:rgba(0,0,0,0.6);}
 .comp_intro_area .editor_popup.active {display:block;}
 /* .comp_intro_area .editor_popup  */
-.comp_intro_area .editor_popup .btn_pop_close {position:absolute; top:-44px; right:6px; width:44px; height:44px; background:url('/images/icon_gnb_close_white.svg') 50% 50% no-repeat; background-size:24px auto;}
+.comp_intro_area .editor_popup .btn_pop_close {position:absolute; top:-44px; right:6px; width:44px; height:44px; background:url('/runnable/images/icon_gnb_close_white.svg') 50% 50% no-repeat; background-size:24px auto;}
 .comp_intro_area .editor_popup .popup_inner {position:absolute; top:50%; left:0; transform:translateY(-50%); width:100%;}
 .comp_intro_area .editor_popup .video_container {overflow:hidden; position:relative; padding-bottom:56.25%; height:0;}
 .comp_intro_area .editor_popup .video_container iframe {position:absolute; bottom:0; left:0; width:100%; height:100%;}
